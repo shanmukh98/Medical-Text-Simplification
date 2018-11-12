@@ -1,0 +1,61 @@
+*Title: Automatic Generation of Java API Class Definitions
+*Author: Willie Rogers
+
+* Analysis of Grammar 
+
+Sample MetaMap Machine Output
+
+^<<
+args('MetaMap -q',[machine_output-[],infile-user_input,outfile-user_output]).
+aas([]).
+neg_list([]).
+utterance('00000000.tx.1',"a significant ethnic disparity",0/30,[]).
+phrase('a significant ethnic disparity',
+       [det([lexmatch([a]),inputmatch([a]),tag(det),tokens([a])]),
+	mod([lexmatch([significant]),inputmatch([significant]),tag(adj),tokens([significant])]),
+	mod([lexmatch([ethnic]),inputmatch([ethnic]),tag(adj),tokens([ethnic])]),
+	head([lexmatch([disparity]),inputmatch([disparity]),tag(noun),tokens([disparity])])],0/30,[]).
+candidates([ev(-660,'C0680174',ethnic,ethnic,[ethnic],[fndg],[[[2,2],[1,1],0]],no,no,['AOD','MTH'],[14/6]),
+	    ev(-660,'C0750502','Significant','Significant',[significant],[idcn],[[[1,1],[1,1],0]],no,no,['MTH','NCI','SNOMEDCT','CCPSS'],[2/11]),
+	    ev(-660,'C1546944','Significant','Event Seriousness - Significant',[significant],[qlco],[[[1,1],[1,1],0]],no,no,['MTH','HL7V2.5'],[2/11]),
+	    ev(-660,'C1879937','ETHNIC','CDISC SDTM Patient Ethnic Group Terminology',[ethnic],[ftcn],[[[2,2],[1,1],0]],no,no,['MTH','NCI'],[14/6]),
+	    ev(-589,'C0237881','Significance','Statistical Significance',[significance],[qnco],[[[1,1],[1,1],3]],no,no,['MTH','NCI','PSY'],[2/11])]).
+mappings([map(-623,[ev(-660,'C1546944','Significant','Event Seriousness - Significant',[significant],[qlco],[[[1,1],[1,1],0]],no,no,['MTH','HL7V2.5'],[2/11]),
+		    ev(-660,'C1879937','ETHNIC','CDISC SDTM Patient Ethnic Group Terminology',[ethnic],[ftcn],[[[2,2],[1,1],0]],no,no,['MTH','NCI'],[14/6])]),
+	  map(-623,[ev(-660,'C1546944','Significant','Event Seriousness - Significant',[significant],[qlco],[[[1,1],[1,1],0]],no,no,['MTH','HL7V2.5'],[2/11]),
+		    ev(-660,'C0680174',ethnic,ethnic,[ethnic],[fndg],[[[2,2],[1,1],0]],no,no,['AOD','MTH'],[14/6])]),
+	  map(-623,[ev(-660,'C0750502','Significant','Significant',[significant],[idcn],[[[1,1],[1,1],0]],no,no,['MTH','NCI','SNOMEDCT','CCPSS'],[2/11]),
+		    ev(-660,'C1879937','ETHNIC','CDISC SDTM Patient Ethnic Group Terminology',[ethnic],[ftcn],[[[2,2],[1,1],0]],no,no,['MTH','NCI'],[14/6])]),
+	  map(-623,[ev(-660,'C0750502','Significant','Significant',[significant],[idcn],[[[1,1],[1,1],0]],no,no,['MTH','NCI','SNOMEDCT','CCPSS'],[2/11]),
+		    ev(-660,'C0680174',ethnic,ethnic,[ethnic],[fndg],[[[2,2],[1,1],0]],no,no,['AOD','MTH'],[14/6])])]).
+'EOU'.
+^>>
+
+
+BNF representation of machine output
+
+^<<
+mmotermlist -> argsterm aasterm utteranceterm pcmgrouplist 'EOU' period ;
+pcmgrouplist -> pcmgroup pcmgrouplist ;
+pcmgrouplist -> lambda ;
+pcmgroup -> phraseterm candidatesterm mappingsterm ;
+argsterm -> 'args' '(' clargsatom ',' optionslist ')' period ;
+aasterm -> 'aas' '(' '[' aaslist ']' ')' period ;
+utteranceterm -> 'utterance' '(' idatom ',' utterancestring ',' positionalinfo ',' list ')' period ;
+phraseterm -> 'phrase' '(' phraseatom ',' mincomanlist ',' positionalinfo ',' list ')' period ;
+candidatesterm -> 'candidates' '(' evlist ')' period ;
+mappingsterm -> 'mappings' '(' maplist ')' period ;
+maplist -> '[' mapterm maptermtail ']' ;
+maptermtail -> ',' mapterm maptermtail ;
+maptermtail -> lambda ;
+mapterm -> 'map' '(' score ',' evlist ',' posinfolist ')' ;
+evlist -> '[' evterm evtermtail ']' ;
+evtermtail -> ',' evterm evtermtail ;
+evtermtail -> lambda ;
+evterm -> 'ev' '(' score ',' cuiatom ',' atom ',' atom ',' matchedwordlist ',' semtypelist ',' matchmaplist ',' flag ',' flag  ',' srclist  ',' posinfolist ')' ;
+posinfolist -> '[' positionalinfo posinfotail ']' ;
+posinfotail -> ',' positionalinfo posinfotail ;
+posinfotail -> lambda ;
+positionalinfo -> intatom '/' intatom ;
+
+^>>

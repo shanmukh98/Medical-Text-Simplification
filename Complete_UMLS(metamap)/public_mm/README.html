@@ -1,0 +1,495 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>Installing and Running the Public Version of MetaMap</title>
+	<meta name="author" content="Willie Rogers">
+	<meta name="GENERATOR" content = "Almost Free Text v5.098; Copyright 1996-2010 Todd Coram.">
+<style type="text/css">
+  <!--
+	.section5 { padding-left: 50pt; }
+	.section6 { padding-left: 75pt; }
+	.section7 { padding-left: 100pt; }
+html { background: #eee; color: #000; }
+
+body { background: #eee; color: #000; margin: 0; padding: 0;}
+
+div.body {
+	background: #fff; color: #000;
+	margin: 0 1em 0 1em; padding: 1em;
+	font-family: serif;
+	font-size: 1em; line-height: 1.2em;
+	border-width: 0 1px 0 1px;
+	border-style: solid;
+	border-color: #aaa;
+}
+
+div.block {
+	background: #F8F8FF; color: #000;
+	margin: 1em; padding: 0 1em 0 1em;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #909090;
+}
+
+table {
+	background: #F8F8F8; color: #000;
+	margin: 1em;
+	border-width: 0 0 0 1px;
+	border-style: solid;
+	border-color: #C0C0C0;
+}
+
+td {
+	border-width: 0 1px 1px 0;
+	border-style: solid;
+	border-color: #C0C0C0;
+}
+
+th {
+	background: #F8F8FF;
+	border-width: 1px 1px 2px 0;
+	border-style: solid;
+	border-color: #C0C0C0;
+}
+
+
+/* body text, headings, and rules */
+
+p { margin: 0; text-indent: 0em; margin: 0 0 0.5em 0 }
+
+h1, h2, h3, h4, h5, h6 {
+	color: #206020; background: transparent;
+	font-family: Optima, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+/*
+h1 { font-size: 1.69em; margin: 1.4em 0 0.4em 0; }
+h2 { font-size: 1.44em; margin: 1.4em 0 0.4em 0; }
+h3 { font-size: 1.21em; margin: 1.4em 0 0.4em 0; }
+h4 { font-size: 1.00em; margin: 1.4em 0 0.4em 0; }
+h5 { font-size: 0.81em; margin: 1.4em 0 0.4em 0; }
+h6 { font-size: 0.64em; margin: 1.4em 0 0.4em 0; }
+*/
+
+hr {
+	color: transparent; background: transparent;
+	height: 0px; margin: 0.6em 0;
+	border-width: 1px ;
+	border-style: solid;
+	border-color: #999;
+}
+
+/* bulleted lists and definition lists */
+
+ul { margin: 0 1em 0.6em 2em; padding: 0; }
+li { margin: 0.4em 0 0 0; }
+
+dl { margin: 0.6em 1em 0.6em 2em; }
+dt { color: #206020; }
+
+tt { color: #602020; }
+
+/* links */
+
+a.link {
+	color: #33c; background: transparent;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000; background: transparent;
+}
+
+body > a {
+	font-family: Optima, Arial, Helvetica, sans-serif;
+	font-size: 0.81em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #206020; background: transparent;
+	font-family: Optima, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+  -->
+</style>
+</head>
+<body>
+<div class="body">
+
+<br><center><h1><a name="AFT-top">Installing and Running the Public Version of MetaMap</a></h1></center>
+<br><center><h2>Willie Rogers</h2></center>
+<!--  AFT Table of Contents (auto generated) -->
+<ul>
+<li> <a class="link" href="#Introduction">Introduction</a></li>
+<li> <a class="link" href="#Prerequisites">Prerequisites</a></li>
+<ul>
+<li> <a class="link" href="#MetaMap Terms and Conditions and UMLS License">MetaMap Terms and Conditions and UMLS License</a></li>
+<li> <a class="link" href="#Platform Prerequisites">Platform Prerequisites</a></li>
+<li> <a class="link" href="#Space Requirements">Space Requirements</a></li>
+</ul>
+<li> <a class="link" href="#Getting the distribution">Getting the distribution</a></li>
+<li> <a class="link" href="#Extracting the distribution">Extracting the distribution</a></li>
+<li> <a class="link" href="#Install">Install</a></li>
+<ul>
+<li> <a class="link" href="#Step 1">Step 1</a></li>
+<li> <a class="link" href="#Step 2">Step 2</a></li>
+</ul>
+<li> <a class="link" href="#Starting MetaMap">Starting MetaMap</a></li>
+<ul>
+<li> <a class="link" href="#Starting the MetaMap Servers">Starting the MetaMap Servers</a></li>
+<li> <a class="link" href="#Stopping the servers">Stopping the servers</a></li>
+<li> <a class="link" href="#Determining whether the servers are running">Determining whether the servers are running</a></li>
+<li> <a class="link" href="#Invoking MetaMap">Invoking MetaMap</a></li>
+</ul>
+<li> <a class="link" href="#Datafile Builder">Datafile Builder</a></li>
+<li> <a class="link" href="#Questions">Questions</a></li>
+<li> <a class="link" href="#Using MetaMap">Using MetaMap</a>
+
+</li>
+</ul>
+<!-- Start SectLevel1 -->
+<h2><a name="Introduction">Introduction</a></h2>
+<p class="Body">
+MetaMap is a highly configurable program that maps biomedical text to
+concepts in the UMLS Metathesaurus
+<a name="REFiNtErNaLNOTE1">&nbsp</a><sup><a class="link" href="#iNtErNaLNOTE1">1</a></sup>.
+This guide is designed to help install MetaMap on the Linux operating system.
+</p>
+<!--End Section 1-->
+<h2><a name="Prerequisites">Prerequisites</a></h2>
+<!-- Start SectLevel2 -->
+<h3><a name="MetaMap Terms and Conditions and UMLS License">MetaMap Terms and Conditions and UMLS License</a></h3>
+<p class="Body">
+<strong>Important</strong>: Users are responsible for compliance with the 
+<a class="link" href="http://metamap.nlm.nih.gov/MMTnCs.shtml">MetaMap Terms and Conditions</a>.
+</p>
+<p class="Body">
+To use this application, you must have signed 
+<a class="link" href="http://wwwcf.nlm.nih.gov/umlslicense/snomed/license.cfm">the UMLS agreement</a>.
+The UMLS agreement requires those who use the 
+<a class="link" href="http://www.nlm.nih.gov/research/umls/">UMLS</a> to file a brief
+report once a year to summarize their use of the UMLS. It also
+requires the acknowledgment that the UMLS contains copyrighted
+material and that those copyright restrictions be respected. The UMLS
+agreement requires users to agree to obtain agreements for EACH
+copyrighted source prior to it's use within a commercial or production
+application.
+</p>
+<p class="Body">
+To download MetaMap, you must have access to an UTS account. For
+information on how to acquire an UTS account, please see the 
+<a class="link" href="http://uts.nlm.nih.gov/">UMLS Terminology Services Page</a>.
+</p>
+<!--End Section 2-->
+<h3><a name="Platform Prerequisites">Platform Prerequisites</a></h3>
+<dl>
+<dt><strong>Sun Java Runtime Environment (JRE)</strong></dt><dd> Oracle/Sun's Java 1.6 or later is required for use of the SKR-MedPost Part-of-Speech (POS) Tagger Server which is required to use MetaMap and the Word Sense Disambiguation (WSD) Server which is necessary to use the WSD option when running MetaMap.  The JRE is available from <a class="link" href="http://java.com">http://java.com</a>/ .</dd>
+</dl>
+<!--  Note: If you don't plan on using the WSD Server, you can also use the -->
+<!--  GNU Compiler for the Java Programming Language (GCJ) for the -->
+<!--  SKR-MedPost Tagger Server.  (The Tagger Server has been tested using -->
+<!--  GCJ 3.4.6, newer versions should work as well.)  Many Linux -->
+<!--  distributions provide pre-compiled packages for GCJ, including Red -->
+<!--  Hat, Debian, and Ubuntu.  GCJ is available from the Free Software -->
+<!--  Foundation at [http://gcc.gnu.org/java.] -->
+<!--End Section 2-->
+<h3><a name="Space Requirements">Space Requirements</a></h3>
+<p class="Body">
+MetaMap requires a minimum of 8GB of space to run.
+</p>
+<!--End Section 2-->
+<!-- End SectLevel2 -->
+<!--End Section 1-->
+<h2><a name="Getting the distribution">Getting the distribution</a></h2>
+<p class="Body">
+The public distribution can be downloaded at:
+</p>
+<p class="Body">
+  <a class="link" href="http://metamap.nlm.nih.gov">http://metamap.nlm.nih.gov</a>/
+</p>
+<!--  For hosts which have access to the CGSB file servers, it is also -->
+<!--  available at file:///nfsvol/nlsaux15/public_mm_dist/stage/archive/public__mm__{os}__{year}.tar.bz2 -->
+<!--End Section 1-->
+<h2><a name="Extracting the distribution">Extracting the distribution</a></h2>
+<p class="Body">
+Use the following <tt>tar</tt> command extract the distribution:
+</p>
+<div class="block"><pre>
+% tar xvfj public_mm_{os}_{year}.tar.bz2
+</pre></div>
+<p class="Body">
+<tt>Tar</tt> will create the distribution directory <tt>public_mm</tt>.
+</p>
+<!--End Section 1-->
+<h2><a name="Install">Install</a></h2>
+<!--  Note: Due to an error creating the distribution the -->
+<!--  file |public_mm/.installrc| should removed from the distribution -->
+<!--  directory before starting the install process. -->
+<!-- Start SectLevel2 -->
+<h3><a name="Step 1">Step 1</a></h3>
+<p class="Body">
+To begin the initial install, go to the directory created when you
+extracted the distribution (<tt>public_mm</tt>).  You can speed up the
+process by telling the install program where your java installation is
+by setting the environment variable JAVA_HOME to the Java installation
+directory.  If you don't set the variable the program will prompt you
+for the information.
+</p>
+<p class="Body">
+To file out where your java installation is located type of the
+command line:
+</p>
+<div class="block"><pre>
+% which java
+</pre></div>
+<p class="Body">
+To set the environment variable JAVA_HOME:
+</p>
+<p class="Body">
+If the command: <tt>which java</tt> returns /usr/local/jre1.4.2/bin/java,
+then JAVA_HOME should be set to /usr/local/jre1.4.2/.
+</p>
+<p class="Body">
+For example:
+</p>
+<div class="block"><pre>
+# in C Shell (csh or tcsh)
+setenv JAVA_HOME /usr/local/jre1.4.2
+
+# in Bourne Again Shell (bash)
+export JAVA_HOME=/usr/local/jre1.4.2
+
+# Bourne Shell (sh)
+JAVA_HOME=/usr/local/jre1.4.2
+export JAVA_HOME
+</pre></div>
+<p class="Body">
+You also need to add the public_mm/bin directory to your
+program path:
+</p>
+<div class="block"><pre>
+# in C Shell (csh or tcsh)
+set path = ( $path &lt;public_mm's parent dir&gt;/public_mm/bin )
+
+# in Bourne Again Shell (bash)
+export PATH=$PATH:&lt;public_mm's parent dir&gt;/public_mm/bin
+
+# Bourne Shell (sh)
+PATH=$PATH:&lt;public_mm's parent dir&gt;/public_mm/bin
+export PATH
+</pre></div>
+<!--End Section 2-->
+<h3><a name="Step 2">Step 2</a></h3>
+<p class="Body">
+Run the installation script as follows:
+</p>
+<div class="block"><pre>
+% cd public_mm
+% ./bin/install.sh
+</pre></div>
+<p class="Body">
+An example of a successful installation looks as follows:
+</p>
+<div class="block"><pre>
+$ cd /nfsvol/nlsaux15/public_mm
+$ bin/install.sh 
+1
+1
+Enter basedir of installation [/nfsvol/nlsaux15/public_mm] 
+
+Basedir is set to /nfsvol/nlsaux15/public_mm.
+
+The WSD Server requires Sun's Java Runtime Environment (JRE);
+Sun's Java Developer Kit (JDK) will work as well. if the
+command: &quot;which&quot; java returns /usr/local/jre1.4.2/bin/java, then the
+JRE resides in /usr/local/jre1.4.2/.
+
+Where does your distribution of Sun\'s JRE reside?
+Enter home path of JRE (JDK) [/usr/local/jdk1.6.0_11]: 
+
+Using /usr/local/jdk1.6.0_11 for JAVA_HOME.
+
+/nfsvol/nlsaux15/public_mm/WSD_Server/config/disambServer.cfg generated
+/nfsvol/nlsaux15/public_mm/WSD_Server/config/log4j.properties generated
+Setting up bin directory scripts:
+/nfsvol/nlsaux15/public_mm/bin/BuildDataFiles generated.
+/nfsvol/nlsaux15/public_mm/bin/builddatafiles.sh generated.
+/nfsvol/nlsaux15/public_mm/bin/dfbuilder.profile generated.
+/nfsvol/nlsaux15/public_mm/bin/filter_mrconso generated.
+/nfsvol/nlsaux15/public_mm/bin/form_opt generated.
+/nfsvol/nlsaux15/public_mm/bin/linkSICStus generated.
+/nfsvol/nlsaux15/public_mm/bin/LoadDataFiles generated.
+/nfsvol/nlsaux15/public_mm/bin/loaddatafiles.sh generated.
+/nfsvol/nlsaux15/public_mm/bin/make_all generated.
+/nfsvol/nlsaux15/public_mm/bin/metamap{version} generated.
+/nfsvol/nlsaux15/public_mm/bin/metamap20{version}.TEMPLATE generated.
+/nfsvol/nlsaux15/public_mm/bin/mmserver{version} generated.
+/nfsvol/nlsaux15/public_mm/bin/rundatafiles.sh generated.
+/nfsvol/nlsaux15/public_mm/bin/SKRenv.{version} generated.
+/nfsvol/nlsaux15/public_mm/bin/skrmedpostctl generated.
+/nfsvol/nlsaux15/public_mm/bin/SKRrun.{version} generated.
+/nfsvol/nlsaux15/public_mm/bin/testapi.sh generated.
+/nfsvol/nlsaux15/public_mm/bin/wsdserverctl generated.
+Setting up test suite:
+/nfsvol/nlsaux15/public_mm/TestSuite/runTest_2011.sh generated.
+Checking for required datafiles
+Checking for optional datafiles (WSD)
+Public MetaMap Install complete.
+Public MetaMap Install Settings:
+
+Public MetaMap basedir: /nfsvol/nlsaux15/public_mm
+Public MetaMap Program Dir: /nfsvol/nlsaux15/public_mm/bin
+Java Home dir: /usr/local/jdk1.6.0_11
+
+$ 
+</pre></div>
+<!--End Section 2-->
+<!-- End SectLevel2 -->
+<!--End Section 1-->
+<h2><a name="Starting MetaMap">Starting MetaMap</a></h2>
+<p class="Body">
+MetaMap requires the starting of two servers, The Part-of-Speech
+Tagger and Word Sense Disambiguation (WSD) Servers.  They can be
+started and stopped as follows:
+</p>
+<!-- Start SectLevel2 -->
+<h3><a name="Starting the MetaMap Servers">Starting the MetaMap Servers</a></h3>
+<p class="Body">
+Before running MetaMap you need to start the Tagger and WSD servers.
+Both servers will automatically run in the background when started.
+</p>
+<dl>
+<dt><strong>1. The SKR/Medpost Part-of-Speech Tagger Server</strong></dt><dd></dd>
+</dl>
+<div class="block"><pre>
+% ./bin/skrmedpostctl start
+</pre></div>
+<dl>
+<dt><strong>2. Word Sense Disambiguation (WSD) Server (optional)</strong></dt><dd></dd>
+</dl>
+<div class="block"><pre>
+% ./bin/wsdserverctl start
+</pre></div>
+<!--End Section 2-->
+<h3><a name="Stopping the servers">Stopping the servers</a></h3>
+<p class="Body">
+You can stop the each server by invoking the corresponding script
+with the <tt>stop</tt> parameter:
+</p>
+<dl>
+<dt><strong>1. The SKR/Medpost Part-of-Speech Tagger Server</strong></dt><dd></dd>
+</dl>
+<div class="block"><pre>
+% ./bin/skrmedpostctl stop
+</pre></div>
+<dl>
+<dt><strong>2. Word Sense Disambiguation (WSD) Server (optional)</strong></dt><dd></dd>
+</dl>
+<div class="block"><pre>
+% ./bin/wsdserverctl stop
+</pre></div>
+<!--End Section 2-->
+<h3><a name="Determining whether the servers are running">Determining whether the servers are running</a></h3>
+<p class="Body">
+You can determine if the server are running by the command:
+</p>
+<div class="block"><pre>
+% ps ax | grep java
+</pre></div>
+<p class="Body">
+The output should look something like this:
+</p>
+<div class="block"><pre>
+16105 pts/0    Sl     0:00 /usr/local/jdk1.6.0_01/bin/java -Xmx2g -Dserver.config...
+16158 pts/0    R+     0:00 grep java
+21914 pts/0    Sl     0:02 /usr/bin/gij -Djava.version=1.4.2 -Djava.home=/usr/lib/...
+%
+</pre></div>
+<!--End Section 2-->
+<h3><a name="Invoking MetaMap">Invoking MetaMap</a></h3>
+<p class="Body">
+If there are no errors starting the WSD and Tagger servers then  
+MetaMap can be run as follows:
+</p>
+<div class="block"><pre>
+% ./bin/metamap{version}
+</pre></div>
+<p class="Body">
+#-- If you're using the pre-release version of MetaMap use the following command:
+</p>
+<p class="Body">
+#-- ^&lt;&lt;
+#-- % ./bin/metamap{version} -L 11 -Z 10
+#-- ^&gt;&gt;
+</p>
+<!--  If you're using the pre-release version of MMServer 11 (MetaMap Server -->
+<!--  11) use the following command: -->
+<!--  ^<< -->
+<!--  % ./ bin/mmserver{version} -Z 10 -->
+<!--  ^>> -->
+<p class="Body">
+MetaMap has a plethora of options that are explained elsewhere.
+<a name="REFiNtErNaLNOTE2">&nbsp</a><sup><a class="link" href="#iNtErNaLNOTE2">2</a></sup>
+</p>
+<!--  * Un-installing MetaMap -->
+<!--  Before un-installing MetaMap, make sure both of the MetaMap servers -->
+<!--  have been stopped (see [Stopping the servers].) -->
+<!--  To un-install MetaMap move to the parent directory of your Metamap -->
+<!--  installation and run the uninstall program: -->
+<!--  ^<< -->
+<!--  % cd <parent directory of installation> -->
+<!--  % ./public_mm/bin/uninstall.sh  -->
+<!--  Do you really want to uninstall MetaMap? [no/yes] yes -->
+<!--  Removing Tagger Server -->
+<!--  Removing WSD Server -->
+<!--  Removing Lexicon -->
+<!--  Removing MetaMap Databases -->
+<!--  Removing Programs -->
+<!--  Removing Base Directory -->
+<!--  Removal of MetaMap installation successful. -->
+<!--  % -->
+<!--  ^>> -->
+<!--End Section 2-->
+<!-- End SectLevel2 -->
+<!--End Section 1-->
+<h2><a name="Datafile Builder">Datafile Builder</a></h2>
+<p class="Body">
+For users who wish to use there own datasets with MetaMap, a datafile
+builder suite is now available.  Go to the MetaMap Web Site
+(<a class="link" href="http://metamap.nlm.nih.gov">http://metamap.nlm.nih.gov</a>/) for more information.
+</p>
+<!--End Section 1-->
+<h2><a name="Questions">Questions</a></h2>
+<p class="Body">
+If you have problems then send email to metamap@nlm.nih.gov.
+</p>
+<!--End Section 1-->
+<h2><a name="Using MetaMap">Using MetaMap</a></h2>
+<p class="Body">
+For more information on running MetaMap and its many options, please
+see these references:
+</p>
+<ol>
+<li> MetaMap Readme for Linux, <a class="link" href="http://metamap.nlm.nih.gov/MM09_Readme.shtml">http://metamap.nlm.nih.gov/MM09_Readme.shtml</a></li>
+<li> MetaMap 2009 Usage, <a class="link" href="http://metamap.nlm.nih.gov/MM09_Usage.shtml">http://metamap.nlm.nih.gov/MM09_Usage.shtml</a></li>
+<li> Effective Mapping of Biomedical Text to the UMLS Metathesaurus: The MetaMap Program, 2001, <a class="link" href="http://skr.nlm.nih.gov/papers/references/metamap_01AMIA.pdf">http://skr.nlm.nih.gov/papers/references/metamap_01AMIA.pdf</a></li>
+<li> MetaMap: Mapping Text to the UMLS Metathesaurus, July 2006, <a class="link" href="http://skr.nlm.nih.gov/papers/references/metamap06.pdf">http://skr.nlm.nih.gov/papers/references/metamap06.pdf</a></li>
+<li> MetaMap Options and Examples, September 2006, <a class="link" href="http://skr.nlm.nih.gov/papers/references/MetaMap_Examples_06.pdf">http://skr.nlm.nih.gov/papers/references/MetaMap_Examples_06.pdf</a></li>
+</ol>
+<!--End Section 1-->
+<!-- End SectLevel1 -->
+<hr>
+<p class="Body">
+<a name="iNtErNaLNOTE1">&nbsp</a>
+[<a class="link" href="#REFiNtErNaLNOTE1">1</a>] - MetaMap: Mapping Text to the UMLS Metathesaurus, July 2006, <a class="link" href="http://skr.nlm.nih.gov/papers/references/metamap06.pdf">http://skr.nlm.nih.gov/papers/references/metamap06.pdf</a>
+
+<br><a name="iNtErNaLNOTE2">&nbsp</a>
+[<a class="link" href="#REFiNtErNaLNOTE2">2</a>] - MetaMap 2009 Usage, <a class="link" href="http://metamap.nlm.nih.gov/MM09_Usage.shtml">http://metamap.nlm.nih.gov/MM09_Usage.shtml</a>
+
+<br><br>
+<p align="right"> <small>This document was generated using <a class="link" href="http://www.maplefish.com/todd/aft.html">AFT v5.098</a></small> </p>
+</body>
+</html>
+

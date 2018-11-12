@@ -1,0 +1,16 @@
+To compile:
+
+   ant jar
+
+
+To Run:
+
+java -cp lib/mps.jar gov.nih.nlm.nls.mps.Tagger text text.out
+
+
+
+NOTE:
+
+/nfsvol/nls/tools/MedPost-SKR contains the current libraries
+and data for both the tagger and the taggerServer.
+

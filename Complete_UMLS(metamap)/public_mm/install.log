@@ -1,0 +1,28 @@
+./bin/install.sh started Tue Oct 16 07:49:18 IST 2018
+glib minimun required version: 2.12
+Basedir is set to /home/rallaakhil/IRE/project/complete_umls/public_mm.
+Using /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin for JAVA_HOME.
+Setting up bin directory scripts:
+/home/rallaakhil/IRE/project/complete_umls/public_mm/bin/metamap16 generated.
+/home/rallaakhil/IRE/project/complete_umls/public_mm/bin/metamap2016.TEMPLATE generated.
+/home/rallaakhil/IRE/project/complete_umls/public_mm/bin/metamap generated.
+/home/rallaakhil/IRE/project/complete_umls/public_mm/bin/SKRenv.16 generated.
+/home/rallaakhil/IRE/project/complete_umls/public_mm/bin/skrmedpostctl generated.
+/home/rallaakhil/IRE/project/complete_umls/public_mm/bin/SKRrun.16 generated.
+/home/rallaakhil/IRE/project/complete_umls/public_mm/bin/uninstall.sh generated.
+/home/rallaakhil/IRE/project/complete_umls/public_mm/bin/wsdserverctl generated.
+Setting up test suite:
+/home/rallaakhil/IRE/project/complete_umls/public_mm/TestSuite/runTest_2009.sh generated.
+/home/rallaakhil/IRE/project/complete_umls/public_mm/TestSuite/runTest_2010.sh generated.
+/home/rallaakhil/IRE/project/complete_umls/public_mm/TestSuite/runTest_2011.bat generated.
+/home/rallaakhil/IRE/project/complete_umls/public_mm/TestSuite/runTest_2011.sh generated.
+/home/rallaakhil/IRE/project/complete_umls/public_mm/TestSuite/runTest_2012.sh generated.
+Checking for required datafiles
+Checking for optional datafiles (WSD)
+MISSINGOPTIONS=0
+MISSINGFILES=0
+Public MetaMap Install complete.
+./bin/install.sh ended Tue Oct 16 08:54:04 IST 2018
+Public MetaMap basedir: /home/rallaakhil/IRE/project/complete_umls/public_mm
+Public MetaMap Program Dir: /home/rallaakhil/IRE/project/complete_umls/public_mm/bin
+Java Home dir: /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin

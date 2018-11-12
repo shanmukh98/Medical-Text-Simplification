@@ -1,0 +1,289 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>MetaMap 2009 Readme</title>
+	<meta name="author" content="">
+	<meta name="GENERATOR" content = "Almost Free Text v5.098; Copyright 1996-2010 Todd Coram.">
+<style type="text/css">
+  <!--
+	.section5 { padding-left: 50pt; }
+	.section6 { padding-left: 75pt; }
+	.section7 { padding-left: 100pt; }
+html { background: #eee; color: #000; }
+
+body { background: #eee; color: #000; margin: 0; padding: 0;}
+
+div.body {
+	background: #fff; color: #000;
+	margin: 0 1em 0 1em; padding: 1em;
+	font-family: serif;
+	font-size: 1em; line-height: 1.2em;
+	border-width: 0 1px 0 1px;
+	border-style: solid;
+	border-color: #aaa;
+}
+
+div.block {
+	background: #F8F8FF; color: #000;
+	margin: 1em; padding: 0 1em 0 1em;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #909090;
+}
+
+table {
+	background: #F8F8F8; color: #000;
+	margin: 1em;
+	border-width: 0 0 0 1px;
+	border-style: solid;
+	border-color: #C0C0C0;
+}
+
+td {
+	border-width: 0 1px 1px 0;
+	border-style: solid;
+	border-color: #C0C0C0;
+}
+
+th {
+	background: #F8F8FF;
+	border-width: 1px 1px 2px 0;
+	border-style: solid;
+	border-color: #C0C0C0;
+}
+
+
+/* body text, headings, and rules */
+
+p { margin: 0; text-indent: 0em; margin: 0 0 0.5em 0 }
+
+h1, h2, h3, h4, h5, h6 {
+	color: #206020; background: transparent;
+	font-family: Optima, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+/*
+h1 { font-size: 1.69em; margin: 1.4em 0 0.4em 0; }
+h2 { font-size: 1.44em; margin: 1.4em 0 0.4em 0; }
+h3 { font-size: 1.21em; margin: 1.4em 0 0.4em 0; }
+h4 { font-size: 1.00em; margin: 1.4em 0 0.4em 0; }
+h5 { font-size: 0.81em; margin: 1.4em 0 0.4em 0; }
+h6 { font-size: 0.64em; margin: 1.4em 0 0.4em 0; }
+*/
+
+hr {
+	color: transparent; background: transparent;
+	height: 0px; margin: 0.6em 0;
+	border-width: 1px ;
+	border-style: solid;
+	border-color: #999;
+}
+
+/* bulleted lists and definition lists */
+
+ul { margin: 0 1em 0.6em 2em; padding: 0; }
+li { margin: 0.4em 0 0 0; }
+
+dl { margin: 0.6em 1em 0.6em 2em; }
+dt { color: #206020; }
+
+tt { color: #602020; }
+
+/* links */
+
+a.link {
+	color: #33c; background: transparent;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000; background: transparent;
+}
+
+body > a {
+	font-family: Optima, Arial, Helvetica, sans-serif;
+	font-size: 0.81em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #206020; background: transparent;
+	font-family: Optima, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+  -->
+</style>
+</head>
+<body>
+<div class="body">
+
+<br><center><h1><a name="AFT-top">MetaMap 2009 Readme</a></h1></center>
+<!--  AFT Table of Contents (auto generated) -->
+<ul>
+<li> <a class="link" href="#Running MetaMap:">Running MetaMap:</a></li>
+<ul>
+<li> <a class="link" href="#Adding MetaMap to the Program Path">Adding MetaMap to the Program Path</a></li>
+<li> <a class="link" href="#Running MetaMap Explicitly">Running MetaMap Explicitly</a></li>
+</ul>
+<li> <a class="link" href="#Examples:">Examples:</a></li>
+<ul>
+<li> <a class="link" href="#Running MetaMap with no options on a simple term from standard input">Running MetaMap with no options on a simple term from standard input</a></li>
+<li> <a class="link" href="#Running MetaMap on a small MEDLINE Abstract to a named output file.">Running MetaMap on a small MEDLINE Abstract to a named output file.</a>
+
+</li>
+</ul>
+</ul>
+<!-- Start SectLevel1 -->
+<h2><a name="Running MetaMap:">Running MetaMap:</a></h2>
+<p class="Body">
+To run the MetaMap program from the command line, you have two
+options, adding MetaMap to your path or running MetaMap by specifying
+its full filesystem path.
+</p>
+<!-- Start SectLevel2 -->
+<h3><a name="Adding MetaMap to the Program Path">Adding MetaMap to the Program Path</a></h3>
+<p class="Body">
+Put the directory containing the MetaMap program in the PATH
+environment variable and then you can run MetaMap from any directory.
+</p>
+<p class="Body">
+In C Shell (csh or tcsh):
+<div class="block"><pre>
+setenv PATH {parent dir}/public_mm/bin:$PATH
+</pre></div>
+</p>
+<p class="Body">
+In Bourne Again Shell (bash):
+<div class="block"><pre>
+export PATH={parent dir}/public_mm/bin:$PATH
+</pre></div>
+</p>
+<p class="Body">
+In Bourne Shell (sh):
+<div class="block"><pre>
+PATH={parent dir}/public_mm/bin:$PATH
+export PATH
+</pre></div>
+</p>
+<!--End Section 2-->
+<h3><a name="Running MetaMap Explicitly">Running MetaMap Explicitly</a></h3>
+<p class="Body">
+You can simply run the MetaMap command by specifying the full 
+path to the command.
+</p>
+<div class="block"><pre>
+{parent dir}/public_mm/bin/metamap09
+</pre></div>
+<p class="Body">
+    
+Whichever option you decide on, the command line statement to run
+MetaMap is:
+    
+<div class="block"><pre>
+% metamap09 [Options] [InputFile] [OutputFile]
+</pre></div>
+    
+For more information on MetaMap usage, please refer to the MetaMap
+2009 Usage (<a class="link" href="http://metamap.nlm.nih.gov/MM09_Usage.shtml">http://metamap.nlm.nih.gov/MM09_Usage.shtml</a>) (HTML),
+or use the MetaMap help command:
+    
+<div class="block"><pre>
+% metamap09 --help
+</pre></div>
+</p>
+<!--End Section 2-->
+<!-- End SectLevel2 -->
+<!--End Section 1-->
+<h2><a name="Examples:">Examples:</a></h2>
+<p class="Body">
+Note: The pathnames in the examples below are those from the NLM site;
+your pathnames will differ.
+</p>
+<p class="Body">
+More examples are available in MetaMap Options and Examples
+(<a class="link" href="http://skr.nlm.nih.gov/papers/references/MetaMap_Examples_06.pdf">http://skr.nlm.nih.gov/papers/references/MetaMap_Examples_06.pdf</a>)
+(PDF - 50 kb)
+</p>
+<!-- Start SectLevel2 -->
+<h3><a name="Running MetaMap with no options on a simple term from standard input">Running MetaMap with no options on a simple term from standard input</a></h3>
+<div class="block"><pre>
+% ./bin/metamap09
+/test/linux/public_mm/bin/SKRrun -L 2009 -M /DATA/XDR -B /BDB4 
+ -w /test/linux/public_mm/lexicon /test/linux/public_mm/bin/metamap09.BINARY -Z 09
+
+MetaMap (2009)
+
+
+Control options:
+  mm_data_year=09
+Berkeley DB databases (normal strict 09 model) are open.
+Static variants will come from table varsan in /test/linux/public_mm/DB/BDB4/DB.normal.09.strict.
+Derivational Variants: Adj/noun ONLY.
+Accessing lexicon /test/linux/public_mm/lexicon/data/BDB4/lexiconStatic2009.
+Variant generation mode: static.
+
+|: Obstructive Sleep Apnea
+|: 
+Established connection to Tagger Server on localhost.
+Processing 00000000.tx.1: Obstructive Sleep Apnea
+
+Phrase: &quot;Obstructive Sleep Apnea&quot;
+Meta Candidates (11):
+  1000 Obstructive sleep apnoea (Sleep Apnea, Obstructive) [Disease or Syndrome]
+   901 Apnea, Sleep (Sleep Apnea Syndromes) [Disease or Syndrome]
+   827 APNOEA (Apnea) [Pathologic Function]
+   827 Sleep [Organism Function]
+   827 Obstructive (Obstructed) [Functional Concept]
+   827 Apnea (Apnea Adverse Event) [Finding]
+   793 Sleeping (Asleep) [Finding]
+   755 Obstruction [Individual Behavior,Pathologic Function]
+   755 Sleepy [Finding]
+   755 Sleeplessness [Sign or Symptom]
+   755 Obstruction (Obstruction within Medical Device) [Phenomenon or Process]
+Meta Mapping (1000):
+  1000 Obstructive sleep apnoea (Sleep Apnea, Obstructive) [Disease or Syndrome]
+|: 
+</pre></div>
+<!--End Section 2-->
+<h3><a name="Running MetaMap on a small MEDLINE Abstract to a named output file.">Running MetaMap on a small MEDLINE Abstract to a named output file.</a></h3>
+<div class="block"><pre>
+% metamap09 cit00000 cit00000.output 
+/test/linux/public_mm/bin/SKRrun -L 2009 -M /DATA/XDR -B /BDB4 
+ -w /test/linux/public_mm/lexicon /test/linux/public_mm/bin/metamap09.BINARY -Z 09
+
+MetaMap (2009)
+
+/nfsvol/nls/bin/SKRrun -L 2009 /nfsvol/nls/bin/metamap09.BINARY -Z 09
+
+
+Control options:
+  mm_data_year=09
+Berkeley DB databases (normal strict 09 model) are open.
+Static variants will come from table varsan in /test/linux/public_mm/DB/BDB4/DB.normal.09.strict.
+Derivational Variants: Adj/noun ONLY.
+Accessing lexicon /test/linux/public_mm/lexicon/data/BDB4/lexiconStatic2009.
+Variant generation mode: static.
+
+Beginning to process cit00000 sending output to cit00000.output.
+Tagging will be done dynamically.
+Processing 9337195.ti.1: Obstructive Sleep Apnea
+Established connection to Tagger Server on localhost.
+
+Batch processing is finished.
+%
+</pre></div>
+<p class="Body">
+MetaMap will populate the output file cit00000.output
+with the processed contents of cit00000.
+</p>
+<!--End Section 2-->
+<!-- End SectLevel2 -->
+<!--End Section 1-->
+<!-- End SectLevel1 -->
+<hr>
+<br>
+<p align="right"> <small>This document was generated using <a class="link" href="http://www.maplefish.com/todd/aft.html">AFT v5.098</a></small> </p>
+</body>
+</html>
+

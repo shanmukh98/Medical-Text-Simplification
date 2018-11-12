@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# Copy the new test output files to the production versions
+# once all the changes have been blessed.
+
+for TEST_FILE in *.test
+do
+   PROD_FILE=`echo $TEST_FILE | sed -e 's/test$/prod/'`
+   echo copying $TEST_FILE to $PROD_FILE
+   /bin/cp -p $TEST_FILE $PROD_FILE
+done

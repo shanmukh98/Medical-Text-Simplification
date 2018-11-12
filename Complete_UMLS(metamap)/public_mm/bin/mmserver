@@ -1,0 +1,166 @@
+#!/bin/bash
+
+PROGRAM=`basename $0`
+
+BASEDIR=/home/rallaakhil/IRE/project/complete_umls/public_mm
+BINDIR=$BASEDIR/bin
+MM_DIR=$BINDIR
+
+# fix for Berkeley DB shared library problem. 29oct2010 wjr
+ARCHITECTURE=`uname`
+
+case $ARCHITECTURE in
+    CYGWIN_NT*)
+	ARCHITECTURE=x86-win32-nt-4
+	export PATH=$PATH:$BASEDIR/lib:$BASEDIR/bin
+	;;
+    MINGW*)
+	ARCHITECTURE=x86-win32-nt-4
+	export PATH=$PATH:$BASEDIR/lib:$BASEDIR/bin
+	;;
+    Darwin*)
+	DYLD_LIBRARY_PATH=$BASEDIR/lib:${DYLD_LIBRARY_PATH}
+	export DYLD_LIBRARY_PATH
+	;;
+    *)
+	LD_LIBRARY_PATH=$BASEDIR/lib:${LD_LIBRARY_PATH}
+	export LD_LIBRARY_PATH
+	;;
+esac
+
+if [ -z $MMSERVER_PORT ] ; then
+   MMSERVER_PORT=8066
+fi
+export MMSERVER_PORT
+
+if [ -z $ACCEPTED_HOSTS] ; then
+    ACCEPTED_HOSTS="['127.0.0.1']"
+fi
+export ACCEPTED_HOSTS
+
+DATA_YEAR=2016AA
+DEFAULT_DATA_YEAR=16
+LEXICON_YEAR=2016
+USER_ARGS=
+
+# The logic below allows the user
+# (1) to override the default value for MetaMap's -Z flag to specify the model year, and
+# (2) to use SKRrun.YY's -L flag to specify the lexicon year.
+# If -Z (model year) is specified, but -L (lexicon year) is not,
+# it is assumed that the lexicon year will be the one corresponding to the data year.
+# We can't use the obvious getopts, because this script must allow
+# all MetaMap options to be specified.
+
+while [ $# -gt 0 ]
+do
+    # echo ARG = $1 $# $*
+    case $1 in
+        -B) OVERRIDE_BINARY=$2
+            echo "##### WARNING: Using binary $BINARY"
+	    shift 2;;
+        -L) LEXICON_YEAR=$2
+	    shift 2;;
+        -Z) if [ "$DATA_YEAR" != $2 ]
+	    then
+	       DATA_YEAR=$2
+	    fi
+	    shift 2;;
+         *) USER_ARGS="$USER_ARGS $1";
+	    shift;;
+    esac
+done
+
+# If no data year is explicitly specified, use the default
+if [ "$DATA_YEAR" == "" ]
+then
+   DATA_YEAR=$DEFAULT_DATA_YEAR
+fi
+
+# If no lexicon is explicitly specified, use the lexicon corresponding to the data model
+if [ "$LEXICON_YEAR" == "" ]
+then
+   LEXICON_YEAR=$DATA_YEAR
+fi
+
+# echo LEXICON_YEAR = $LEXICON_YEAR
+
+case $LEXICON_YEAR in
+                               # e.g., 2008AB, 2011AA: 20XXYY --> 20XX
+            20[0-9][0-9]A[AB]) LEXICON_YEAR=`echo $LEXICON_YEAR | cut -c1-4` ;;
+                           99) LEXICON_YEAR=1999 ;;
+                         99AA) LEXICON_YEAR=1999 ;;
+                         1999) LEXICON_YEAR=1999 ;;
+                       1999AA) LEXICON_YEAR=1999 ;;
+                               # e.g., 0708, 0910, 1011, etc.: XXYY --> 20XX
+           [01][0-9][01][0-9]) LEXICON_YEAR=`echo $LEXICON_YEAR | cut -c1-2`
+		               LEXICON_YEAR="20${LEXICON_YEAR}" ;;
+                               # e.g., 2006, 2010, etc.: Just leave LEXICON_YEAR unchanged
+                 20[0-9][0-9]) LEXICON_YEAR="${LEXICON_YEAR}" ;;
+                               # e.g., 06AA, 10AB, etc.: YYRR --> 20YY
+               [01][0-9]A[AB]) LEXICON_YEAR=`echo $LEXICON_YEAR | cut -c1-2`
+			       LEXICON_YEAR="20${LEXICON_YEAR}" ;;
+                               # e.g., 07, 09, 10, etc.: YY --> 20YY
+ 		    [01][0-9]) LEXICON_YEAR="20${LEXICON_YEAR}" ;;
+    		            *) echo "ERROR from $PROGRAM: \"$LEXICON_YEAR\" is not a valid data version"
+			       exit 1 ;;
+esac
+
+
+# echo LEXICON_YEAR = $LEXICON_YEAR
+# echo "DATA_YEAR = >$DATA_YEAR<"
+
+case $DATA_YEAR in
+                               # e.g., 2008AB, 2011AA: leave DATA_YEAR unchanged
+            20[0-9][0-9]A[AB]) ;;
+                           99) DATA_YEAR=1999AA ;;
+                         99AA) DATA_YEAR=1999AA ;;
+                         1999) DATA_YEAR=1999AA ;;
+                       1999AA) DATA_YEAR=1999AA ;;
+                               # e.g., 0708, 0910, 1011, etc.: XXYY --> 20XXAB
+           [01][0-9][01][0-9]) DATA_YEAR=`echo $DATA_YEAR | cut -c1-2`
+		               DATA_YEAR="20${DATA_YEAR}AB" ;;
+                               # e.g., 2006, 2010, etc.: 20YY --> 20YYAA
+                 20[0-9][0-9]) DATA_YEAR="${DATA_YEAR}AA" ;;
+                               # e.g., 06AA, 10AB, etc.:  YYRR --> 20YYRR
+                [01][0-9]A[AB]) DATA_YEAR="20${DATA_YEAR}" ;;
+                               # e.g., 07, 09, 10, etc.: YY --> 20YYAA
+ 		    [01][0-9]) DATA_YEAR="20${DATA_YEAR}AA" ;;
+    		            *) echo "ERROR from $PROGRAM: \"$DATA_YEAR\" is not a valid data version"
+			       exit 1 ;;
+esac
+
+# echo "DATA_YEAR = >$DATA_YEAR<"
+
+DATA_ARGS="-Z $DATA_YEAR"
+LEXICON_ARGS="-L $LEXICON_YEAR --lexicon db"
+
+if [ -e $BASEDIR/lexicon/data/2016/lex_rec ]; then
+    LEXICON_ARGS="--lexicon db"
+elif [ -e $BASEDIR/DB/DB.USAbase.2016AA.strict/lex_rec ]; then
+    LEXICON_ARGS="--lexicon db"
+elif [ -e $BASEDIR/lexicon/data/lexiconStatic2016 ]; then
+    LEXICON_ARGS="-L $LEXICON_YEAR --lexicon c"
+else 
+    echo "Could not find suitable lexicon, check installation!"
+fi
+
+
+VERBOSE=0
+
+# echo DATA_ARGS = $DATA_ARGS
+# echo LEXICON_ARGS = $LEXICON_ARGS
+# echo USER_ARGS = $USER_ARGS
+
+SKRrun=$BINDIR/SKRrun.${DEFAULT_DATA_YEAR}
+BINARY=$MM_DIR/mmserver${DEFAULT_DATA_YEAR}.BINARY.${ARCHITECTURE}
+
+if [ "$OVERRIDE_BINARY" != "" ]
+then
+   BINARY=$OVERRIDE_BINARY
+fi
+
+COMMAND="$SKRrun $BINARY $LEXICON_ARGS $DATA_ARGS $USER_ARGS"
+
+echo $COMMAND
+
+$COMMAND

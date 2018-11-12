@@ -1,0 +1,27 @@
+./run.sh started Tue Oct 16 07:00:23 IST 2018
+glib minimun required version: 2.12
+glibc major version: 
+glibc minor version: 
+Basedir is set to /home/rallaakhil/IRE/project/public_mm/bin.
+Using /usr/bin/java for JAVA_HOME.
+Setting up bin directory scripts:
+Setting up test suite:
+Checking for required datafiles
+Warning: the dm_vars file is missing in ./lexicon/data, cannot ensure correct operation of MetaMap without file!
+Warning: the im_vars file is missing in ./lexicon/data, cannot ensure correct operation of MetaMap without file!
+Warning: the lex_form file is missing in ./lexicon/data, cannot ensure correct operation of MetaMap without file!
+Warning: the lex_rec file is missing in ./lexicon/data, cannot ensure correct operation of MetaMap without file!
+Warning: the norm_prefix file is missing in ./lexicon/data, cannot ensure correct operation of MetaMap without file!
+Warning: the DB.*.base file is missing in ./DB, cannot ensure correct operation of MetaMap without file!
+Warning: the DB.*.[smr]* file is missing in ./DB, cannot ensure correct operation of MetaMap without file!
+Warning: Tagger directory is missing, cannot ensure correct operation of MetaMap without it!
+Checking for optional datafiles (WSD)
+Warning: WSD Server directory is missing, MetaMap will not have WSD support without it!
+MISSINGOPTIONS=1
+!! WARNING: Some optional datafiles are missing, see install.log for more information. !!
+MISSINGFILES=8
+!! WARNING: Some necessary datafiles are missing, see install.log for more information. !!
+./run.sh ended Tue Oct 16 07:00:37 IST 2018
+Public MetaMap basedir: /home/rallaakhil/IRE/project/public_mm/bin
+Public MetaMap Program Dir: /home/rallaakhil/IRE/project/public_mm/bin/bin
+Java Home dir: /usr/bin/java

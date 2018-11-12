@@ -1,0 +1,163 @@
+*Title: Implementation of a Java API for MetaMap
+*Author: Willie Rogers
+
+* Objective
+
+The goal is to replace the current Application Programming Interface
+(API) used access MMTx (MetaMap Transfer) with an API which accesses
+MetaMap through Quintus provided Java -> Prolog interface.
+
+* State of the Current MMTx API
+
+The current interface has some idiosyncrasies which should be
+eliminated.  Some of the calling signatures currently retain
+processing results which require the API to retain state information
+which is used for later calls to the API.  These calls should instead
+return a handle to retained that can be later released when the
+information is no longer in use.  This would alleviate the threading
+problems which occurred in the implementation of MMTx.
+
+Many individual classes in MMTx API are too large and have
+functionality that would be better factored out into other utility
+classes.
+
+* Challenges to Building a New MetaMap API
+
+Any functionality we wish to expose in the new API will require 
+Java and Prolog counterparts to implement.  Unfortunately, other than
+some of the current call signatures used by the MMTx API, most of the
+MMTx code will not be of use.  Many of the call signatures will
+require modification.  
+
+* Required Functionality in the Initial Implementation
+
+What features are absolutely necessary to implement in the new API?
+
+** Proposed API
+
+Below are examples of interface classes for the proposed new API.  The
+new API will be exposed almost entirely as a set of interfaces to
+decouple the interface as much as possible from the underlying
+implementation.
+
+*** Main API
+
+The top level api allows generation of Metamap results for external
+files or string that exist internally.
+
+^<<
+public interface MetaMapApi {
+  List<Result> processFile(File aFile);
+  List<Result> processString(String aString);
+}
+^>>
+
+*** Result Interface
+
+Object instances that conform to this interface coorespond to one
+instance of an aggregation of the eight main objects that comprise the
+machine output.
+
+^<<
+public interface Result {
+  List<AcronymsAbbrev> getAcronymsAbbrev();
+  List<Negation> getNegations();
+  Utterance getUtterance();
+  Phrase getPhrase();
+  List<Ev> getCandidates();
+  List<Ev> getMappings();
+}
+^>>
+
+*** Ev Object
+
+Object instances that conform to the |Ev| interface correspond to one
+|ev| term in a candidate or mapping list.
+
+^<<
+public interface Ev {
+  int getScore();
+  String getConceptId();
+  String getConceptName();
+  String getPreferredName();
+  List<String> getMatchedWords();
+  List<String> getSemanticTypes();
+  boolean isHead();
+  boolean isOvermatch();
+  List<Position> getPositionalInfo();
+}
+^>>
+
+*** Tokenization
+
+*** 
+
+
+* Problem transferring large amount of data
+
+^<<
+! [PBEANS] - prologbeans could not handle data_received('$pbstream'('$stream'(917508),'$stream'(851971))): permission_error(flush_output('$stream'(851971)),write,stream,'$stream'(851971),errno(32))
+^>>
+
+SiCS determined the problem was actually occurring because the client
+library was timing out due to long period MetaMap requires to process
+citations.  Setting timeout to a much longer period (150000
+milliseconds or greater) or disbling the timeout (by setting in the
+timeout to zero) solved the problem.
+
+* Implementation Time Estimate
+
+Implementation of the API presented including interfaces and
+classes required to complete the API should take at most six weeks to
+implement if it was the sole project.
+
+* Addition of servlet example
+
+A servelet example would be useful.
+
+** A General Overview 
+ 
+^<<
+get Acronyms and Abbreviations
+get Negations
+foreach utterance:
+  get id
+  get text
+  get position in input text
+  get position in machine output
+  foreach phrase/candidates/mapping group given an utterance:
+     get phrase
+        text
+        positional info
+     get candidates
+        score
+        Concept Id
+        Concept Name
+        Preferred Name
+        Matched Words
+        Semantic Types
+        is Head?
+        is Overmatch?
+        Sources
+        Positional Info
+     get mappings
+        map score
+	foreach map in mappings:
+          score
+          Concept Id
+          Concept Name
+          Preferred Name
+          Matched Words
+          Semantic Types
+          is Head?
+          is Overmatch?
+          Sources
+          Positional Info
+^>>
+
+* PrologBeans Jar location
+
+The prologbeans.jar resides in the "lib/sicstus-[version]/bin"
+directory of SICStus Prolog installation.
+(sp-4.3.2-x86_64-linux-glibc2.12/lib/sicstus-4.3.2/bin/prologbeans.jar
+for example.)

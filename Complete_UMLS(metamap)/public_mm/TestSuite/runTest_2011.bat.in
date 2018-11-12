@@ -1,0 +1,2 @@
+set path=%path%;@@basedir@@\bin
+@@basedir@@\bin\sh runTest_2011.sh %*

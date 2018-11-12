@@ -1,0 +1,23 @@
+#!/bin/sh
+
+BASEDIR=@@basedir@@
+BINDIR=$BASEDIR/bin
+
+ARCHITECTURE=`uname`
+
+case $ARCHITECTURE in
+    Darwin*)
+	# Note, this doesn't not work on Mac OS/X 10.11 (El Capitan)
+	# when SIP is enabled (the default).  Files in public_mm/lib
+	# should be copied to ~/lib (or /usr/lib [not recommended])
+	# when SIP is enabled.
+	DYLD_LIBRARY_PATH=$BASEDIR/lib:${DYLD_LIBRARY_PATH}
+	export DYLD_LIBRARY_PATH
+	;;
+    *)
+	LD_LIBRARY_PATH=$BASEDIR/lib:${LD_LIBRARY_PATH}
+	export LD_LIBRARY_PATH
+	;;
+esac
+
+$BINDIR/metamap2016.TEMPLATE 16 $*

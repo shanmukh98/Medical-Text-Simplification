@@ -1,0 +1,264 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>Using Additional Data Sets with Public MetaMap</title>
+	<meta name="author" content="Willie Rogers">
+	<meta name="GENERATOR" content = "Almost Free Text v5.098; Copyright 1996-2010 Todd Coram.">
+<style type="text/css">
+  <!--
+	.section5 { padding-left: 50pt; }
+	.section6 { padding-left: 75pt; }
+	.section7 { padding-left: 100pt; }
+html { background: #eee; color: #000; }
+
+body { background: #eee; color: #000; margin: 0; padding: 0;}
+
+div.body {
+	background: #fff; color: #000;
+	margin: 0 1em 0 1em; padding: 1em;
+	font-family: serif;
+	font-size: 1em; line-height: 1.2em;
+	border-width: 0 1px 0 1px;
+	border-style: solid;
+	border-color: #aaa;
+}
+
+div.block {
+	background: #F8F8FF; color: #000;
+	margin: 1em; padding: 0 1em 0 1em;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #909090;
+}
+
+table {
+	background: #F8F8F8; color: #000;
+	margin: 1em;
+	border-width: 0 0 0 1px;
+	border-style: solid;
+	border-color: #C0C0C0;
+}
+
+td {
+	border-width: 0 1px 1px 0;
+	border-style: solid;
+	border-color: #C0C0C0;
+}
+
+th {
+	background: #F8F8FF;
+	border-width: 1px 1px 2px 0;
+	border-style: solid;
+	border-color: #C0C0C0;
+}
+
+
+/* body text, headings, and rules */
+
+p { margin: 0; text-indent: 0em; margin: 0 0 0.5em 0 }
+
+h1, h2, h3, h4, h5, h6 {
+	color: #206020; background: transparent;
+	font-family: Optima, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+/*
+h1 { font-size: 1.69em; margin: 1.4em 0 0.4em 0; }
+h2 { font-size: 1.44em; margin: 1.4em 0 0.4em 0; }
+h3 { font-size: 1.21em; margin: 1.4em 0 0.4em 0; }
+h4 { font-size: 1.00em; margin: 1.4em 0 0.4em 0; }
+h5 { font-size: 0.81em; margin: 1.4em 0 0.4em 0; }
+h6 { font-size: 0.64em; margin: 1.4em 0 0.4em 0; }
+*/
+
+hr {
+	color: transparent; background: transparent;
+	height: 0px; margin: 0.6em 0;
+	border-width: 1px ;
+	border-style: solid;
+	border-color: #999;
+}
+
+/* bulleted lists and definition lists */
+
+ul { margin: 0 1em 0.6em 2em; padding: 0; }
+li { margin: 0.4em 0 0 0; }
+
+dl { margin: 0.6em 1em 0.6em 2em; }
+dt { color: #206020; }
+
+tt { color: #602020; }
+
+/* links */
+
+a.link {
+	color: #33c; background: transparent;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000; background: transparent;
+}
+
+body > a {
+	font-family: Optima, Arial, Helvetica, sans-serif;
+	font-size: 0.81em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #206020; background: transparent;
+	font-family: Optima, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+  -->
+</style>
+</head>
+<body>
+<div class="body">
+
+<br><center><h1><a name="AFT-top">Using Additional Data Sets with Public MetaMap</a></h1></center>
+<br><center><h2>Willie Rogers</h2></center>
+<!-- Start SectLevel1 -->
+<h2><a name="Archives files necessary for using an additional data set">Archives files necessary for using an additional data set</a></h2>
+<p class="Body">
+For each supported UMLS release, MetaMap provides three data subsets
+(Base, USAbase, and NLM), each subset is derived from a subset of the
+UMLS Metathesaurus; these subsets are explained in Section 3 of
+MetaMap 2011 Release Notes
+(<a class="link" href="http://metamap.nlm.nih.gov/Docs/MM_2011_ReleaseNotes.pdf">http://metamap.nlm.nih.gov/Docs/MM_2011_ReleaseNotes.pdf</a>). Each of
+these three data subsets
+ are available in a both strict and relaxed
+models <a class="link" href="#Note: Model Documentation">see Note on Model Documentation</a>
+at the end of this page.
+</p>
+<p class="Body">
+To use any model for a particular release you need two archive files:
+The base archive for the release and the archive file for the
+particular model you want to use .  If you wish to use more than one
+model you only need to download the base archive file once.
+</p>
+<p class="Body">
+If you wish to use the relaxed model for Base data set 2012AA it is necessary to
+download the base archive file: <tt>public_mm_data_base_2012aa_base.bz2</tt>
+and the relaxed model archive:
+<tt>public_mm_data_base_2012aa_relaxed.bz2</tt>.  You will also need the file
+<tt>public_mm_data_dblexicon_2012.tar.bz2</tt> that provides the 2012 version
+of the SPECIALIST Lexicon required for the 2012aa data set.
+</p>
+<!--End Section 1-->
+<h2><a name="Installing the data sets for additional models">Installing the data sets for additional models</a></h2>
+<p class="Body">
+After downloading the necessary archive files for additional data set,
+first move to the directory containing the directory of the existing
+public_mm installation and then extract the additional data set using
+bzip2 and tar.
+</p>
+<p class="Body">
+For example, to add the 2012AA Base relaxed model to your MetaMap
+installation:
+</p>
+<div class="block"><pre>
+$ cd &lt;directory containing existing public_mm installation&gt;
+$ tar xvfj public_mm_data_dblexicon_2012.tar.bz2 
+$ tar xvfj public_mm_data_base_2012aa_base.tar.bz2
+$ tar xvfj public_mm_data_base_2012aa_relaxed.tar.bz2 
+</pre></div>
+<p class="Body">
+The 2012aa data-files should be installed now, to use the new data set
+run MetaMap with the options
+<tt>-Z &lt;4 digit year and 2 letter release&gt; -V &lt;UMLS subset&gt; --&lt;model name&gt;_model</tt>
+in the current case the options
+<tt>-Z 2012AA -V Base --relaxed_model</tt> will suffice:
+</p>
+<div class="block"><pre>
+$ cd public_mm
+$ echo &quot;lung cancer&quot; | ./bin/metamap13 -Z 2012AA -V Base --relaxed_model
+</pre></div>
+<p class="Body">
+The output should be similar to this:
+</p>
+<div class="block"><pre>
+...
+metamap13.BINARY.Linux (2013)
+
+Control options:
+  composite_phrases=4
+  lexicon=db
+  mm_data_year=2012AA
+  mm_data_version=Base
+  relaxed_model
+Processing 00000000.tx.1: lung cancer
+
+Phrase: &quot;lung cancer&quot;
+Meta Candidates (Total=10; Excluded=3; Pruned=0; Remaining=7)
+  1000   Lung Cancer (Malignant neoplasm of lung) [Neoplastic Process]
+  1000   LUNG CANCER (Carcinoma of lung) [Neoplastic Process]
+   861   Cancer (Malignant Neoplasms) [Neoplastic Process]
+   861   Lung [Body Part, Organ, or Organ Component]
+   861   Lung (Lung diseases) [Disease or Syndrome]
+   861   Cancer (Cancer Genus) [Eukaryote]
+   861   Cancer (Specialty Type - cancer) [Biomedical Occupation or Discipline]
+   805 E Pulmonary (Pulmonary (qualifier value)) [Qualitative Concept]
+   768 E Pneumonia [Disease or Syndrome]
+   768 E Pulmonary Arteries (Pulmonary artery structure) [Body Part, Organ, or Organ Component]
+Meta Mapping (1000):
+  1000   LUNG CANCER (Carcinoma of lung) [Neoplastic Process]
+Meta Mapping (1000):
+  1000   Lung Cancer (Malignant neoplasm of lung) [Neoplastic Process]
+$ 
+</pre></div>
+<!--End Section 1-->
+<h2><a name="Archive Filename Organization">Archive Filename Organization</a></h2>
+<p class="Body">
+The archive files are named using the following nomenclature:
+</p>
+<p class="Body">
+   public_mm_data_<strong>{UMLS subset}_{UMLS year}{UMLS release}_{model}</strong>.tar.bz2 
+</p>
+<p class="Body">
+On Windows:
+</p>
+<p class="Body">
+   public_mm_data_win32_<strong>{UMLS subset}_{UMLS year}{UMLS release}_{model}</strong>.7z
+</p>
+<p class="Body">
+   public_mm_data_win32_<strong>{UMLS subset}_{UMLS year}{UMLS release}_{model}</strong>.zip
+</p>
+<p class="Body">
+A description of the segments of the archive name follows:
+</p>
+<dl>
+<dt><strong>UMLS subset</strong></dt><dd> Subset of UMLS Meta-Thesaurus (Base, USAbase, and NLM)</dd>
+<dt><strong>UMLS year</strong></dt><dd> The year the UMLS Meta-Thesaurus release was created.</dd>
+<dt><strong>UMLS release</strong></dt><dd> AA - first release, AB - second release</dd>
+</dl>
+<p class="Body">
+Below are the MetaMap UMLS subsets and the corresponding UMLS
+Metathesaurus subsets used to generate them:
+</p>
+<dl>
+<dt><strong>Base</strong></dt><dd>    Level 0 vocabularies only.</dd>
+<dt><strong>USAbase</strong></dt><dd> Level 0 vocabularies + SNOMEDCT</dd>
+<dt><strong>NLM</strong></dt><dd>&nbsp;&nbsp;  All vocabularies except (CDT, CPT, and other HCPCS vocabularies)</dd>
+</dl>
+<p class="Body">
+See MetamorphoSys Help for additional information:
+<a class="link" href="http://www.nlm.nih.gov/research/umls/implementation_resources/metamorphosys/help.html">http://www.nlm.nih.gov/research/umls/implementation_resources/metamorphosys/help.html</a>
+</p>
+<!--End Section 1-->
+<h2><a name="Note: Model Documentation">Note: Model Documentation</a></h2>
+<p class="Body">
+For a description of the content of each model, see the paper: &quot;Filtering
+the UMLS Metathesaurus for MetaMap&quot; at the SKR website under &quot;Research
+Information&quot; (<a class="link" href="http://ii.nlm.nih.gov/Publications/index.shtml">http://ii.nlm.nih.gov/Publications/index.shtml</a>).
+</p>
+<!--End Section 1-->
+<!-- End SectLevel1 -->
+<hr>
+<br>
+<p align="right"> <small>This document was generated using <a class="link" href="http://www.maplefish.com/todd/aft.html">AFT v5.098</a></small> </p>
+</body>
+</html>
+

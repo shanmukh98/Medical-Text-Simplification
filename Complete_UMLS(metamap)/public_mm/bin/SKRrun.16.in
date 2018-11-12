@@ -1,0 +1,126 @@
+#!/bin/bash
+
+PROGRAM=`basename $0`
+
+USAGE="$PROGRAM -d | -p | -w HOME"
+
+LEXICON_VERSION="2016"
+export LEXICON_VERSION
+
+MM_DISTRIB_DIR=@@basedir@@
+export MM_DISTRIB_DIR
+
+SKR_LEXICON=$MM_DISTRIB_DIR/lexicon
+export SKR_LEXICON
+
+# Mats Carlsson's fix for the "Toronto" citation
+PROLOGMAXSIZE=10000M
+export PROLOGMAXSIZE
+
+ARCHITECTURE=`uname`
+
+if [ "$ARCHITECTURE" = "SunOS" ]
+then
+   ulimit -n 2047
+else
+   ulimit -n 1024
+fi
+
+while getopts L:Sw: option
+do
+   # echo SKRrun option is $option
+   case $option
+   in
+	# L) LEXICON_VERSION=$OPTARG;;
+	w) SKR_LEXICON=$OPTARG;;
+	?) echo Unknown option $option
+ 	   exit 1;;
+   esac
+done
+
+# for mmserver
+
+if [ -z $MMSERVER_PORT ] ; then
+   MMSERVER_PORT=8066
+fi
+export MMSERVER_PORT
+
+# for mmserver
+if [ -z $ACCEPTED_HOSTS ] ; then
+    ACCEPTED_HOSTS="['127.0.0.1']"
+fi
+export ACCEPTED_HOSTS
+
+export MODEL_LOCATION_BASE_DIR=$MM_DISTRIB_DIR/DB
+
+export BDB_CACHE_SIZE=1048576
+
+shift `expr $OPTIND - 1`
+export OPTIND=1
+
+export LEXICON_DATA=$SKR_LEXICON/data
+
+export SKR_MORPH=$SKR_LEXICON/morph
+
+# export DEFAULT_LEXICON_FILE=$LEXICON_DATA/lexiconStatic${LEXICON_VERSION}
+
+# export DEFAULT_LEXICON_INDEX_FILE=${DEFAULT_LEXICON_FILE}Ind
+
+export DM_TRANSLATED_RULES_FILE=$SKR_MORPH/dm_translated_rules
+
+export DM_TRANSLATED_FACTS_FILE=$SKR_MORPH/dm_translated_facts
+
+export LM_TRANSLATED_RULES_FILE=$SKR_MORPH/lm_translated_rules
+
+export MMI_TREE_DEPTH_SPECIFICITY_DIVISOR=9
+
+export MMI_WORD_SPECIFICITY_DIVISOR=26
+
+export MMI_CHARACTER_SPECIFICITY_DIVISOR=102
+
+export NEGEX_UTTERANCE_MAX_DIST=20
+
+export NEGEX_CONCEPT_MAX_DIST=10
+
+export LEXICON_SERVER_HOSTS="localhost"
+
+export LEXICON_SERVER_PORT="8042"
+
+export TAGGER_SERVER_HOSTS="localhost"
+
+export TAGGER_SERVER_PORT=1795
+
+export TAGGER_SERVER_DELIMITER='^THE_END^\n'
+
+export WSD_SERVER_HOSTS="localhost"
+
+export WSD_SERVER_PORT=5554
+
+export WSD_SERVER_BEGIN_DELIMITER='<Response>'
+
+export WSD_SERVER_END_DELIMITER='</Response>'
+
+export WSD_METHODS="['AEC_METHOD']"
+
+export WSD_WEIGHTS="[1.0]"
+
+export XML_VERSION="<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+
+export XML_DOCTYPE="DOCTYPE MMOs PUBLIC"
+
+export XML_DOCNAME="-//NLM//DTD MetaMap Machine Output//EN"
+
+export XML_DTD="http://metamap.nlm.nih.gov/DTD/MMOtoXML_v5.dtd"
+
+# LD_LIBRARY_PATH=${SP_RT_DIR}:${SP_LIBRARY_DIR}/x86-linux-glibc2.5:${LD_LIBRARY_PATH}
+# export LD_LIBRARY_PATH
+
+# echo LD_LIBRARY_PATH=$LD_LIBRARY_PATH
+
+if [ $# -gt 0 ]
+then
+   case $1 in
+   -*) ;;
+    *) exec $* ;;
+   esac
+fi

@@ -1,0 +1,2102 @@
+Allow Overmatches:
+
+
+Processing 00000000.tx.1: clone
+
+Phrase: "clone"
+Meta Candidates (25):
+  1000 Clone, NOS (Clone Cells) [Cell]
+   966 Cloning [Research Activity]
+   722 Forbidden clone [Cell]
+   722 Clone status [Qualitative Concept]
+   688 Cloning, Molecular [Laboratory Procedure,Molecular Biology Research Technique]
+   688 Cloning Vector (Cloning Vectors) [Nucleic Acid, Nucleoside, or Nucleotide,Virus]
+   688 Embryo Cloning [Research Activity]
+   688 Human Cloning [Research Activity]
+   688 Cloning, Organism [Research Activity]
+   688 gene cloning [Laboratory Procedure,Molecular Biology Research Technique]
+   688 expression cloning [Molecular Biology Research Technique]
+   654 BPF clone conjunctivitis (Brazilian purpuric fever) [Disease or Syndrome]
+   650 Clonal Anergies (Clonal Anergy) [Organ or Tissue Function]
+   650 Clonal Abortion [Organ or Tissue Function]
+   650 Clonal Deletion [Organ or Tissue Function]
+   625 clone 15 gene product [Amino Acid, Peptide, or Protein]
+   620 whole animal cloning [Laboratory Procedure,Molecular Biology Research Technique]
+   620 Whole organism cloning [Research Activity]
+   620 nucleic acid cloning [Laboratory Procedure,Molecular Biology Research Technique]
+   608 hydrogen peroxide-inducible clone 5 [Amino Acid, Peptide, or Protein]
+   608 human clone pAT464 macrophage inflammatory [Amino Acid, Peptide, or Protein]
+   598 Xenopus clone 11 protein, 49 kDa [Amino Acid, Peptide, or Protein]
+   582 CLONAL PROTEIN DISEASES (Clonal protein disease, NOS) [Disease or Syndrome]
+   582 Clonal inhibitory factor [Immunologic Factor]
+   582 Clonal Bowen's disease (Intraepidermal epithelioma of Jadassohn) [Neoplastic Process]
+Meta Mapping (1000):
+  1000 Clone, NOS (Clone Cells) [Cell]
+Allow Concept Gaps w/ KS Year:
+
+
+Processing 00000000.tx.1: continuous treatment
+
+Phrase: "continuous treatment"
+Meta Candidates (6):
+   861 treatment <2> (therapy <1>) [Functional Concept]
+   861 Treatment <1> (Therapeutic procedure) [Therapeutic or Preventive Procedure]
+   795 Continuous negative pressure ventilation treatment [Therapeutic or Preventive Procedure]
+   790 Continuous positive airway pressure ventilation treatment [Therapeutic or Preventive Procedure]
+   694 Continuous [Temporal Concept]
+   623 Continuity [Temporal Concept]
+Meta Mapping (1000):
+   795 Continuous negative pressure ventilation treatment [Therapeutic or Preventive Procedure]
+Prefer Multiple Concepts:
+
+
+Processing 00000000.tx.1: lung cancer
+
+Phrase: "lung cancer"
+Meta Candidates (5):
+   694 Cancer <1> [Neoplastic Process]
+   666 Lung Cancer [Neoplastic Process]
+   527 Lung [Body Part, Organ, or Organ Component]
+   472 Pulmonary <1> [Spatial Concept]
+   435 Pneumonia [Disease or Syndrome]
+Meta Mapping (777):
+   527 Lung [Body Part, Organ, or Organ Component]
+   694 Cancer <1> [Neoplastic Process]
+Ignore Word Order:
+
+
+Processing 00000000.tx.1: cancer lung
+
+Phrase: "cancer lung"
+Meta Candidates (4):
+   833 Lung [Body Part, Organ, or Organ Component]
+   777 Pulmonary <1> [Spatial Concept]
+   740 Pneumonia [Disease or Syndrome]
+   666 Cancer <1> [Neoplastic Process]
+Meta Mapping (888):
+   666 Cancer <1> [Neoplastic Process]
+   833 Lung [Body Part, Organ, or Organ Component]
+Allow Concept Gaps w/ Show All Maps:
+
+
+Processing 00000000.tx.1: continuous treatment
+
+Phrase: "continuous treatment"
+Meta Candidates (6):
+   861 treatment <2> (therapy <1>) [Functional Concept]
+   861 Treatment <1> (Therapeutic procedure) [Therapeutic or Preventive Procedure]
+   795 Continuous negative pressure ventilation treatment [Therapeutic or Preventive Procedure]
+   790 Continuous positive airway pressure ventilation treatment [Therapeutic or Preventive Procedure]
+   694 Continuous [Temporal Concept]
+   623 Continuity [Temporal Concept]
+Meta Mapping (1000):
+   795 Continuous negative pressure ventilation treatment [Therapeutic or Preventive Procedure]
+Meta Mapping (1000):
+   790 Continuous positive airway pressure ventilation treatment [Therapeutic or Preventive Procedure]
+Meta Mapping (888):
+   694 Continuous [Temporal Concept]
+   861 Treatment <1> (Therapeutic procedure) [Therapeutic or Preventive Procedure]
+Meta Mapping (888):
+   694 Continuous [Temporal Concept]
+   861 treatment <2> (therapy <1>) [Functional Concept]
+Meta Mapping (853):
+   623 Continuity [Temporal Concept]
+   861 Treatment <1> (Therapeutic procedure) [Therapeutic or Preventive Procedure]
+Meta Mapping (853):
+   623 Continuity [Temporal Concept]
+   861 treatment <2> (therapy <1>) [Functional Concept]
+Allow Concept Gaps w/ Show All Maps + Debug5:
+Allow Concept Gaps w/ Show All Maps + Number the Candidates:
+
+
+Processing 00000000.tx.1: continuous treatment
+
+Phrase: "continuous treatment"
+Meta Candidates (6):
+   1.    861 treatment <2> (therapy <1>) [Functional Concept]
+   2.    861 Treatment <1> (Therapeutic procedure) [Therapeutic or Preventive Procedure]
+   3.    795 Continuous negative pressure ventilation treatment [Therapeutic or Preventive Procedure]
+   4.    790 Continuous positive airway pressure ventilation treatment [Therapeutic or Preventive Procedure]
+   5.    694 Continuous [Temporal Concept]
+   6.    623 Continuity [Temporal Concept]
+Meta Mapping (1000):
+   795 Continuous negative pressure ventilation treatment [Therapeutic or Preventive Procedure]
+Meta Mapping (1000):
+   790 Continuous positive airway pressure ventilation treatment [Therapeutic or Preventive Procedure]
+Meta Mapping (888):
+   694 Continuous [Temporal Concept]
+   861 Treatment <1> (Therapeutic procedure) [Therapeutic or Preventive Procedure]
+Meta Mapping (888):
+   694 Continuous [Temporal Concept]
+   861 treatment <2> (therapy <1>) [Functional Concept]
+Meta Mapping (853):
+   623 Continuity [Temporal Concept]
+   861 Treatment <1> (Therapeutic procedure) [Therapeutic or Preventive Procedure]
+Meta Mapping (853):
+   623 Continuity [Temporal Concept]
+   861 treatment <2> (therapy <1>) [Functional Concept]
+Allow Concept Gaps w/ Show All Maps + Show CUIs:
+
+
+Processing 00000000.tx.1: continuous treatment
+
+Phrase: "continuous treatment"
+Meta Candidates (6):
+   861 C0039798:treatment <2> (therapy <1>) [Functional Concept]
+   861 C0087111:Treatment <1> (Therapeutic procedure) [Therapeutic or Preventive Procedure]
+   795 C0199452:Continuous negative pressure ventilation treatment [Therapeutic or Preventive Procedure]
+   790 C0199451:Continuous positive airway pressure ventilation treatment [Therapeutic or Preventive Procedure]
+   694 C0549178:Continuous [Temporal Concept]
+   623 C0595960:Continuity [Temporal Concept]
+Meta Mapping (1000):
+   795 C0199452:Continuous negative pressure ventilation treatment [Therapeutic or Preventive Procedure]
+Meta Mapping (1000):
+   790 C0199451:Continuous positive airway pressure ventilation treatment [Therapeutic or Preventive Procedure]
+Meta Mapping (888):
+   694 C0549178:Continuous [Temporal Concept]
+   861 C0087111:Treatment <1> (Therapeutic procedure) [Therapeutic or Preventive Procedure]
+Meta Mapping (888):
+   694 C0549178:Continuous [Temporal Concept]
+   861 C0039798:treatment <2> (therapy <1>) [Functional Concept]
+Meta Mapping (853):
+   623 C0595960:Continuity [Temporal Concept]
+   861 C0087111:Treatment <1> (Therapeutic procedure) [Therapeutic or Preventive Procedure]
+Meta Mapping (853):
+   623 C0595960:Continuity [Temporal Concept]
+   861 C0039798:treatment <2> (therapy <1>) [Functional Concept]
+Allow Concept Gaps w/ Show All Maps + Syntax:
+
+
+Processing 00000000.tx.1: continuous treatment
+
+Phrase: "continuous treatment"
+
+msu
+  mod([inputmatch([continuous]),tag(noun),tokens([continuous])])
+  head([inputmatch([treatment]),tag(noun),tokens([treatment])])
+Meta Candidates (6):
+   861 treatment <2> (therapy <1>) [Functional Concept]
+   861 Treatment <1> (Therapeutic procedure) [Therapeutic or Preventive Procedure]
+   795 Continuous negative pressure ventilation treatment [Therapeutic or Preventive Procedure]
+   790 Continuous positive airway pressure ventilation treatment [Therapeutic or Preventive Procedure]
+   694 Continuous [Temporal Concept]
+   623 Continuity [Temporal Concept]
+Meta Mapping (1000):
+   795 Continuous negative pressure ventilation treatment [Therapeutic or Preventive Procedure]
+Meta Mapping (1000):
+   790 Continuous positive airway pressure ventilation treatment [Therapeutic or Preventive Procedure]
+Meta Mapping (888):
+   694 Continuous [Temporal Concept]
+   861 Treatment <1> (Therapeutic procedure) [Therapeutic or Preventive Procedure]
+Meta Mapping (888):
+   694 Continuous [Temporal Concept]
+   861 treatment <2> (therapy <1>) [Functional Concept]
+Meta Mapping (853):
+   623 Continuity [Temporal Concept]
+   861 Treatment <1> (Therapeutic procedure) [Therapeutic or Preventive Procedure]
+Meta Mapping (853):
+   623 Continuity [Temporal Concept]
+   861 treatment <2> (therapy <1>) [Functional Concept]
+Show All Maps + Threshold=900:
+
+
+Processing 00000000.tx.1: The effect of Obstructive Sleep Apnea.
+
+Phrase: "The effect of Obstructive Sleep Apnea."
+Show All Maps:
+
+
+Processing 00000000.tx.1: The effect of Obstructive Sleep Apnea.
+
+Phrase: "The effect of Obstructive Sleep Apnea."
+Meta Candidates (11):
+   861 Obstructive sleep apnea (Obstructive sleep apnea syndrome) [Disease or Syndrome]
+   839 Apnea, Obstructive [Disease or Syndrome]
+   827 Sleep apnea, NOS (Sleep Apnea Syndromes) [Disease or Syndrome]
+   827 Apnea, Sleep [Disease or Syndrome]
+   799 Apnea [Disease or Syndrome]
+   632 Sleep [Mental Process]
+   632 Effect (Effective) [Functional Concept,Qualitative Concept]
+   632 Sleep (Asleep) [Finding]
+   632 Obstructive (Obstructed) [Functional Concept]
+   561 Sleepy [Finding]
+   532 Sleeplessness (Insomnia) [Mental or Behavioral Dysfunction,Sign or Symptom]
+Meta Mapping (817):
+   632 Effect (Effective) [Functional Concept,Qualitative Concept]
+   861 Obstructive sleep apnea (Obstructive sleep apnea syndrome) [Disease or Syndrome]
+Meta Mapping (762):
+   632 Effect (Effective) [Functional Concept,Qualitative Concept]
+   632 Obstructive (Obstructed) [Functional Concept]
+   827 Apnea, Sleep [Disease or Syndrome]
+Meta Mapping (762):
+   632 Effect (Effective) [Functional Concept,Qualitative Concept]
+   632 Obstructive (Obstructed) [Functional Concept]
+   827 Sleep apnea, NOS (Sleep Apnea Syndromes) [Disease or Syndrome]
+Meta Mapping (762):
+   632 Effect (Effective) [Functional Concept,Qualitative Concept]
+   839 Apnea, Obstructive [Disease or Syndrome]
+   632 Sleep (Asleep) [Finding]
+Meta Mapping (762):
+   632 Effect (Effective) [Functional Concept,Qualitative Concept]
+   839 Apnea, Obstructive [Disease or Syndrome]
+   632 Sleep [Mental Process]
+Meta Mapping (744):
+   632 Effect (Effective) [Functional Concept,Qualitative Concept]
+   839 Apnea, Obstructive [Disease or Syndrome]
+   561 Sleepy [Finding]
+Meta Mapping (737):
+   632 Effect (Effective) [Functional Concept,Qualitative Concept]
+   839 Apnea, Obstructive [Disease or Syndrome]
+   532 Sleeplessness (Insomnia) [Mental or Behavioral Dysfunction,Sign or Symptom]
+Meta Mapping (734):
+   632 Effect (Effective) [Functional Concept,Qualitative Concept]
+   632 Obstructive (Obstructed) [Functional Concept]
+   632 Sleep (Asleep) [Finding]
+   799 Apnea [Disease or Syndrome]
+Meta Mapping (734):
+   632 Effect (Effective) [Functional Concept,Qualitative Concept]
+   632 Obstructive (Obstructed) [Functional Concept]
+   632 Sleep [Mental Process]
+   799 Apnea [Disease or Syndrome]
+Meta Mapping (716):
+   632 Effect (Effective) [Functional Concept,Qualitative Concept]
+   632 Obstructive (Obstructed) [Functional Concept]
+   561 Sleepy [Finding]
+   799 Apnea [Disease or Syndrome]
+Meta Mapping (709):
+   632 Effect (Effective) [Functional Concept,Qualitative Concept]
+   632 Obstructive (Obstructed) [Functional Concept]
+   532 Sleeplessness (Insomnia) [Mental or Behavioral Dysfunction,Sign or Symptom]
+   799 Apnea [Disease or Syndrome]
+Normal Processing - Best Mappings Only:
+
+
+Processing 00000000.tx.1: The effect of Obstructive Lung Sleep Cancer Apnea.
+
+Phrase: "The effect of Obstructive Lung Sleep Cancer Apnea."
+Meta Candidates (16):
+   852 Obstructive sleep apnea (Obstructive sleep apnea syndrome) [Disease or Syndrome]
+   850 Apnea, Obstructive [Disease or Syndrome]
+   822 Sleep apnea, NOS (Sleep Apnea Syndromes) [Disease or Syndrome]
+   822 Apnea, Sleep [Disease or Syndrome]
+   793 Apnea [Disease or Syndrome]
+   656 Lung Cancer [Neoplastic Process]
+   626 Cancer <1> [Neoplastic Process]
+   626 Lung [Body Part, Organ, or Organ Component]
+   626 Sleep [Mental Process]
+   626 Effect (Effective) [Functional Concept,Qualitative Concept]
+   626 Sleep (Asleep) [Finding]
+   626 Obstructive (Obstructed) [Functional Concept]
+   571 Pulmonary <1> [Spatial Concept]
+   555 Sleepy [Finding]
+   534 Pneumonia [Disease or Syndrome]
+   526 Sleeplessness (Insomnia) [Mental or Behavioral Dysfunction,Sign or Symptom]
+Meta Mapping (771):
+   626 Effect (Effective) [Functional Concept,Qualitative Concept]
+   852 Obstructive sleep apnea (Obstructive sleep apnea syndrome) [Disease or Syndrome]
+   626 Lung [Body Part, Organ, or Organ Component]
+   626 Cancer <1> [Neoplastic Process]
+Concept Gap:
+
+
+Processing 00000000.tx.1: chronic headache with sleep disorders
+
+Phrase: "chronic headache with sleep disorders"
+Meta Candidates (24):
+   881 chronic disorder (Chronic Disease) [Disease or Syndrome]
+   858 Headache disorder [Disease or Syndrome]
+   840 Sleep Disorders [Disease or Syndrome,Sign or Symptom]
+   804 Disorders (Disease) [Disease or Syndrome]
+   689 Chronicity of Disorders [Temporal Concept]
+   686 chronic hypomanic personality disorder [Mental or Behavioral Dysfunction]
+   686 chronic depressive personality disorder [Mental or Behavioral Dysfunction]
+   686 Chronic motor tic disorder [Disease or Syndrome]
+   686 Chronic vocal tic disorder [Disease or Syndrome]
+   676 Chronic recurrent major depressive disorder [Mental or Behavioral Dysfunction]
+   673 Headache, chronic [Sign or Symptom]
+   650 Sleep Terror Disorder [Mental or Behavioral Dysfunction]
+   650 Sleep walking disorder (Somnambulism) [Mental or Behavioral Dysfunction]
+   637 Headache [Sign or Symptom]
+   637 Sleep [Mental Process]
+   637 Chronic [Temporal Concept]
+   637 Sleep (Asleep) [Finding]
+   628 Sleep-wake schedule disorder (Circadian Rhythm Sleep Disorder) [Disease or Syndrome,Finding]
+   566 Sleepy [Finding]
+   566 Chronicity [Functional Concept]
+   537 Sleeplessness (Insomnia) [Mental or Behavioral Dysfunction,Sign or Symptom]
+   500 Chronic cluster headache [Disease or Syndrome]
+   478 Chronic tension - type headache [Sign or Symptom]
+   478 Chronic post-traumatic headache [Disease or Syndrome,Sign or Symptom]
+Meta Mapping (825):
+   478 Chronic post-traumatic headache [Disease or Syndrome,Sign or Symptom]
+   840 Sleep Disorders [Disease or Syndrome,Sign or Symptom]
+Meta Mapping (825):
+   478 Chronic tension - type headache [Sign or Symptom]
+   840 Sleep Disorders [Disease or Syndrome,Sign or Symptom]
+Meta Mapping (817):
+   500 Chronic cluster headache [Disease or Syndrome]
+   840 Sleep Disorders [Disease or Syndrome,Sign or Symptom]
+Meta Mapping (817):
+   673 Headache, chronic [Sign or Symptom]
+   628 Sleep-wake schedule disorder (Circadian Rhythm Sleep Disorder) [Disease or Syndrome,Finding]
+Meta Mapping (816):
+   676 Chronic recurrent major depressive disorder [Mental or Behavioral Dysfunction]
+   637 Headache [Sign or Symptom]
+   637 Sleep (Asleep) [Finding]
+Meta Mapping (816):
+   676 Chronic recurrent major depressive disorder [Mental or Behavioral Dysfunction]
+   637 Headache [Sign or Symptom]
+   637 Sleep [Mental Process]
+Meta Mapping (813):
+   478 Chronic post-traumatic headache [Disease or Syndrome,Sign or Symptom]
+   637 Sleep (Asleep) [Finding]
+   804 Disorders (Disease) [Disease or Syndrome]
+Meta Mapping (813):
+   478 Chronic post-traumatic headache [Disease or Syndrome,Sign or Symptom]
+   637 Sleep [Mental Process]
+   804 Disorders (Disease) [Disease or Syndrome]
+Meta Mapping (813):
+   478 Chronic tension - type headache [Sign or Symptom]
+   637 Sleep (Asleep) [Finding]
+   804 Disorders (Disease) [Disease or Syndrome]
+Meta Mapping (813):
+   478 Chronic tension - type headache [Sign or Symptom]
+   637 Sleep [Mental Process]
+   804 Disorders (Disease) [Disease or Syndrome]
+Meta Mapping (813):
+   673 Headache, chronic [Sign or Symptom]
+   840 Sleep Disorders [Disease or Syndrome,Sign or Symptom]
+Meta Mapping (809):
+   673 Headache, chronic [Sign or Symptom]
+   650 Sleep Terror Disorder [Mental or Behavioral Dysfunction]
+Meta Mapping (809):
+   673 Headache, chronic [Sign or Symptom]
+   650 Sleep walking disorder (Somnambulism) [Mental or Behavioral Dysfunction]
+Meta Mapping (807):
+   500 Chronic cluster headache [Disease or Syndrome]
+   628 Sleep-wake schedule disorder (Circadian Rhythm Sleep Disorder) [Disease or Syndrome,Finding]
+Meta Mapping (807):
+   478 Chronic post-traumatic headache [Disease or Syndrome,Sign or Symptom]
+   650 Sleep Terror Disorder [Mental or Behavioral Dysfunction]
+Meta Mapping (807):
+   478 Chronic post-traumatic headache [Disease or Syndrome,Sign or Symptom]
+   650 Sleep walking disorder (Somnambulism) [Mental or Behavioral Dysfunction]
+Meta Mapping (807):
+   478 Chronic tension - type headache [Sign or Symptom]
+   650 Sleep Terror Disorder [Mental or Behavioral Dysfunction]
+Meta Mapping (807):
+   478 Chronic tension - type headache [Sign or Symptom]
+   650 Sleep walking disorder (Somnambulism) [Mental or Behavioral Dysfunction]
+Meta Mapping (805):
+   637 Chronic [Temporal Concept]
+   637 Headache [Sign or Symptom]
+   628 Sleep-wake schedule disorder (Circadian Rhythm Sleep Disorder) [Disease or Syndrome,Finding]
+Meta Mapping (805):
+   500 Chronic cluster headache [Disease or Syndrome]
+   650 Sleep Terror Disorder [Mental or Behavioral Dysfunction]
+Meta Mapping (805):
+   500 Chronic cluster headache [Disease or Syndrome]
+   650 Sleep walking disorder (Somnambulism) [Mental or Behavioral Dysfunction]
+Meta Mapping (805):
+   478 Chronic post-traumatic headache [Disease or Syndrome,Sign or Symptom]
+   628 Sleep-wake schedule disorder (Circadian Rhythm Sleep Disorder) [Disease or Syndrome,Finding]
+Meta Mapping (805):
+   478 Chronic tension - type headache [Sign or Symptom]
+   628 Sleep-wake schedule disorder (Circadian Rhythm Sleep Disorder) [Disease or Syndrome,Finding]
+Meta Mapping (805):
+   686 Chronic motor tic disorder [Disease or Syndrome]
+   637 Headache [Sign or Symptom]
+   637 Sleep (Asleep) [Finding]
+Meta Mapping (805):
+   686 Chronic vocal tic disorder [Disease or Syndrome]
+   637 Headache [Sign or Symptom]
+   637 Sleep (Asleep) [Finding]
+Meta Mapping (805):
+   686 chronic depressive personality disorder [Mental or Behavioral Dysfunction]
+   637 Headache [Sign or Symptom]
+   637 Sleep (Asleep) [Finding]
+Meta Mapping (805):
+   686 chronic hypomanic personality disorder [Mental or Behavioral Dysfunction]
+   637 Headache [Sign or Symptom]
+   637 Sleep (Asleep) [Finding]
+Meta Mapping (805):
+   686 Chronic motor tic disorder [Disease or Syndrome]
+   637 Headache [Sign or Symptom]
+   637 Sleep [Mental Process]
+Meta Mapping (805):
+   686 Chronic vocal tic disorder [Disease or Syndrome]
+   637 Headache [Sign or Symptom]
+   637 Sleep [Mental Process]
+Meta Mapping (805):
+   686 chronic depressive personality disorder [Mental or Behavioral Dysfunction]
+   637 Headache [Sign or Symptom]
+   637 Sleep [Mental Process]
+Meta Mapping (805):
+   686 chronic hypomanic personality disorder [Mental or Behavioral Dysfunction]
+   637 Headache [Sign or Symptom]
+   637 Sleep [Mental Process]
+Meta Mapping (799):
+   500 Chronic cluster headache [Disease or Syndrome]
+   637 Sleep (Asleep) [Finding]
+   804 Disorders (Disease) [Disease or Syndrome]
+Meta Mapping (799):
+   500 Chronic cluster headache [Disease or Syndrome]
+   637 Sleep [Mental Process]
+   804 Disorders (Disease) [Disease or Syndrome]
+Meta Mapping (798):
+   676 Chronic recurrent major depressive disorder [Mental or Behavioral Dysfunction]
+   637 Headache [Sign or Symptom]
+   566 Sleepy [Finding]
+Meta Mapping (795):
+   478 Chronic post-traumatic headache [Disease or Syndrome,Sign or Symptom]
+   566 Sleepy [Finding]
+   804 Disorders (Disease) [Disease or Syndrome]
+Meta Mapping (795):
+   478 Chronic tension - type headache [Sign or Symptom]
+   566 Sleepy [Finding]
+   804 Disorders (Disease) [Disease or Syndrome]
+Meta Mapping (791):
+   637 Chronic [Temporal Concept]
+   637 Headache [Sign or Symptom]
+   650 Sleep Terror Disorder [Mental or Behavioral Dysfunction]
+Meta Mapping (791):
+   637 Chronic [Temporal Concept]
+   637 Headache [Sign or Symptom]
+   650 Sleep walking disorder (Somnambulism) [Mental or Behavioral Dysfunction]
+Meta Mapping (791):
+   676 Chronic recurrent major depressive disorder [Mental or Behavioral Dysfunction]
+   637 Headache [Sign or Symptom]
+   537 Sleeplessness (Insomnia) [Mental or Behavioral Dysfunction,Sign or Symptom]
+Meta Mapping (788):
+   478 Chronic post-traumatic headache [Disease or Syndrome,Sign or Symptom]
+   537 Sleeplessness (Insomnia) [Mental or Behavioral Dysfunction,Sign or Symptom]
+   804 Disorders (Disease) [Disease or Syndrome]
+Meta Mapping (788):
+   478 Chronic tension - type headache [Sign or Symptom]
+   537 Sleeplessness (Insomnia) [Mental or Behavioral Dysfunction,Sign or Symptom]
+   804 Disorders (Disease) [Disease or Syndrome]
+Meta Mapping (787):
+   566 Chronicity [Functional Concept]
+   637 Headache [Sign or Symptom]
+   628 Sleep-wake schedule disorder (Circadian Rhythm Sleep Disorder) [Disease or Syndrome,Finding]
+Meta Mapping (787):
+   686 Chronic motor tic disorder [Disease or Syndrome]
+   637 Headache [Sign or Symptom]
+   566 Sleepy [Finding]
+Meta Mapping (787):
+   686 Chronic vocal tic disorder [Disease or Syndrome]
+   637 Headache [Sign or Symptom]
+   566 Sleepy [Finding]
+Meta Mapping (787):
+   686 chronic depressive personality disorder [Mental or Behavioral Dysfunction]
+   637 Headache [Sign or Symptom]
+   566 Sleepy [Finding]
+Meta Mapping (787):
+   686 chronic hypomanic personality disorder [Mental or Behavioral Dysfunction]
+   637 Headache [Sign or Symptom]
+   566 Sleepy [Finding]
+Meta Mapping (785):
+   637 Chronic [Temporal Concept]
+   637 Headache [Sign or Symptom]
+   840 Sleep Disorders [Disease or Syndrome,Sign or Symptom]
+Meta Mapping (785):
+   673 Headache, chronic [Sign or Symptom]
+   637 Sleep (Asleep) [Finding]
+   804 Disorders (Disease) [Disease or Syndrome]
+Meta Mapping (785):
+   673 Headache, chronic [Sign or Symptom]
+   637 Sleep [Mental Process]
+   804 Disorders (Disease) [Disease or Syndrome]
+Meta Mapping (782):
+   500 Chronic cluster headache [Disease or Syndrome]
+   566 Sleepy [Finding]
+   804 Disorders (Disease) [Disease or Syndrome]
+Meta Mapping (782):
+   689 Chronicity of Disorders [Temporal Concept]
+   637 Headache [Sign or Symptom]
+   637 Sleep (Asleep) [Finding]
+Meta Mapping (782):
+   689 Chronicity of Disorders [Temporal Concept]
+   637 Headache [Sign or Symptom]
+   637 Sleep [Mental Process]
+Meta Mapping (779):
+   686 Chronic motor tic disorder [Disease or Syndrome]
+   637 Headache [Sign or Symptom]
+   537 Sleeplessness (Insomnia) [Mental or Behavioral Dysfunction,Sign or Symptom]
+Meta Mapping (779):
+   686 Chronic vocal tic disorder [Disease or Syndrome]
+   637 Headache [Sign or Symptom]
+   537 Sleeplessness (Insomnia) [Mental or Behavioral Dysfunction,Sign or Symptom]
+Meta Mapping (779):
+   686 chronic depressive personality disorder [Mental or Behavioral Dysfunction]
+   637 Headache [Sign or Symptom]
+   537 Sleeplessness (Insomnia) [Mental or Behavioral Dysfunction,Sign or Symptom]
+Meta Mapping (779):
+   686 chronic hypomanic personality disorder [Mental or Behavioral Dysfunction]
+   637 Headache [Sign or Symptom]
+   537 Sleeplessness (Insomnia) [Mental or Behavioral Dysfunction,Sign or Symptom]
+Meta Mapping (777):
+   637 Chronic [Temporal Concept]
+   858 Headache disorder [Disease or Syndrome]
+   637 Sleep (Asleep) [Finding]
+Meta Mapping (777):
+   637 Chronic [Temporal Concept]
+   858 Headache disorder [Disease or Syndrome]
+   637 Sleep [Mental Process]
+Meta Mapping (777):
+   881 chronic disorder (Chronic Disease) [Disease or Syndrome]
+   637 Headache [Sign or Symptom]
+   637 Sleep (Asleep) [Finding]
+Meta Mapping (777):
+   881 chronic disorder (Chronic Disease) [Disease or Syndrome]
+   637 Headache [Sign or Symptom]
+   637 Sleep [Mental Process]
+Meta Mapping (775):
+   500 Chronic cluster headache [Disease or Syndrome]
+   537 Sleeplessness (Insomnia) [Mental or Behavioral Dysfunction,Sign or Symptom]
+   804 Disorders (Disease) [Disease or Syndrome]
+Meta Mapping (773):
+   566 Chronicity [Functional Concept]
+   637 Headache [Sign or Symptom]
+   650 Sleep Terror Disorder [Mental or Behavioral Dysfunction]
+Meta Mapping (773):
+   566 Chronicity [Functional Concept]
+   637 Headache [Sign or Symptom]
+   650 Sleep walking disorder (Somnambulism) [Mental or Behavioral Dysfunction]
+Meta Mapping (767):
+   566 Chronicity [Functional Concept]
+   637 Headache [Sign or Symptom]
+   840 Sleep Disorders [Disease or Syndrome,Sign or Symptom]
+Meta Mapping (767):
+   673 Headache, chronic [Sign or Symptom]
+   566 Sleepy [Finding]
+   804 Disorders (Disease) [Disease or Syndrome]
+Meta Mapping (764):
+   689 Chronicity of Disorders [Temporal Concept]
+   637 Headache [Sign or Symptom]
+   566 Sleepy [Finding]
+Meta Mapping (760):
+   673 Headache, chronic [Sign or Symptom]
+   537 Sleeplessness (Insomnia) [Mental or Behavioral Dysfunction,Sign or Symptom]
+   804 Disorders (Disease) [Disease or Syndrome]
+Meta Mapping (759):
+   637 Chronic [Temporal Concept]
+   858 Headache disorder [Disease or Syndrome]
+   566 Sleepy [Finding]
+Meta Mapping (759):
+   566 Chronicity [Functional Concept]
+   858 Headache disorder [Disease or Syndrome]
+   637 Sleep (Asleep) [Finding]
+Meta Mapping (759):
+   566 Chronicity [Functional Concept]
+   858 Headache disorder [Disease or Syndrome]
+   637 Sleep [Mental Process]
+Meta Mapping (759):
+   881 chronic disorder (Chronic Disease) [Disease or Syndrome]
+   637 Headache [Sign or Symptom]
+   566 Sleepy [Finding]
+Meta Mapping (757):
+   637 Chronic [Temporal Concept]
+   637 Headache [Sign or Symptom]
+   637 Sleep (Asleep) [Finding]
+   804 Disorders (Disease) [Disease or Syndrome]
+Meta Mapping (757):
+   637 Chronic [Temporal Concept]
+   637 Headache [Sign or Symptom]
+   637 Sleep [Mental Process]
+   804 Disorders (Disease) [Disease or Syndrome]
+Meta Mapping (757):
+   689 Chronicity of Disorders [Temporal Concept]
+   637 Headache [Sign or Symptom]
+   537 Sleeplessness (Insomnia) [Mental or Behavioral Dysfunction,Sign or Symptom]
+Meta Mapping (752):
+   637 Chronic [Temporal Concept]
+   858 Headache disorder [Disease or Syndrome]
+   537 Sleeplessness (Insomnia) [Mental or Behavioral Dysfunction,Sign or Symptom]
+Meta Mapping (752):
+   881 chronic disorder (Chronic Disease) [Disease or Syndrome]
+   637 Headache [Sign or Symptom]
+   537 Sleeplessness (Insomnia) [Mental or Behavioral Dysfunction,Sign or Symptom]
+Meta Mapping (741):
+   566 Chronicity [Functional Concept]
+   858 Headache disorder [Disease or Syndrome]
+   566 Sleepy [Finding]
+Meta Mapping (739):
+   637 Chronic [Temporal Concept]
+   637 Headache [Sign or Symptom]
+   566 Sleepy [Finding]
+   804 Disorders (Disease) [Disease or Syndrome]
+Meta Mapping (739):
+   566 Chronicity [Functional Concept]
+   637 Headache [Sign or Symptom]
+   637 Sleep (Asleep) [Finding]
+   804 Disorders (Disease) [Disease or Syndrome]
+Meta Mapping (739):
+   566 Chronicity [Functional Concept]
+   637 Headache [Sign or Symptom]
+   637 Sleep [Mental Process]
+   804 Disorders (Disease) [Disease or Syndrome]
+Meta Mapping (734):
+   566 Chronicity [Functional Concept]
+   858 Headache disorder [Disease or Syndrome]
+   537 Sleeplessness (Insomnia) [Mental or Behavioral Dysfunction,Sign or Symptom]
+Meta Mapping (732):
+   637 Chronic [Temporal Concept]
+   637 Headache [Sign or Symptom]
+   537 Sleeplessness (Insomnia) [Mental or Behavioral Dysfunction,Sign or Symptom]
+   804 Disorders (Disease) [Disease or Syndrome]
+Meta Mapping (722):
+   566 Chronicity [Functional Concept]
+   637 Headache [Sign or Symptom]
+   566 Sleepy [Finding]
+   804 Disorders (Disease) [Disease or Syndrome]
+Meta Mapping (714):
+   566 Chronicity [Functional Concept]
+   637 Headache [Sign or Symptom]
+   537 Sleeplessness (Insomnia) [Mental or Behavioral Dysfunction,Sign or Symptom]
+   804 Disorders (Disease) [Disease or Syndrome]
+Normal Processing - All Mappings:
+
+
+Processing 00000000.tx.1: continuous abuse
+
+Phrase: "continuous abuse"
+Meta Candidates (4):
+   861 Abuse, NOS (Adult maltreatment syndrome) [Mental or Behavioral Dysfunction]
+   861 ABUSE (Drug Abuse) [Mental or Behavioral Dysfunction,Patient or Disabled Group]
+   694 Continuous [Temporal Concept]
+   623 Continuity [Temporal Concept]
+Meta Mapping (888):
+   694 Continuous [Temporal Concept]
+   861 Abuse, NOS (Adult maltreatment syndrome) [Mental or Behavioral Dysfunction]
+Meta Mapping (888):
+   694 Continuous [Temporal Concept]
+   861 ABUSE (Drug Abuse) [Mental or Behavioral Dysfunction,Patient or Disabled Group]
+Meta Mapping (853):
+   623 Continuity [Temporal Concept]
+   861 Abuse, NOS (Adult maltreatment syndrome) [Mental or Behavioral Dysfunction]
+Meta Mapping (853):
+   623 Continuity [Temporal Concept]
+   861 ABUSE (Drug Abuse) [Mental or Behavioral Dysfunction,Patient or Disabled Group]
+Truncate Candidates Mappings:
+  MetaMap w/o Truncate:
+
+
+Processing 00000000.tx.1: cold therapy
+
+Phrase: "cold therapy"
+Meta Candidates (10):
+  1000 Cold Therapy [Therapeutic or Preventive Procedure]
+          Cold <4>
+  1000 Cold therapy <1> (hypothermia, induced) [Therapeutic or Preventive Procedure]
+   861 therapy <1> [Functional Concept]
+   861 Therapy, NOS (Therapeutic procedure) [Therapeutic or Preventive Procedure]
+   694 Cold <1> (cold temperature) [Natural Phenomenon or Process]
+   694 Cold <2> (Common Cold) [Disease or Syndrome]
+   694 COLD <3> (Chronic Obstructive Airway Disease) [Disease or Syndrome]
+   694 Cold <5> (Cold Sensation) [Qualitative Concept,Sign or Symptom]
+   623 Coldness [Natural Phenomenon or Process]
+Meta Mapping (1000):
+  1000 Cold Therapy [Therapeutic or Preventive Procedure]
+Meta Mapping (1000):
+  1000 Cold therapy <1> (hypothermia, induced) [Therapeutic or Preventive Procedure]
+Meta Mapping (888):
+   694 COLD <3> (Chronic Obstructive Airway Disease) [Disease or Syndrome]
+   861 Therapy, NOS (Therapeutic procedure) [Therapeutic or Preventive Procedure]
+Meta Mapping (888):
+   694 COLD <3> (Chronic Obstructive Airway Disease) [Disease or Syndrome]
+   861 therapy <1> [Functional Concept]
+Meta Mapping (888):
+   694 Cold <5> (Cold Sensation) [Qualitative Concept,Sign or Symptom]
+   861 Therapy, NOS (Therapeutic procedure) [Therapeutic or Preventive Procedure]
+Meta Mapping (888):
+   694 Cold <5> (Cold Sensation) [Qualitative Concept,Sign or Symptom]
+   861 therapy <1> [Functional Concept]
+Meta Mapping (888):
+   694 Cold <4> (Cold Therapy) [Therapeutic or Preventive Procedure]
+   861 Therapy, NOS (Therapeutic procedure) [Therapeutic or Preventive Procedure]
+Meta Mapping (888):
+   694 Cold <4> (Cold Therapy) [Therapeutic or Preventive Procedure]
+   861 therapy <1> [Functional Concept]
+Meta Mapping (888):
+   694 Cold <2> (Common Cold) [Disease or Syndrome]
+   861 Therapy, NOS (Therapeutic procedure) [Therapeutic or Preventive Procedure]
+Meta Mapping (888):
+   694 Cold <2> (Common Cold) [Disease or Syndrome]
+   861 therapy <1> [Functional Concept]
+Meta Mapping (888):
+   694 Cold <1> (cold temperature) [Natural Phenomenon or Process]
+   861 Therapy, NOS (Therapeutic procedure) [Therapeutic or Preventive Procedure]
+Meta Mapping (888):
+   694 Cold <1> (cold temperature) [Natural Phenomenon or Process]
+   861 therapy <1> [Functional Concept]
+Meta Mapping (853):
+   623 Coldness [Natural Phenomenon or Process]
+   861 Therapy, NOS (Therapeutic procedure) [Therapeutic or Preventive Procedure]
+Meta Mapping (853):
+   623 Coldness [Natural Phenomenon or Process]
+   861 therapy <1> [Functional Concept]
+  MetaMap w/ Truncate:
+
+
+Processing 00000000.tx.1: cold therapy
+
+Phrase: "cold therapy"
+Meta Candidates (10):
+  1000 Cold Therapy [Therapeutic or Preventive Procedure]
+          Cold <4>
+  1000 Cold therapy <1> (hypothermia, induced) [Therapeutic or Preventive Procedure]
+   861 therapy <1> [Functional Concept]
+   861 Therapy, NOS (Therapeutic procedure) [Therapeutic or Preventive Procedure]
+   694 Cold <1> (cold temperature) [Natural Phenomenon or Process]
+   694 Cold <2> (Common Cold) [Disease or Syndrome]
+   694 COLD <3> (Chronic Obstructive Airway Disease) [Disease or Syndrome]
+   694 Cold <5> (Cold Sensation) [Qualitative Concept,Sign or Symptom]
+   623 Coldness [Natural Phenomenon or Process]
+Meta Mapping (1000):
+  1000 Cold Therapy [Therapeutic or Preventive Procedure]
+Meta Mapping (1000):
+  1000 Cold therapy <1> (hypothermia, induced) [Therapeutic or Preventive Procedure]
+Meta Mapping (888):
+   694 COLD <3> (Chronic Obstructive Airway Disease) [Disease or Syndrome]
+   861 Therapy, NOS (Therapeutic procedure) [Therapeutic or Preventive Procedure]
+Meta Mapping (888):
+   694 COLD <3> (Chronic Obstructive Airway Disease) [Disease or Syndrome]
+   861 therapy <1> [Functional Concept]
+Meta Mapping (888):
+   694 Cold <5> (Cold Sensation) [Qualitative Concept,Sign or Symptom]
+   861 Therapy, NOS (Therapeutic procedure) [Therapeutic or Preventive Procedure]
+Meta Mapping (888):
+   694 Cold <5> (Cold Sensation) [Qualitative Concept,Sign or Symptom]
+   861 therapy <1> [Functional Concept]
+Meta Mapping (888):
+   694 Cold <4> (Cold Therapy) [Therapeutic or Preventive Procedure]
+   861 Therapy, NOS (Therapeutic procedure) [Therapeutic or Preventive Procedure]
+Meta Mapping (888):
+   694 Cold <4> (Cold Therapy) [Therapeutic or Preventive Procedure]
+   861 therapy <1> [Functional Concept]
+MetaMap -c option (remove candidates list):
+
+
+Processing 00000000.tx.1: The effect of Obstructive Sleep Apnea.
+
+Phrase: "The effect of Obstructive Sleep Apnea."
+Meta Mapping (817):
+   632 Effect (Effective) [Functional Concept,Qualitative Concept]
+   861 Obstructive sleep apnea (Obstructive sleep apnea syndrome) [Disease or Syndrome]
+MetaMap -s option (remove semantic information):
+  MetaMap w/ Semantic Information:
+
+
+Processing 00000000.tx.1: The effect of Obstructive Sleep Apnea.
+
+Phrase: "The effect of Obstructive Sleep Apnea."
+Meta Candidates (11):
+   861 Obstructive sleep apnea (Obstructive sleep apnea syndrome) [Disease or Syndrome]
+   839 Apnea, Obstructive [Disease or Syndrome]
+   827 Sleep apnea, NOS (Sleep Apnea Syndromes) [Disease or Syndrome]
+   827 Apnea, Sleep [Disease or Syndrome]
+   799 Apnea [Disease or Syndrome]
+   632 Sleep [Mental Process]
+   632 Effect (Effective) [Functional Concept,Qualitative Concept]
+   632 Sleep (Asleep) [Finding]
+   632 Obstructive (Obstructed) [Functional Concept]
+   561 Sleepy [Finding]
+   532 Sleeplessness (Insomnia) [Mental or Behavioral Dysfunction,Sign or Symptom]
+Meta Mapping (817):
+   632 Effect (Effective) [Functional Concept,Qualitative Concept]
+   861 Obstructive sleep apnea (Obstructive sleep apnea syndrome) [Disease or Syndrome]
+  MetaMap w/o Semantic Information:
+
+
+Processing 00000000.tx.1: The effect of Obstructive Sleep Apnea.
+
+Phrase: "The effect of Obstructive Sleep Apnea."
+Meta Candidates (11):
+   861 Obstructive sleep apnea (Obstructive sleep apnea syndrome)
+   839 Apnea, Obstructive
+   827 Sleep apnea, NOS (Sleep Apnea Syndromes)
+   827 Apnea, Sleep
+   799 Apnea
+   632 Sleep
+   632 Effect (Effective)
+   632 Sleep (Asleep)
+   632 Obstructive (Obstructed)
+   561 Sleepy
+   532 Sleeplessness (Insomnia)
+Meta Mapping (817):
+   632 Effect (Effective)
+   861 Obstructive sleep apnea (Obstructive sleep apnea syndrome)
+MetaMap -m option (remove final mappings list):
+
+
+Processing 00000000.tx.1: The effect of Obstructive Sleep Apnea.
+
+Phrase: "The effect of Obstructive Sleep Apnea."
+Meta Candidates (11):
+   861 Obstructive sleep apnea (Obstructive sleep apnea syndrome) [Disease or Syndrome]
+   839 Apnea, Obstructive [Disease or Syndrome]
+   827 Sleep apnea, NOS (Sleep Apnea Syndromes) [Disease or Syndrome]
+   827 Apnea, Sleep [Disease or Syndrome]
+   799 Apnea [Disease or Syndrome]
+   632 Sleep [Mental Process]
+   632 Effect (Effective) [Functional Concept,Qualitative Concept]
+   632 Sleep (Asleep) [Finding]
+   632 Obstructive (Obstructed) [Functional Concept]
+   561 Sleepy [Finding]
+   532 Sleeplessness (Insomnia) [Mental or Behavioral Dysfunction,Sign or Symptom]
+MetaMap -q option (machine output):
+args('MetaMap -Z 99 -q file2.txt tmp',[mm_data_year-'99',machine_output-[],infile-'file2.txt',outfile-tmp]).
+aas([]).
+neg_list([]).
+utterance('00000000.tx.1',"The effect of Obstructive Sleep Apnea.",0/39).
+phrase('The effect of Obstructive Sleep Apnea.',[mod([inputmatch(['The']),tag(noun),tokens([the])]),mod([inputmatch([effect]),tag(noun),tokens([effect])]),mod([inputmatch([of]),tag(noun),tokens([of])]),mod([inputmatch(['Obstructive']),tag(noun),tokens([obstructive])]),mod([inputmatch(['Sleep']),tag(noun),tokens([sleep])]),head([inputmatch(['Apnea']),tag(noun),tokens([apnea])]),punc([inputmatch(['.']),tokens([])])],0/38).
+candidates([ev(-861,'C0520679','Obstructive sleep apnea','Obstructive sleep apnea syndrome',[obstructive,sleep,apnea],[dsyn],[[[4,4],[1,1],0],[[5,5],[2,2],0],[[6,6],[3,3],0]],yes,no,['SNMI98','RCDAE','RCD98'],[14/11,26/5,32/5]),ev(-839,'C0003581','Apnea, Obstructive','Apnea, Obstructive',[obstructive,apnea],[dsyn],[[[4,4],[1,1],0],[[6,6],[2,2],0]],yes,no,['MSH99'],[14/11,32/5]),ev(-827,'C0037315','Sleep apnea, NOS','Sleep Apnea Syndromes',[sleep,apnea],[dsyn],[[[5,5],[1,1],0],[[6,6],[2,2],0]],yes,no,['MSH99','LCH90','RCDAE','SNM2','MTH','ICD91','SNMI98','RCD98','CSP98','WHO97'],[26/5,32/5]),ev(-827,'C0242501','Apnea, Sleep','Apnea, Sleep',[sleep,apnea],[dsyn],[[[5,5],[1,1],0],[[6,6],[2,2],0]],yes,no,['MSH99','MTH','ICD10AE','SNM2','COS89','CST95','DXP94','PSY94','BI98','CSP98','SNMI98','ICD10','WHO97'],[26/5,32/5]),ev(-799,'C0003578','Apnea','Apnea',[apnea],[dsyn],[[[6,6],[1,1],0]],yes,no,['ICD91','ICD99','LCH90','MSH99','PSY94','RCDAE','RCDSA','SNM2','COS89','CST95','DXP94','MTH','AOD95','CSP98','SNMI98','RCD98','RCDSY','WHO97'],[32/5]),ev(-632,'C0037313','Sleep','Sleep',[sleep],[menp],[[[5,5],[1,1],0]],no,no,['LCH90','MSH99','MTH','PSY94','RCD98','SNM2','AOD95','CSP98','SNMI98'],[26/5]),ev(-632,'C0205414','Effect','Effective',[effect],[ftcn,qlco],[[[2,2],[1,1],0]],no,no,['SNMI98'],[4/6]),ev(-632,'C0424522','Sleep','Asleep',[sleep],[fndg],[[[5,5],[1,1],0]],no,no,['MTH','RCD98','SNMI98','NOC97'],[26/5]),ev(-632,'C0549186','Obstructive','Obstructed',[obstructive],[ftcn],[[[4,4],[1,1],0]],no,no,['RCD98','SNM2','SNMI98'],[14/11]),ev(-561,'C0234450','Sleepy','Sleepy',[sleepy],[fndg],[[[5,5],[1,1],3]],no,no,['RCD98','SNMI98','DXP94'],[26/5]),ev(-532,'C0021603','Sleeplessness','Insomnia',[sleeplessness],[mobd,sosy],[[[5,5],[1,1],6]],no,no,['DSM3R','ICD91','LCH90','MSH99','PSY94','QMR96','RCD98','RCDSY','SNM2','COS89','CST95','DXP94','WHO97','AOD95','BI98','CSP98','OMS94','SNMI98','ICD10'],[26/5])]).
+mappings([map(-817,[ev(-632,'C0205414','Effect','Effective',[effect],[ftcn,qlco],[[[2,2],[1,1],0]],no,no,['SNMI98'],[4/6]),ev(-861,'C0520679','Obstructive sleep apnea','Obstructive sleep apnea syndrome',[obstructive,sleep,apnea],[dsyn],[[[4,4],[1,1],0],[[5,5],[2,2],0],[[6,6],[3,3],0]],yes,no,['SNMI98','RCDAE','RCD98'],[14/11,26/5,32/5])])]).
+'EOU'.
+MetaMap -E option (EOT marker):
+
+
+Processing 00000000.tx.1: The effect of Obstructive Sleep Apnea.
+
+Phrase: "The effect of Obstructive Sleep Apnea."
+Meta Candidates (11):
+   861 Obstructive sleep apnea (Obstructive sleep apnea syndrome) [Disease or Syndrome]
+   839 Apnea, Obstructive [Disease or Syndrome]
+   827 Sleep apnea, NOS (Sleep Apnea Syndromes) [Disease or Syndrome]
+   827 Apnea, Sleep [Disease or Syndrome]
+   799 Apnea [Disease or Syndrome]
+   632 Sleep [Mental Process]
+   632 Effect (Effective) [Functional Concept,Qualitative Concept]
+   632 Sleep (Asleep) [Finding]
+   632 Obstructive (Obstructed) [Functional Concept]
+   561 Sleepy [Finding]
+   532 Sleeplessness (Insomnia) [Mental or Behavioral Dysfunction,Sign or Symptom]
+Meta Mapping (817):
+   632 Effect (Effective) [Functional Concept,Qualitative Concept]
+   861 Obstructive sleep apnea (Obstructive sleep apnea syndrome) [Disease or Syndrome]
+'EOT'.
+Differences:
+args('MetaMap -Z 99 -aq file.txt tmp',[mm_data_year-'99',allow_acros_abbrs-[],machine_output-[],infile-'file.txt',outfile-tmp]).
+aas([]).
+neg_list([]).
+utterance('00000000.tx.1',"basic research.  basic research ""a"".",0/38).
+phrase('basic research.  basic research "a".',[mod([inputmatch([basic]),tag(noun),tokens([basic])]),mod([inputmatch([research]),tag(noun),tokens([research])]),punc([inputmatch(['.']),tokens([])]),mod([inputmatch([basic]),tag(noun),tokens([basic])]),mod([inputmatch([research]),tag(noun),tokens([research])]),punc([inputmatch(['"']),tokens([])]),head([inputmatch([a]),tag(noun),tokens([a])]),punc([inputmatch(['"']),tokens([])]),punc([inputmatch(['.']),tokens([])])],0/36).
+candidates([ev(-673,'C0681833','basic research','basic research',[basic,research],[resa],[[[1,1],[1,1],0],[[2,2],[2,2],0]],no,no,['AOD95'],[0/5,6/8]),ev(-637,'C0035168','Research','Research',[research],[resa],[[[2,2],[1,1],0]],no,no,['LCH90','MSH99','PSY94','AOD95'],[6/8]),ev(-554,'C0178499',bases,'Base, NOS',[bases],[chvf],[[[1,1],[1,1],4]],no,no,['SNMI98','CSP98','RCD98','AOD95'],[0/5]),ev(-537,'C0205112','Basal','Basal',[basal],[spco],[[[1,1],[1,1],6]],no,no,['SNMI98'],[0/5]),ev(-510,'C0016617','Foundation','Foundations',[foundation],[orgt],[[[1,1],[1,1],13]],no,no,['LCH90','MSH99','AOD95'],[0/5])]).
+mappings([map(-673,[ev(-673,'C0681833','basic research','basic research',[basic,research],[resa],[[[1,1],[1,1],0],[[2,2],[2,2],0]],no,no,['AOD95'],[0/5,6/8])])]).
+'EOU'.
+utterance('00000000.tx.2',"activate",38/9).
+phrase(activate,[head([inputmatch([activate]),tag(noun),tokens([activate])])],38/8).
+candidates([]).
+mappings([]).
+'EOU'.
+DifferencesII:
+
+
+Processing 00000000.tx.1: Lyme Disease.
+
+Phrase: "Lyme Disease."
+Meta Candidates (3):
+   983 Lyme Disease [Disease or Syndrome]
+   861 Disease [Disease or Syndrome]
+   661 LYME [Bacterium]
+Meta Mapping (983):
+   983 Lyme Disease [Disease or Syndrome]
+
+
+Processing 00000000.tx.2: Raynaud's Disease.  beta-2 beta-3.
+
+Phrase: "Raynaud's Disease.  beta-2 beta-3."
+Meta Candidates (7):
+   829 Raynaud's Disease [Disease or Syndrome]
+   817 MAL-3 [Organic Chemical]
+   795 Disease [Disease or Syndrome]
+   795 Beta, NOS [Plant]
+   795 Beta [Intellectual Product]
+   762 SS <1> (Sezary Syndrome) [Neoplastic Process]
+   762 SS <2> (Sicca Syndrome) [Disease or Syndrome]
+Meta Mapping (730):
+   829 Raynaud's Disease [Disease or Syndrome]
+   762 SS <1> (Sezary Syndrome) [Neoplastic Process]
+   795 Beta [Intellectual Product]
+Meta Mapping (730):
+   829 Raynaud's Disease [Disease or Syndrome]
+   762 SS <1> (Sezary Syndrome) [Neoplastic Process]
+   795 Beta, NOS [Plant]
+Meta Mapping (730):
+   829 Raynaud's Disease [Disease or Syndrome]
+   762 SS <2> (Sicca Syndrome) [Disease or Syndrome]
+   795 Beta [Intellectual Product]
+Meta Mapping (730):
+   829 Raynaud's Disease [Disease or Syndrome]
+   762 SS <2> (Sicca Syndrome) [Disease or Syndrome]
+   795 Beta, NOS [Plant]
+
+
+Processing 00000000.tx.3: n-nitro n-nitrosoguanidine.
+
+Phrase: "n-nitro n-nitrosoguanidine."
+Meta Candidates (2):
+   812 nitrosoguanidine (Nitrosoguanidines) [Organic Chemical]
+   612 ns [Quantitative Concept]
+Meta Mapping (775):
+   612 ns [Quantitative Concept]
+   812 nitrosoguanidine (Nitrosoguanidines) [Organic Chemical]
+
+
+Processing 00000000.tx.4: C3.
+
+Phrase: "C3."
+Meta Candidates (1):
+  1000 C3 (Complement 3) [Amino Acid, Peptide, or Protein,Immunologic Factor]
+Meta Mapping (1000):
+  1000 C3 (Complement 3) [Amino Acid, Peptide, or Protein,Immunologic Factor]
+
+
+Processing 00000000.tx.5: human herpesvirus 1.
+
+Phrase: "human herpesvirus 1."
+Meta Candidates (5):
+   988 Herpesvirus 1, Human [Virus]
+   827 Human [Human]
+   827 Herpesvirus [Virus]
+   827 Herpesvirus, NOS (Human herpes simplex virus, NOS) [Virus]
+   793 Herpesviruses (Herpesviridae) [Virus]
+Meta Mapping (988):
+   988 Herpesvirus 1, Human [Virus]
+
+
+Processing 00000000.tx.6: H-RSD
+
+Phrase: "H-RSD"
+Meta Candidates (3):
+   983 H-RSD [Carbohydrate]
+   694 H+ <2> (Protons) [Element, Ion, or Isotope]
+   694 H+ <1> (Hepatic Involvement) [Intellectual Product]
+Meta Mapping (983):
+   983 H-RSD [Carbohydrate]
+I) head problems & scoring problems:
+
+
+Processing 00000000.tx.1: focus of organized obstruction pneumonia in right upper lobe secondary to obstructive tumor.
+
+Phrase: "focus of organized obstruction pneumonia in right upper lobe secondary to obstructive tumor."
+Meta Candidates (26):
+   813 Tumor, secondary (Neoplasm Metastasis) [Neoplastic Process]
+          Secondaries
+   809 LUNG TUMOR (Lung Neoplasms) [Neoplastic Process]
+   786 Tumour (Neoplasms) [Neoplastic Process]
+   786 Tumor (Tumors <1>) [Neoplastic Process]
+   785 Secondary neoplasm (Carcinoma, metastatic, NOS) [Neoplastic Process]
+   749 Second Neoplasm (Neoplasms, Second Primary) [Neoplastic Process]
+   638 Organized pneumonia [Disease or Syndrome]
+   630 Secondary to [Temporal Concept]
+          Secondary <2>
+   620 Obstruction [Pathologic Function]
+   620 Pneumonia [Disease or Syndrome]
+   620 secondary <1> (Metastatic to) [Spatial Concept]
+   620 Right [Spatial Concept]
+   620 Upper [Spatial Concept]
+   620 Obstructive (Obstructed) [Functional Concept]
+   619 PNEUMONIA LOBAR (Pneumonia, Pneumococcal) [Disease or Syndrome]
+   602 Pulmonary lobe (Lobe of lung, NOS) [Body Part, Organ, or Organ Component]
+   586 Rights [Qualitative Concept]
+   586 Focusing (Observation of focusing) [Organism Function]
+   548 Focal [Spatial Concept]
+   548 Second [Quantitative Concept]
+   548 /second [Quantitative Concept]
+   536 seconds [Temporal Concept]
+   527 Lung [Body Part, Organ, or Organ Component]
+   514 Pulmonary <1> [Spatial Concept]
+Meta Mapping (722):
+   586 Focusing (Observation of focusing) [Organism Function]
+   620 Obstruction [Pathologic Function]
+   619 PNEUMONIA LOBAR (Pneumonia, Pneumococcal) [Disease or Syndrome]
+   620 Right [Spatial Concept]
+   620 Upper [Spatial Concept]
+   630 Secondary to [Temporal Concept]
+   620 Obstructive (Obstructed) [Functional Concept]
+   786 Tumour (Neoplasms) [Neoplastic Process]
+Meta Mapping (722):
+   586 Focusing (Observation of focusing) [Organism Function]
+   620 Obstruction [Pathologic Function]
+   619 PNEUMONIA LOBAR (Pneumonia, Pneumococcal) [Disease or Syndrome]
+   620 Right [Spatial Concept]
+   620 Upper [Spatial Concept]
+   630 Secondary to [Temporal Concept]
+   620 Obstructive (Obstructed) [Functional Concept]
+   786 Tumor (Tumors <1>) [Neoplastic Process]
+
+
+Processing 00000000.tx.2: Secondary to
+
+Phrase: "Secondary to"
+Meta Candidates (7):
+  1000 Secondary to [Temporal Concept]
+          Secondary <2>
+   694 secondary <1> (Metastatic to) [Spatial Concept]
+   661 Secondaries (Neoplasm Metastasis) [Neoplastic Process]
+   623 Second [Quantitative Concept]
+   623 /second [Quantitative Concept]
+   611 seconds [Temporal Concept]
+Meta Mapping (1000):
+  1000 Secondary to [Temporal Concept]
+II) head problems & scoring problems:
+
+
+Processing 00000000.tx.1: focus of organized obstruction pneumonia in right upper lobe secondary to obstructive tumor
+
+Phrase: "focus of organized obstruction pneumonia in right upper lobe secondary to obstructive tumor"
+Meta Candidates (26):
+   749 Tumor, secondary (Neoplasm Metastasis) [Neoplastic Process]
+          Secondaries
+   735 Tumour (Neoplasms) [Neoplastic Process]
+   735 Tumor (Tumors <1>) [Neoplastic Process]
+   721 Secondary neoplasm (Carcinoma, metastatic, NOS) [Neoplastic Process]
+   702 LUNG TUMOR (Lung Neoplasms) [Neoplastic Process]
+   685 Second Neoplasm (Neoplasms, Second Primary) [Neoplastic Process]
+   583 Secondary to [Temporal Concept]
+          Secondary <2>
+   582 Organized pneumonia [Disease or Syndrome]
+   569 Obstruction [Pathologic Function]
+   569 Pneumonia [Disease or Syndrome]
+   569 secondary <1> (Metastatic to) [Spatial Concept]
+   569 Right [Spatial Concept]
+   569 Upper [Spatial Concept]
+   569 Obstructive (Obstructed) [Functional Concept]
+   546 PNEUMONIA LOBAR (Pneumonia, Pneumococcal) [Disease or Syndrome]
+   535 Rights [Qualitative Concept]
+   535 Focusing (Observation of focusing) [Organism Function]
+   529 Pulmonary lobe (Lobe of lung, NOS) [Body Part, Organ, or Organ Component]
+   497 Focal [Spatial Concept]
+   497 Second [Quantitative Concept]
+   497 /second [Quantitative Concept]
+   485 seconds [Temporal Concept]
+   476 Lung [Body Part, Organ, or Organ Component]
+   462 Pulmonary <1> [Spatial Concept]
+Meta Mapping (684):
+   535 Focusing (Observation of focusing) [Organism Function]
+   569 Obstruction [Pathologic Function]
+   546 PNEUMONIA LOBAR (Pneumonia, Pneumococcal) [Disease or Syndrome]
+   569 Right [Spatial Concept]
+   569 Upper [Spatial Concept]
+   583 Secondary to [Temporal Concept]
+   569 Obstructive (Obstructed) [Functional Concept]
+   735 Tumour (Neoplasms) [Neoplastic Process]
+Meta Mapping (684):
+   535 Focusing (Observation of focusing) [Organism Function]
+   569 Obstruction [Pathologic Function]
+   546 PNEUMONIA LOBAR (Pneumonia, Pneumococcal) [Disease or Syndrome]
+   569 Right [Spatial Concept]
+   569 Upper [Spatial Concept]
+   583 Secondary to [Temporal Concept]
+   569 Obstructive (Obstructed) [Functional Concept]
+   735 Tumor (Tumors <1>) [Neoplastic Process]
+-qI option (machine output with CUIs displayed):
+args('MetaMap -Z 99 -qI file5.txt tmp',[mm_data_year-'99',machine_output-[],show_cuis-[],infile-'file5.txt',outfile-tmp]).
+aas([]).
+neg_list([]).
+utterance('00000000.tx.1',"Lung Cancer",0/12).
+phrase('Lung Cancer',[mod([inputmatch(['Lung']),tag(noun),tokens([lung])]),head([inputmatch(['Cancer']),tag(noun),tokens([cancer])])],0/11).
+candidates([ev(-1000,'C0242379','Lung Cancer','Lung Cancer',[lung,cancer],[neop],[[[1,1],[1,1],0],[[2,2],[2,2],0]],yes,no,['MSH99','BI98','PDQ98','RCD98','SNMI98','COS89','CST95','WHO97','RCDAE'],[0/4,5/6]),ev(-861,'C0006826','Cancer <1>','Cancer <1>',[cancer],[neop],[[[2,2],[1,1],0]],yes,no,['MTH','MSH99','RCD98','SNM2','SNMI98','PSY94','CST95','DXP94','MIM93','AOD95','PDQ98','AIR93','COS89','BI98','ICD10','ICD99','RCDSY','ICD89','WHO97','COS93','RCDAE','CSP98'],[5/6]),ev(-694,'C0024109','Lung','Lung',[lung],[bpoc],[[[1,1],[1,1],0]],no,no,['CST95','MSH99','PSY94','RCD98','SNM2','UWDA97','AOD95','CSP98','SNMI98','LCH90'],[0/4]),ev(-638,'C0175632','Pulmonary <1>','Pulmonary <1>',[pulmonary],[spco],[[[1,1],[1,1],2]],no,no,['MTH','AIR93','ALT98','RCD98','SNMI98','CSP98','PDQ98'],[0/4]),ev(-601,'C0032285','Pneumonia','Pneumonia',[pneumonia],[dsyn],[[[1,1],[1,1],5]],no,no,['ICD91','ICPC93','LCH90','MSH99','NOC97','PSY94','RCD98','SNM2','COS89','CST95','DXP94','WHO97','AOD95','BI98','CSP98','SNMI98','COS92','ICD10'],[0/4])]).
+mappings([map(-1000,[ev(-1000,'C0242379','Lung Cancer','Lung Cancer',[lung,cancer],[neop],[[[1,1],[1,1],0],[[2,2],[2,2],0]],yes,no,['MSH99','BI98','PDQ98','RCD98','SNMI98','COS89','CST95','WHO97','RCDAE'],[0/4,5/6])])]).
+'EOU'.
+--debug 5 -zb option:
+
+[the,effect,of,obstructive,sleep,apnea]
+[effect]
+[[[2,2],[1,1],0]]
+[[1],[1]]
+[]
+= 632 ~ 0.00, 1.00, 0.72, 0.68, 0.00 <-- Effect
+
+[the,effect,of,obstructive,sleep,apnea]
+[obstructive]
+[[[4,4],[1,1],0]]
+[[1],[1]]
+[]
+= 632 ~ 0.00, 1.00, 0.72, 0.68, 0.00 <-- Obstructive
+
+[the,effect,of,obstructive,sleep,apnea]
+[obstructive,apnea]
+[[[4,4],[1,1],0],[[6,6],[2,2],0]]
+[[1,1],[2]]
+[]
+= 839 ~ 1.00, 1.00, 0.83, 0.69, 0.00 <-- Apnea, Obstructive
+
+[the,effect,of,obstructive,sleep,apnea]
+[obstructive,apneas]
+[[[4,4],[1,1],0],[[6,6],[2,2],1]]
+[[1,1],[2]]
+[]
+= 822 ~ 1.00, 0.90, 0.83, 0.69, 0.00 <-- Apneas, Obstructive
+
+[the,effect,of,obstructive,sleep,apnea]
+[obstructive,sleep,apnea]
+[[[4,4],[1,1],0],[[5,5],[2,2],0],[[6,6],[3,3],0]]
+[[3],[3]]
+[]
+= 861 ~ 1.00, 1.00, 0.83, 0.75, 0.00 <-- Obstructive sleep apnea
+
+[the,effect,of,obstructive,sleep,apnea]
+[obstructive,sleep,apnoea]
+[[[4,4],[1,1],0],[[5,5],[2,2],0],[[6,6],[3,3],0]]
+[[3],[3]]
+[]
+= 861 ~ 1.00, 1.00, 0.83, 0.75, 0.00 <-- Obstructive sleep apnoea
+
+[the,effect,of,obstructive,sleep,apnea]
+[sleep]
+[[[5,5],[1,1],0]]
+[[1],[1]]
+[]
+= 632 ~ 0.00, 1.00, 0.72, 0.68, 0.00 <-- Sleep
+
+[the,effect,of,obstructive,sleep,apnea]
+[sleep]
+[[[5,5],[1,1],0]]
+[[1],[1]]
+[]
+= 632 ~ 0.00, 1.00, 0.72, 0.68, 0.00 <-- Sleep
+
+[the,effect,of,obstructive,sleep,apnea]
+[sleep,apnea]
+[[[5,5],[1,1],0],[[6,6],[2,2],0]]
+[[2],[2]]
+[]
+= 827 ~ 1.00, 1.00, 0.78, 0.70, 0.00 <-- Apnea, Sleep
+
+[the,effect,of,obstructive,sleep,apnea]
+[sleep,apnea]
+[[[5,5],[1,1],0],[[6,6],[2,2],0]]
+[[2],[2]]
+[]
+= 827 ~ 1.00, 1.00, 0.78, 0.70, 0.00 <-- Sleep apnea, NOS
+
+[the,effect,of,obstructive,sleep,apnea]
+[sleep,apneas]
+[[[5,5],[1,1],0],[[6,6],[2,2],1]]
+[[2],[2]]
+[]
+= 810 ~ 1.00, 0.90, 0.78, 0.70, 0.00 <-- Apneas, Sleep
+
+[the,effect,of,obstructive,sleep,apnea]
+[sleep,apnoea]
+[[[5,5],[1,1],0],[[6,6],[2,2],0]]
+[[2],[2]]
+[]
+= 827 ~ 1.00, 1.00, 0.78, 0.70, 0.00 <-- Sleep apnoea <1>
+
+[the,effect,of,obstructive,sleep,apnea]
+[sleep,apnoea]
+[[[5,5],[1,1],0],[[6,6],[2,2],0]]
+[[2],[2]]
+[]
+= 827 ~ 1.00, 1.00, 0.78, 0.70, 0.00 <-- Sleep apnoea, NOS
+
+[the,effect,of,obstructive,sleep,apnea]
+[sleeping]
+[[[5,5],[1,1],1]]
+[[1],[1]]
+[]
+= 599 ~ 0.00, 0.80, 0.72, 0.68, 0.00 <-- Sleeping
+
+[the,effect,of,obstructive,sleep,apnea]
+[sleeplessness]
+[[[5,5],[1,1],6]]
+[[1],[1]]
+[]
+= 532 ~ 0.00, 0.40, 0.72, 0.68, 0.00 <-- Sleeplessness
+
+[the,effect,of,obstructive,sleep,apnea]
+[sleepy]
+[[[5,5],[1,1],3]]
+[[1],[1]]
+[]
+= 561 ~ 0.00, 0.57, 0.72, 0.68, 0.00 <-- Sleepy
+
+[the,effect,of,obstructive,sleep,apnea]
+[apnea]
+[[[6,6],[1,1],0]]
+[[1],[1]]
+[]
+= 799 ~ 1.00, 1.00, 0.72, 0.68, 0.00 <-- Apnea
+
+[the,effect,of,obstructive,sleep,apnea]
+[apneas]
+[[[6,6],[1,1],1]]
+[[1],[1]]
+[]
+= 766 ~ 1.00, 0.80, 0.72, 0.68, 0.00 <-- Apneas
+
+[the,effect,of,obstructive,sleep,apnea]
+[apnoea]
+[[[6,6],[1,1],0]]
+[[1],[1]]
+[]
+= 799 ~ 1.00, 1.00, 0.72, 0.68, 0.00 <-- Apnoea
+
+  Effective
+  Obstructive sleep apnea syndrome
+[[[2,2],[1,1],0],[[4,4],[2,2],0],[[5,5],[3,3],0],[[6,6],[4,4],0]]
+[[1,3],[1,3]]
+= 817 ~ 1.00, 1.00, 0.94, 0.51, 0.00
+
+  Effective
+  Apnea, Obstructive
+  Sleep
+[[[2,2],[1,1],0],[[4,4],[2,2],0],[[5,5],[4,4],0],[[6,6],[3,3],0]]
+[[1,3],[1,2,1]]
+= 762 ~ 1.00, 1.00, 0.94, 0.34, 0.00
+
+  Effective
+  Apnea, Obstructive
+  Asleep
+[[[2,2],[1,1],0],[[4,4],[2,2],0],[[5,5],[4,4],0],[[6,6],[3,3],0]]
+[[1,3],[1,2,1]]
+= 762 ~ 1.00, 1.00, 0.94, 0.34, 0.00
+
+  Effective
+  Apnea, Obstructive
+  Sleepy
+[[[2,2],[1,1],0],[[4,4],[2,2],0],[[5,5],[4,4],3],[[6,6],[3,3],0]]
+[[1,3],[1,2,1]]
+= 744 ~ 1.00, 0.89, 0.94, 0.34, 0.00
+
+  Effective
+  Apnea, Obstructive
+  Insomnia
+[[[2,2],[1,1],0],[[4,4],[2,2],0],[[5,5],[4,4],6],[[6,6],[3,3],0]]
+[[1,3],[1,2,1]]
+= 737 ~ 1.00, 0.85, 0.94, 0.34, 0.00
+
+  Effective
+  Obstructed
+  Sleep Apnea Syndromes
+[[[2,2],[1,1],0],[[4,4],[2,2],0],[[5,5],[3,3],0],[[6,6],[4,4],0]]
+[[1,3],[1,1,2]]
+= 762 ~ 1.00, 1.00, 0.94, 0.34, 0.00
+
+  Effective
+  Obstructed
+  Apnea, Sleep
+[[[2,2],[1,1],0],[[4,4],[2,2],0],[[5,5],[3,3],0],[[6,6],[4,4],0]]
+[[1,3],[1,1,2]]
+= 762 ~ 1.00, 1.00, 0.94, 0.34, 0.00
+
+  Effective
+  Obstructed
+  Sleep
+  Apnea
+[[[2,2],[1,1],0],[[4,4],[2,2],0],[[5,5],[3,3],0],[[6,6],[4,4],0]]
+[[1,3],[1,1,1,1]]
+= 734 ~ 1.00, 1.00, 0.94, 0.26, 0.00
+
+  Effective
+  Obstructed
+  Asleep
+  Apnea
+[[[2,2],[1,1],0],[[4,4],[2,2],0],[[5,5],[3,3],0],[[6,6],[4,4],0]]
+[[1,3],[1,1,1,1]]
+= 734 ~ 1.00, 1.00, 0.94, 0.26, 0.00
+
+  Effective
+  Obstructed
+  Sleepy
+  Apnea
+[[[2,2],[1,1],0],[[4,4],[2,2],0],[[5,5],[3,3],3],[[6,6],[4,4],0]]
+[[1,3],[1,1,1,1]]
+= 716 ~ 1.00, 0.89, 0.94, 0.26, 0.00
+
+  Effective
+  Obstructed
+  Insomnia
+  Apnea
+[[[2,2],[1,1],0],[[4,4],[2,2],0],[[5,5],[3,3],6],[[6,6],[4,4],0]]
+[[1,3],[1,1,1,1]]
+= 709 ~ 1.00, 0.85, 0.94, 0.26, 0.00
+
+[lung,cancer,right,upper,lobe,of,lung]
+[lung]
+[[[1,1],[1,1],0]]
+[[1],[1]]
+[]
+= 629 ~ 0.00, 1.00, 0.71, 0.67, 0.00 <-- Lung
+
+[lung,cancer,right,upper,lobe,of,lung]
+[lung,cancer]
+[[[1,1],[1,1],0],[[2,2],[2,2],0]]
+[[2],[2]]
+[]
+= 651 ~ 0.00, 1.00, 0.76, 0.69, 0.00 <-- Lung Cancer
+
+[lung,cancer,right,upper,lobe,of,lung]
+[lung,cancers]
+[[[1,1],[1,1],0],[[2,2],[2,2],1]]
+[[2],[2]]
+[]
+= 635 ~ 0.00, 0.90, 0.76, 0.69, 0.00 <-- Lung Cancers
+
+[lung,cancer,right,upper,lobe,of,lung]
+[lungs]
+[[[1,1],[1,1],1]]
+[[1],[1]]
+[]
+= 595 ~ 0.00, 0.80, 0.71, 0.67, 0.00 <-- Lungs
+
+[lung,cancer,right,upper,lobe,of,lung]
+[pneumonia]
+[[[1,1],[1,1],5]]
+[[1],[1]]
+[]
+= 536 ~ 0.00, 0.44, 0.71, 0.67, 0.00 <-- Pneumonia
+
+[lung,cancer,right,upper,lobe,of,lung]
+[pneumonia,lobar]
+[[[1,1],[1,1],5],[[5,5],[2,2],3]]
+[[1,1],[2]]
+[]
+= 613 ~ 0.00, 0.51, 0.90, 0.68, 0.00 <-- PNEUMONIA LOBAR
+
+[lung,cancer,right,upper,lobe,of,lung]
+[pneumonias]
+[[[1,1],[1,1],6]]
+[[1],[1]]
+[]
+= 529 ~ 0.00, 0.40, 0.71, 0.67, 0.00 <-- Pneumonias
+
+[lung,cancer,right,upper,lobe,of,lung]
+[pulmonary]
+[[[1,1],[1,1],2]]
+[[1],[1]]
+[]
+= 573 ~ 0.00, 0.67, 0.71, 0.67, 0.00 <-- Pulmonary <1>
+
+[lung,cancer,right,upper,lobe,of,lung]
+[pulmonary,lobe]
+[[[1,1],[1,1],2],[[5,5],[2,2],0]]
+[[1,1],[2]]
+[]
+= 667 ~ 0.00, 0.83, 0.90, 0.68, 0.00 <-- Pulmonary lobe
+
+[lung,cancer,right,upper,lobe,of,lung]
+[pulmonary,pulmonary]
+[[[1,1],[1,1],2],[[7,7],[2,2],2]]
+[[1,1],[2]]
+[]
+= 837 ~ 1.00, 0.67, 1.00, 0.68, 0.00 <-- Pulmonary-pulmonary
+
+[lung,cancer,right,upper,lobe,of,lung]
+[cancer]
+[[[2,2],[1,1],0]]
+[[1],[1]]
+[]
+= 629 ~ 0.00, 1.00, 0.71, 0.67, 0.00 <-- Cancer <1>
+
+[lung,cancer,right,upper,lobe,of,lung]
+[cancers]
+[[[2,2],[1,1],1]]
+[[1],[1]]
+[]
+= 595 ~ 0.00, 0.80, 0.71, 0.67, 0.00 <-- Cancers
+
+[lung,cancer,right,upper,lobe,of,lung]
+[right]
+[[[3,3],[1,1],0]]
+[[1],[1]]
+[]
+= 629 ~ 0.00, 1.00, 0.71, 0.67, 0.00 <-- Right
+
+[lung,cancer,right,upper,lobe,of,lung]
+[right,lung]
+[[[3,3],[1,1],0],[[7,7],[2,2],0]]
+[[1,1],[2]]
+[]
+= 861 ~ 1.00, 1.00, 0.90, 0.68, 0.00 <-- Right lung, NOS
+
+[lung,cancer,right,upper,lobe,of,lung]
+[right,upper,lobe,of,lung]
+[[[3,3],[1,1],0],[[4,4],[2,2],0],[[5,5],[3,3],0],[[6,6],[4,4],0],[[7,7],[5,5],0]]
+[[5],[5]]
+[]
+= 913 ~ 1.00, 1.00, 0.90, 0.84, 0.00 <-- Right upper lobe of lung, NOS
+
+[lung,cancer,right,upper,lobe,of,lung]
+[right,upper,lobe,pneumonia]
+[[[3,3],[1,1],0],[[4,4],[2,2],0],[[5,5],[3,3],0],[[7,7],[4,4],5]]
+[[3,1],[4]]
+[]
+= 856 ~ 1.00, 0.86, 0.90, 0.73, 0.00 <-- Right upper lobe pneumonia
+
+[lung,cancer,right,upper,lobe,of,lung]
+[rights]
+[[[3,3],[1,1],1]]
+[[1],[1]]
+[]
+= 595 ~ 0.00, 0.80, 0.71, 0.67, 0.00 <-- Rights
+
+[lung,cancer,right,upper,lobe,of,lung]
+[upper]
+[[[4,4],[1,1],0]]
+[[1],[1]]
+[]
+= 629 ~ 0.00, 1.00, 0.71, 0.67, 0.00 <-- Upper
+
+[lung,cancer,right,upper,lobe,of,lung]
+[upper,lobe,of,lung]
+[[[4,4],[1,1],0],[[5,5],[2,2],0],[[6,6],[3,3],0],[[7,7],[4,4],0]]
+[[4],[4]]
+[]
+= 877 ~ 1.00, 1.00, 0.86, 0.78, 0.00 <-- Upper lobe of lung, NOS
+
+[lung,cancer,right,upper,lobe,of,lung]
+[lobar,pneumonia]
+[[[5,5],[1,1],3],[[7,7],[2,2],5]]
+[[1,1],[2]]
+[]
+= 747 ~ 1.00, 0.51, 0.81, 0.68, 0.00 <-- Pneumonia, Lobar
+
+[lung,cancer,right,upper,lobe,of,lung]
+[lobar,pneumonias]
+[[[5,5],[1,1],3],[[7,7],[2,2],6]]
+[[1,1],[2]]
+[]
+= 744 ~ 1.00, 0.49, 0.81, 0.68, 0.00 <-- Lobar Pneumonias
+
+[lung,cancer,right,upper,lobe,of,lung]
+[lobe,of,lung]
+[[[5,5],[1,1],0],[[6,6],[2,2],0],[[7,7],[3,3],0]]
+[[3],[3]]
+[]
+= 845 ~ 1.00, 1.00, 0.81, 0.73, 0.00 <-- Lobe of lung, NOS
+
+  Lung Cancer
+  Right upper lobe of lung, NOS
+[[[1,1],[1,1],0],[[2,2],[2,2],0],[[3,3],[3,3],0],[[4,4],[4,4],0],[[5,5],[5,5],0],[[6,6],[6,6],0],[[7,7],[7,7],0]]
+[[7],[2,5]]
+= 909 ~ 1.00, 1.00, 1.00, 0.73, 0.00
+
+  Lung
+  Cancer <1>
+  Right upper lobe of lung, NOS
+[[[1,1],[1,1],0],[[2,2],[2,2],0],[[3,3],[3,3],0],[[4,4],[4,4],0],[[5,5],[5,5],0],[[6,6],[6,6],0],[[7,7],[7,7],0]]
+[[7],[1,1,5]]
+= 900 ~ 1.00, 1.00, 1.00, 0.70, 0.00
+
+  Pulmonary <1>
+  Cancer <1>
+  Right upper lobe of lung, NOS
+[[[1,1],[1,1],2],[[2,2],[2,2],0],[[3,3],[3,3],0],[[4,4],[4,4],0],[[5,5],[5,5],0],[[6,6],[6,6],0],[[7,7],[7,7],0]]
+[[7],[1,1,5]]
+= 892 ~ 1.00, 0.95, 1.00, 0.70, 0.00
+
+  Pneumonia
+  Cancer <1>
+  Right upper lobe of lung, NOS
+[[[1,1],[1,1],5],[[2,2],[2,2],0],[[3,3],[3,3],0],[[4,4],[4,4],0],[[5,5],[5,5],0],[[6,6],[6,6],0],[[7,7],[7,7],0]]
+[[7],[1,1,5]]
+= 886 ~ 1.00, 0.92, 1.00, 0.70, 0.00
+
+  Lung Cancer
+  Right
+  Upper lobe of lung, NOS
+[[[1,1],[1,1],0],[[2,2],[2,2],0],[[3,3],[3,3],0],[[4,4],[4,4],0],[[5,5],[5,5],0],[[6,6],[6,6],0],[[7,7],[7,7],0]]
+[[7],[2,1,4]]
+= 873 ~ 1.00, 1.00, 1.00, 0.62, 0.00
+
+  Lung Cancer
+  Rights
+  Upper lobe of lung, NOS
+[[[1,1],[1,1],0],[[2,2],[2,2],0],[[3,3],[3,3],1],[[4,4],[4,4],0],[[5,5],[5,5],0],[[6,6],[6,6],0],[[7,7],[7,7],0]]
+[[7],[2,1,4]]
+= 868 ~ 1.00, 0.97, 1.00, 0.62, 0.00
+
+  Lung
+  Cancer <1>
+  Right
+  Upper lobe of lung, NOS
+[[[1,1],[1,1],0],[[2,2],[2,2],0],[[3,3],[3,3],0],[[4,4],[4,4],0],[[5,5],[5,5],0],[[6,6],[6,6],0],[[7,7],[7,7],0]]
+[[7],[1,1,1,4]]
+= 863 ~ 1.00, 1.00, 1.00, 0.59, 0.00
+
+  Lung
+  Cancer <1>
+  Rights
+  Upper lobe of lung, NOS
+[[[1,1],[1,1],0],[[2,2],[2,2],0],[[3,3],[3,3],1],[[4,4],[4,4],0],[[5,5],[5,5],0],[[6,6],[6,6],0],[[7,7],[7,7],0]]
+[[7],[1,1,1,4]]
+= 859 ~ 1.00, 0.97, 1.00, 0.59, 0.00
+
+  Pulmonary <1>
+  Cancer <1>
+  Right
+  Upper lobe of lung, NOS
+[[[1,1],[1,1],2],[[2,2],[2,2],0],[[3,3],[3,3],0],[[4,4],[4,4],0],[[5,5],[5,5],0],[[6,6],[6,6],0],[[7,7],[7,7],0]]
+[[7],[1,1,1,4]]
+= 856 ~ 1.00, 0.95, 1.00, 0.59, 0.00
+
+  Pneumonia
+  Cancer <1>
+  Right
+  Upper lobe of lung, NOS
+[[[1,1],[1,1],5],[[2,2],[2,2],0],[[3,3],[3,3],0],[[4,4],[4,4],0],[[5,5],[5,5],0],[[6,6],[6,6],0],[[7,7],[7,7],0]]
+[[7],[1,1,1,4]]
+= 850 ~ 1.00, 0.92, 1.00, 0.59, 0.00
+
+  Pulmonary <1>
+  Cancer <1>
+  Rights
+  Upper lobe of lung, NOS
+[[[1,1],[1,1],2],[[2,2],[2,2],0],[[3,3],[3,3],1],[[4,4],[4,4],0],[[5,5],[5,5],0],[[6,6],[6,6],0],[[7,7],[7,7],0]]
+[[7],[1,1,1,4]]
+= 851 ~ 1.00, 0.92, 1.00, 0.59, 0.00
+
+  Pneumonia
+  Cancer <1>
+  Rights
+  Upper lobe of lung, NOS
+[[[1,1],[1,1],5],[[2,2],[2,2],0],[[3,3],[3,3],1],[[4,4],[4,4],0],[[5,5],[5,5],0],[[6,6],[6,6],0],[[7,7],[7,7],0]]
+[[7],[1,1,1,4]]
+= 845 ~ 1.00, 0.89, 1.00, 0.59, 0.00
+
+  Lung Cancer
+  Right lung, NOS
+  Upper
+[[[1,1],[1,1],0],[[2,2],[2,2],0],[[3,3],[3,3],0],[[4,4],[5,5],0],[[7,7],[4,4],0]]
+[[4,1],[2,2,1]]
+= 785 ~ 1.00, 1.00, 1.00, 0.36, 0.00
+
+  Lung
+  Cancer <1>
+  Right lung, NOS
+  Upper
+[[[1,1],[1,1],0],[[2,2],[2,2],0],[[3,3],[3,3],0],[[4,4],[5,5],0],[[7,7],[4,4],0]]
+[[4,1],[1,1,2,1]]
+= 767 ~ 1.00, 1.00, 1.00, 0.30, 0.00
+
+  Pulmonary <1>
+  Cancer <1>
+  Right lung, NOS
+  Upper
+[[[1,1],[1,1],2],[[2,2],[2,2],0],[[3,3],[3,3],0],[[4,4],[5,5],0],[[7,7],[4,4],0]]
+[[4,1],[1,1,2,1]]
+= 756 ~ 1.00, 0.93, 1.00, 0.30, 0.00
+
+  Pneumonia
+  Cancer <1>
+  Right lung, NOS
+  Upper
+[[[1,1],[1,1],5],[[2,2],[2,2],0],[[3,3],[3,3],0],[[4,4],[5,5],0],[[7,7],[4,4],0]]
+[[4,1],[1,1,2,1]]
+= 748 ~ 1.00, 0.89, 1.00, 0.30, 0.00
+
+  Lung Cancer
+  Right upper zone pneumonia
+[[[1,1],[1,1],0],[[2,2],[2,2],0],[[3,3],[3,3],0],[[4,4],[4,4],0],[[5,5],[5,5],0],[[7,7],[6,6],5]]
+[[5,1],[2,4]]
+= 833 ~ 1.00, 0.91, 1.00, 0.55, 0.00
+
+  Lung
+  Cancer <1>
+  Right upper zone pneumonia
+[[[1,1],[1,1],0],[[2,2],[2,2],0],[[3,3],[3,3],0],[[4,4],[4,4],0],[[5,5],[5,5],0],[[7,7],[6,6],5]]
+[[5,1],[1,1,4]]
+= 821 ~ 1.00, 0.91, 1.00, 0.51, 0.00
+
+  Pulmonary <1>
+  Cancer <1>
+  Right upper zone pneumonia
+[[[1,1],[1,1],2],[[2,2],[2,2],0],[[3,3],[3,3],0],[[4,4],[4,4],0],[[5,5],[5,5],0],[[7,7],[6,6],5]]
+[[5,1],[1,1,4]]
+= 812 ~ 1.00, 0.85, 1.00, 0.51, 0.00
+
+  Pneumonia
+  Cancer <1>
+  Right upper zone pneumonia
+[[[1,1],[1,1],5],[[2,2],[2,2],0],[[3,3],[3,3],0],[[4,4],[4,4],0],[[5,5],[5,5],0],[[7,7],[6,6],5]]
+[[5,1],[1,1,4]]
+= 805 ~ 1.00, 0.81, 1.00, 0.51, 0.00
+
+  Lung Cancer
+  Right
+  Upper
+  Lobe of lung, NOS
+[[[1,1],[1,1],0],[[2,2],[2,2],0],[[3,3],[3,3],0],[[4,4],[4,4],0],[[5,5],[5,5],0],[[6,6],[6,6],0],[[7,7],[7,7],0]]
+[[7],[2,1,1,3]]
+= 845 ~ 1.00, 1.00, 1.00, 0.54, 0.00
+
+  Lung Cancer
+  Rights
+  Upper
+  Lobe of lung, NOS
+[[[1,1],[1,1],0],[[2,2],[2,2],0],[[3,3],[3,3],1],[[4,4],[4,4],0],[[5,5],[5,5],0],[[6,6],[6,6],0],[[7,7],[7,7],0]]
+[[7],[2,1,1,3]]
+= 841 ~ 1.00, 0.97, 1.00, 0.54, 0.00
+
+  Lung
+  Cancer <1>
+  Right
+  Upper
+  Lobe of lung, NOS
+[[[1,1],[1,1],0],[[2,2],[2,2],0],[[3,3],[3,3],0],[[4,4],[4,4],0],[[5,5],[5,5],0],[[6,6],[6,6],0],[[7,7],[7,7],0]]
+[[7],[1,1,1,1,3]]
+= 836 ~ 1.00, 1.00, 1.00, 0.51, 0.00
+
+  Lung
+  Cancer <1>
+  Rights
+  Upper
+  Lobe of lung, NOS
+[[[1,1],[1,1],0],[[2,2],[2,2],0],[[3,3],[3,3],1],[[4,4],[4,4],0],[[5,5],[5,5],0],[[6,6],[6,6],0],[[7,7],[7,7],0]]
+[[7],[1,1,1,1,3]]
+= 831 ~ 1.00, 0.97, 1.00, 0.51, 0.00
+
+  Pulmonary <1>
+  Cancer <1>
+  Right
+  Upper
+  Lobe of lung, NOS
+[[[1,1],[1,1],2],[[2,2],[2,2],0],[[3,3],[3,3],0],[[4,4],[4,4],0],[[5,5],[5,5],0],[[6,6],[6,6],0],[[7,7],[7,7],0]]
+[[7],[1,1,1,1,3]]
+= 828 ~ 1.00, 0.95, 1.00, 0.51, 0.00
+
+  Pneumonia
+  Cancer <1>
+  Right
+  Upper
+  Lobe of lung, NOS
+[[[1,1],[1,1],5],[[2,2],[2,2],0],[[3,3],[3,3],0],[[4,4],[4,4],0],[[5,5],[5,5],0],[[6,6],[6,6],0],[[7,7],[7,7],0]]
+[[7],[1,1,1,1,3]]
+= 823 ~ 1.00, 0.92, 1.00, 0.51, 0.00
+
+  Pulmonary <1>
+  Cancer <1>
+  Rights
+  Upper
+  Lobe of lung, NOS
+[[[1,1],[1,1],2],[[2,2],[2,2],0],[[3,3],[3,3],1],[[4,4],[4,4],0],[[5,5],[5,5],0],[[6,6],[6,6],0],[[7,7],[7,7],0]]
+[[7],[1,1,1,1,3]]
+= 824 ~ 1.00, 0.92, 1.00, 0.51, 0.00
+
+  Pneumonia
+  Cancer <1>
+  Rights
+  Upper
+  Lobe of lung, NOS
+[[[1,1],[1,1],5],[[2,2],[2,2],0],[[3,3],[3,3],1],[[4,4],[4,4],0],[[5,5],[5,5],0],[[6,6],[6,6],0],[[7,7],[7,7],0]]
+[[7],[1,1,1,1,3]]
+= 818 ~ 1.00, 0.89, 1.00, 0.51, 0.00
+
+  Pulmonary artery and pulmonary artery
+  Cancer <1>
+  Right
+  Upper
+[[[1,1],[1,1],2],[[2,2],[3,3],0],[[3,3],[4,4],0],[[4,4],[5,5],0],[[7,7],[2,2],2]]
+[[4,1],[2,1,1,1]]
+= 745 ~ 1.00, 0.87, 1.00, 0.30, 0.00
+
+  Pulmonary artery and pulmonary artery
+  Cancer <1>
+  Rights
+  Upper
+[[[1,1],[1,1],2],[[2,2],[3,3],0],[[3,3],[4,4],1],[[4,4],[5,5],0],[[7,7],[2,2],2]]
+[[4,1],[2,1,1,1]]
+= 738 ~ 1.00, 0.83, 1.00, 0.30, 0.00
+
+  Lung Cancer
+  Right
+  Upper
+  Pneumonia, Pneumococcal
+[[[1,1],[1,1],0],[[2,2],[2,2],0],[[3,3],[3,3],0],[[4,4],[4,4],0],[[5,5],[5,5],3],[[7,7],[6,6],5]]
+[[5,1],[2,1,1,2]]
+= 760 ~ 1.00, 0.84, 1.00, 0.36, 0.00
+
+  Lung Cancer
+  Rights
+  Upper
+  Pneumonia, Pneumococcal
+[[[1,1],[1,1],0],[[2,2],[2,2],0],[[3,3],[3,3],1],[[4,4],[4,4],0],[[5,5],[5,5],3],[[7,7],[6,6],5]]
+[[5,1],[2,1,1,2]]
+= 754 ~ 1.00, 0.80, 1.00, 0.36, 0.00
+
+  Lung
+  Cancer <1>
+  Right
+  Upper
+  Pneumonia, Pneumococcal
+[[[1,1],[1,1],0],[[2,2],[2,2],0],[[3,3],[3,3],0],[[4,4],[4,4],0],[[5,5],[5,5],3],[[7,7],[6,6],5]]
+[[5,1],[1,1,1,1,2]]
+= 747 ~ 1.00, 0.84, 1.00, 0.33, 0.00
+
+  Lung
+  Cancer <1>
+  Rights
+  Upper
+  Pneumonia, Pneumococcal
+[[[1,1],[1,1],0],[[2,2],[2,2],0],[[3,3],[3,3],1],[[4,4],[4,4],0],[[5,5],[5,5],3],[[7,7],[6,6],5]]
+[[5,1],[1,1,1,1,2]]
+= 742 ~ 1.00, 0.80, 1.00, 0.33, 0.00
+
+  Pulmonary <1>
+  Cancer <1>
+  Right
+  Upper
+  Pneumonia, Pneumococcal
+[[[1,1],[1,1],2],[[2,2],[2,2],0],[[3,3],[3,3],0],[[4,4],[4,4],0],[[5,5],[5,5],3],[[7,7],[6,6],5]]
+[[5,1],[1,1,1,1,2]]
+= 738 ~ 1.00, 0.78, 1.00, 0.33, 0.00
+
+  Pneumonia
+  Cancer <1>
+  Right
+  Upper
+  Pneumonia, Pneumococcal
+[[[1,1],[1,1],5],[[2,2],[2,2],0],[[3,3],[3,3],0],[[4,4],[4,4],0],[[5,5],[5,5],3],[[7,7],[6,6],5]]
+[[5,1],[1,1,1,1,2]]
+= 732 ~ 1.00, 0.74, 1.00, 0.33, 0.00
+
+  Pulmonary <1>
+  Cancer <1>
+  Rights
+  Upper
+  Pneumonia, Pneumococcal
+[[[1,1],[1,1],2],[[2,2],[2,2],0],[[3,3],[3,3],1],[[4,4],[4,4],0],[[5,5],[5,5],3],[[7,7],[6,6],5]]
+[[5,1],[1,1,1,1,2]]
+= 732 ~ 1.00, 0.75, 1.00, 0.33, 0.00
+
+  Pneumonia
+  Cancer <1>
+  Rights
+  Upper
+  Pneumonia, Pneumococcal
+[[[1,1],[1,1],5],[[2,2],[2,2],0],[[3,3],[3,3],1],[[4,4],[4,4],0],[[5,5],[5,5],3],[[7,7],[6,6],5]]
+[[5,1],[1,1,1,1,2]]
+= 726 ~ 1.00, 0.71, 1.00, 0.33, 0.00
+
+  Lobe of lung, NOS
+  Cancer <1>
+  Right
+  Upper
+[[[1,1],[1,1],2],[[2,2],[3,3],0],[[3,3],[4,4],0],[[4,4],[5,5],0],[[5,5],[2,2],0]]
+[[5],[2,1,1,1]]
+= 576 ~ 0.00, 0.93, 0.90, 0.36, 0.00
+
+  Lobe of lung, NOS
+  Cancer <1>
+  Rights
+  Upper
+[[[1,1],[1,1],2],[[2,2],[3,3],0],[[3,3],[4,4],1],[[4,4],[5,5],0],[[5,5],[2,2],0]]
+[[5],[2,1,1,1]]
+= 569 ~ 0.00, 0.89, 0.90, 0.36, 0.00
+
+  Pneumonia, Pneumococcal
+  Cancer <1>
+  Right
+  Upper
+[[[1,1],[1,1],5],[[2,2],[3,3],0],[[3,3],[4,4],0],[[4,4],[5,5],0],[[5,5],[2,2],3]]
+[[5],[2,1,1,1]]
+= 554 ~ 0.00, 0.80, 0.90, 0.36, 0.00
+
+  Pneumonia, Pneumococcal
+  Cancer <1>
+  Rights
+  Upper
+[[[1,1],[1,1],5],[[2,2],[3,3],0],[[3,3],[4,4],1],[[4,4],[5,5],0],[[5,5],[2,2],3]]
+[[5],[2,1,1,1]]
+= 547 ~ 0.00, 0.76, 0.90, 0.36, 0.00
+
+
+Processing 00000000.tx.1: the effect of obstructive sleep apnea.
+
+Phrase: "the effect of obstructive sleep apnea."
+Meta Candidates (11):
+   861 Obstructive sleep apnea (Obstructive sleep apnea syndrome) [Disease or Syndrome]
+   839 Apnea, Obstructive [Disease or Syndrome]
+   827 Sleep apnea, NOS (Sleep Apnea Syndromes) [Disease or Syndrome]
+   827 Apnea, Sleep [Disease or Syndrome]
+   799 Apnea [Disease or Syndrome]
+   632 Sleep [Mental Process]
+   632 Effect (Effective) [Functional Concept,Qualitative Concept]
+   632 Sleep (Asleep) [Finding]
+   632 Obstructive (Obstructed) [Functional Concept]
+   561 Sleepy [Finding]
+   532 Sleeplessness (Insomnia) [Mental or Behavioral Dysfunction,Sign or Symptom]
+Meta Mapping (817):
+   632 Effect (Effective) [Functional Concept,Qualitative Concept]
+   861 Obstructive sleep apnea (Obstructive sleep apnea syndrome) [Disease or Syndrome]
+Meta Mapping (762):
+   632 Effect (Effective) [Functional Concept,Qualitative Concept]
+   632 Obstructive (Obstructed) [Functional Concept]
+   827 Apnea, Sleep [Disease or Syndrome]
+Meta Mapping (762):
+   632 Effect (Effective) [Functional Concept,Qualitative Concept]
+   632 Obstructive (Obstructed) [Functional Concept]
+   827 Sleep apnea, NOS (Sleep Apnea Syndromes) [Disease or Syndrome]
+Meta Mapping (762):
+   632 Effect (Effective) [Functional Concept,Qualitative Concept]
+   839 Apnea, Obstructive [Disease or Syndrome]
+   632 Sleep (Asleep) [Finding]
+Meta Mapping (762):
+   632 Effect (Effective) [Functional Concept,Qualitative Concept]
+   839 Apnea, Obstructive [Disease or Syndrome]
+   632 Sleep [Mental Process]
+Meta Mapping (744):
+   632 Effect (Effective) [Functional Concept,Qualitative Concept]
+   839 Apnea, Obstructive [Disease or Syndrome]
+   561 Sleepy [Finding]
+Meta Mapping (737):
+   632 Effect (Effective) [Functional Concept,Qualitative Concept]
+   839 Apnea, Obstructive [Disease or Syndrome]
+   532 Sleeplessness (Insomnia) [Mental or Behavioral Dysfunction,Sign or Symptom]
+Meta Mapping (734):
+   632 Effect (Effective) [Functional Concept,Qualitative Concept]
+   632 Obstructive (Obstructed) [Functional Concept]
+   632 Sleep (Asleep) [Finding]
+   799 Apnea [Disease or Syndrome]
+Meta Mapping (734):
+   632 Effect (Effective) [Functional Concept,Qualitative Concept]
+   632 Obstructive (Obstructed) [Functional Concept]
+   632 Sleep [Mental Process]
+   799 Apnea [Disease or Syndrome]
+Meta Mapping (716):
+   632 Effect (Effective) [Functional Concept,Qualitative Concept]
+   632 Obstructive (Obstructed) [Functional Concept]
+   561 Sleepy [Finding]
+   799 Apnea [Disease or Syndrome]
+Meta Mapping (709):
+   632 Effect (Effective) [Functional Concept,Qualitative Concept]
+   632 Obstructive (Obstructed) [Functional Concept]
+   532 Sleeplessness (Insomnia) [Mental or Behavioral Dysfunction,Sign or Symptom]
+   799 Apnea [Disease or Syndrome]
+
+
+Processing 00000000.tx.2: Lung Cancer.  right upper lobe of lung
+
+Phrase: "Lung Cancer.  right upper lobe of lung"
+Meta Candidates (17):
+   913 Right upper lobe of lung, NOS [Body Location or Region]
+   877 Upper lobe of lung, NOS [Body Location or Region]
+   861 Right lung, NOS [Body Part, Organ, or Organ Component]
+   856 Right upper lobe pneumonia (Right upper zone pneumonia) [Disease or Syndrome]
+   845 Lobe of lung, NOS [Body Part, Organ, or Organ Component]
+          Pulmonary lobe
+   837 Pulmonary-pulmonary (Pulmonary artery and pulmonary artery) [Body Part, Organ, or Organ Component]
+   747 Pneumonia, Lobar (Pneumonia, Pneumococcal) [Disease or Syndrome]
+          PNEUMONIA LOBAR
+   651 Lung Cancer [Neoplastic Process]
+   629 Cancer <1> [Neoplastic Process]
+   629 Lung [Body Part, Organ, or Organ Component]
+   629 Right [Spatial Concept]
+   629 Upper [Spatial Concept]
+   595 Rights [Qualitative Concept]
+   573 Pulmonary <1> [Spatial Concept]
+   536 Pneumonia [Disease or Syndrome]
+Meta Mapping (909):
+   651 Lung Cancer [Neoplastic Process]
+   913 Right upper lobe of lung, NOS [Body Location or Region]
+Meta Mapping (900):
+   629 Lung [Body Part, Organ, or Organ Component]
+   629 Cancer <1> [Neoplastic Process]
+   913 Right upper lobe of lung, NOS [Body Location or Region]
+Meta Mapping (892):
+   573 Pulmonary <1> [Spatial Concept]
+   629 Cancer <1> [Neoplastic Process]
+   913 Right upper lobe of lung, NOS [Body Location or Region]
+Meta Mapping (886):
+   536 Pneumonia [Disease or Syndrome]
+   629 Cancer <1> [Neoplastic Process]
+   913 Right upper lobe of lung, NOS [Body Location or Region]
+Meta Mapping (873):
+   651 Lung Cancer [Neoplastic Process]
+   629 Right [Spatial Concept]
+   877 Upper lobe of lung, NOS [Body Location or Region]
+Meta Mapping (868):
+   651 Lung Cancer [Neoplastic Process]
+   595 Rights [Qualitative Concept]
+   877 Upper lobe of lung, NOS [Body Location or Region]
+Meta Mapping (863):
+   629 Lung [Body Part, Organ, or Organ Component]
+   629 Cancer <1> [Neoplastic Process]
+   629 Right [Spatial Concept]
+   877 Upper lobe of lung, NOS [Body Location or Region]
+Meta Mapping (859):
+   629 Lung [Body Part, Organ, or Organ Component]
+   629 Cancer <1> [Neoplastic Process]
+   595 Rights [Qualitative Concept]
+   877 Upper lobe of lung, NOS [Body Location or Region]
+Meta Mapping (856):
+   573 Pulmonary <1> [Spatial Concept]
+   629 Cancer <1> [Neoplastic Process]
+   629 Right [Spatial Concept]
+   877 Upper lobe of lung, NOS [Body Location or Region]
+Meta Mapping (851):
+   573 Pulmonary <1> [Spatial Concept]
+   629 Cancer <1> [Neoplastic Process]
+   595 Rights [Qualitative Concept]
+   877 Upper lobe of lung, NOS [Body Location or Region]
+Meta Mapping (850):
+   536 Pneumonia [Disease or Syndrome]
+   629 Cancer <1> [Neoplastic Process]
+   629 Right [Spatial Concept]
+   877 Upper lobe of lung, NOS [Body Location or Region]
+Meta Mapping (845):
+   536 Pneumonia [Disease or Syndrome]
+   629 Cancer <1> [Neoplastic Process]
+   595 Rights [Qualitative Concept]
+   877 Upper lobe of lung, NOS [Body Location or Region]
+Meta Mapping (845):
+   651 Lung Cancer [Neoplastic Process]
+   629 Right [Spatial Concept]
+   629 Upper [Spatial Concept]
+   845 Lobe of lung, NOS [Body Part, Organ, or Organ Component]
+Meta Mapping (841):
+   651 Lung Cancer [Neoplastic Process]
+   595 Rights [Qualitative Concept]
+   629 Upper [Spatial Concept]
+   845 Lobe of lung, NOS [Body Part, Organ, or Organ Component]
+Meta Mapping (836):
+   629 Lung [Body Part, Organ, or Organ Component]
+   629 Cancer <1> [Neoplastic Process]
+   629 Right [Spatial Concept]
+   629 Upper [Spatial Concept]
+   845 Lobe of lung, NOS [Body Part, Organ, or Organ Component]
+Meta Mapping (833):
+   651 Lung Cancer [Neoplastic Process]
+   856 Right upper lobe pneumonia (Right upper zone pneumonia) [Disease or Syndrome]
+Meta Mapping (831):
+   629 Lung [Body Part, Organ, or Organ Component]
+   629 Cancer <1> [Neoplastic Process]
+   595 Rights [Qualitative Concept]
+   629 Upper [Spatial Concept]
+   845 Lobe of lung, NOS [Body Part, Organ, or Organ Component]
+Meta Mapping (828):
+   573 Pulmonary <1> [Spatial Concept]
+   629 Cancer <1> [Neoplastic Process]
+   629 Right [Spatial Concept]
+   629 Upper [Spatial Concept]
+   845 Lobe of lung, NOS [Body Part, Organ, or Organ Component]
+Meta Mapping (824):
+   573 Pulmonary <1> [Spatial Concept]
+   629 Cancer <1> [Neoplastic Process]
+   595 Rights [Qualitative Concept]
+   629 Upper [Spatial Concept]
+   845 Lobe of lung, NOS [Body Part, Organ, or Organ Component]
+Meta Mapping (823):
+   536 Pneumonia [Disease or Syndrome]
+   629 Cancer <1> [Neoplastic Process]
+   629 Right [Spatial Concept]
+   629 Upper [Spatial Concept]
+   845 Lobe of lung, NOS [Body Part, Organ, or Organ Component]
+Meta Mapping (821):
+   629 Lung [Body Part, Organ, or Organ Component]
+   629 Cancer <1> [Neoplastic Process]
+   856 Right upper lobe pneumonia (Right upper zone pneumonia) [Disease or Syndrome]
+Meta Mapping (818):
+   536 Pneumonia [Disease or Syndrome]
+   629 Cancer <1> [Neoplastic Process]
+   595 Rights [Qualitative Concept]
+   629 Upper [Spatial Concept]
+   845 Lobe of lung, NOS [Body Part, Organ, or Organ Component]
+Meta Mapping (812):
+   573 Pulmonary <1> [Spatial Concept]
+   629 Cancer <1> [Neoplastic Process]
+   856 Right upper lobe pneumonia (Right upper zone pneumonia) [Disease or Syndrome]
+Meta Mapping (805):
+   536 Pneumonia [Disease or Syndrome]
+   629 Cancer <1> [Neoplastic Process]
+   856 Right upper lobe pneumonia (Right upper zone pneumonia) [Disease or Syndrome]
+Meta Mapping (785):
+   651 Lung Cancer [Neoplastic Process]
+   861 Right lung, NOS [Body Part, Organ, or Organ Component]
+   629 Upper [Spatial Concept]
+Meta Mapping (767):
+   629 Lung [Body Part, Organ, or Organ Component]
+   629 Cancer <1> [Neoplastic Process]
+   861 Right lung, NOS [Body Part, Organ, or Organ Component]
+   629 Upper [Spatial Concept]
+Meta Mapping (760):
+   651 Lung Cancer [Neoplastic Process]
+   629 Right [Spatial Concept]
+   629 Upper [Spatial Concept]
+   747 Pneumonia, Lobar (Pneumonia, Pneumococcal) [Disease or Syndrome]
+Meta Mapping (756):
+   573 Pulmonary <1> [Spatial Concept]
+   629 Cancer <1> [Neoplastic Process]
+   861 Right lung, NOS [Body Part, Organ, or Organ Component]
+   629 Upper [Spatial Concept]
+Meta Mapping (754):
+   651 Lung Cancer [Neoplastic Process]
+   595 Rights [Qualitative Concept]
+   629 Upper [Spatial Concept]
+   747 Pneumonia, Lobar (Pneumonia, Pneumococcal) [Disease or Syndrome]
+Meta Mapping (748):
+   536 Pneumonia [Disease or Syndrome]
+   629 Cancer <1> [Neoplastic Process]
+   861 Right lung, NOS [Body Part, Organ, or Organ Component]
+   629 Upper [Spatial Concept]
+Meta Mapping (747):
+   629 Lung [Body Part, Organ, or Organ Component]
+   629 Cancer <1> [Neoplastic Process]
+   629 Right [Spatial Concept]
+   629 Upper [Spatial Concept]
+   747 Pneumonia, Lobar (Pneumonia, Pneumococcal) [Disease or Syndrome]
+Meta Mapping (745):
+   837 Pulmonary-pulmonary (Pulmonary artery and pulmonary artery) [Body Part, Organ, or Organ Component]
+   629 Cancer <1> [Neoplastic Process]
+   629 Right [Spatial Concept]
+   629 Upper [Spatial Concept]
+Meta Mapping (742):
+   629 Lung [Body Part, Organ, or Organ Component]
+   629 Cancer <1> [Neoplastic Process]
+   595 Rights [Qualitative Concept]
+   629 Upper [Spatial Concept]
+   747 Pneumonia, Lobar (Pneumonia, Pneumococcal) [Disease or Syndrome]
+Meta Mapping (738):
+   837 Pulmonary-pulmonary (Pulmonary artery and pulmonary artery) [Body Part, Organ, or Organ Component]
+   629 Cancer <1> [Neoplastic Process]
+   595 Rights [Qualitative Concept]
+   629 Upper [Spatial Concept]
+Meta Mapping (738):
+   573 Pulmonary <1> [Spatial Concept]
+   629 Cancer <1> [Neoplastic Process]
+   629 Right [Spatial Concept]
+   629 Upper [Spatial Concept]
+   747 Pneumonia, Lobar (Pneumonia, Pneumococcal) [Disease or Syndrome]
+Meta Mapping (732):
+   536 Pneumonia [Disease or Syndrome]
+   629 Cancer <1> [Neoplastic Process]
+   629 Right [Spatial Concept]
+   629 Upper [Spatial Concept]
+   747 Pneumonia, Lobar (Pneumonia, Pneumococcal) [Disease or Syndrome]
+Meta Mapping (732):
+   573 Pulmonary <1> [Spatial Concept]
+   629 Cancer <1> [Neoplastic Process]
+   595 Rights [Qualitative Concept]
+   629 Upper [Spatial Concept]
+   747 Pneumonia, Lobar (Pneumonia, Pneumococcal) [Disease or Syndrome]
+Meta Mapping (726):
+   536 Pneumonia [Disease or Syndrome]
+   629 Cancer <1> [Neoplastic Process]
+   595 Rights [Qualitative Concept]
+   629 Upper [Spatial Concept]
+   747 Pneumonia, Lobar (Pneumonia, Pneumococcal) [Disease or Syndrome]
+Meta Mapping (576):
+   667 Pulmonary lobe (Lobe of lung, NOS) [Body Part, Organ, or Organ Component]
+   629 Cancer <1> [Neoplastic Process]
+   629 Right [Spatial Concept]
+   629 Upper [Spatial Concept]
+Meta Mapping (569):
+   667 Pulmonary lobe (Lobe of lung, NOS) [Body Part, Organ, or Organ Component]
+   629 Cancer <1> [Neoplastic Process]
+   595 Rights [Qualitative Concept]
+   629 Upper [Spatial Concept]
+Meta Mapping (554):
+   613 PNEUMONIA LOBAR (Pneumonia, Pneumococcal) [Disease or Syndrome]
+   629 Cancer <1> [Neoplastic Process]
+   629 Right [Spatial Concept]
+   629 Upper [Spatial Concept]
+Meta Mapping (547):
+   613 PNEUMONIA LOBAR (Pneumonia, Pneumococcal) [Disease or Syndrome]
+   629 Cancer <1> [Neoplastic Process]
+   595 Rights [Qualitative Concept]
+   629 Upper [Spatial Concept]

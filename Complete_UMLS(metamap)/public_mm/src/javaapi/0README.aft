@@ -1,0 +1,38 @@
+*Title: The MetaMap Java API
+*Author: Willie Rogers
+
+* Compiling API using ANT
+
+	$ ant -f build.simple.xml
+
+If you have NetBeans installed
+
+	$ ant build.xml        
+
+* Compiling and Installing API using Maven
+
+Install prologbeans jar into local Maven repository
+
+        $ mvn install:install-file \
+          -Dfile=dist/prologbeans.jar \
+          -DgroupId=se.sics \
+	  -DartifactId=prologbeans \
+	  -Dversion=4.2.1 \
+          -Dpackaging=jar
+
+The "dist" in dist/prologbeans.jar refers to dist directory of the
+metamap-api distribution.  
+
+Install MetaMap Java Api into local Maven repository
+
+	$ mvn install
+
+* Generating JavaDoc documentation using Maven
+
+	$ mvn javadoc:javadoc
+
+The documentation will reside in the HTML files in
+target/site/apidocs.
+
+See doc/userguide.html or doc/userguide.aft for information on using
+the API from Java.

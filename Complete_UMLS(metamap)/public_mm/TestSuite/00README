@@ -1,0 +1,21 @@
+This Test Suite has been built over the years where problems or questions had
+come up.  This Test Suite exercises several aspects of MetaMap and makes
+sure that the distributable version of MetaMap matches our internal version.
+
+
+runTest_2011.sh - Script for testing of metamap11.
+
+
+To run the Test Suite, simply update the METAMAP variable in the file to
+point to where your version of MetaMap is located and the run
+
+     ./runTest_2011.sh -T
+
+Or if your using COMAND.COM on Windows:
+
+     ./runTest_2011.bat -T
+
+You will see locator notes scroll on the screen as the Test Suite proceeds
+through it's set of tests.  At the end, the script does a "diff" of the
+"out" results file created by running this script and the "gold.2008" standard
+results file.  There should be no differences in the files.

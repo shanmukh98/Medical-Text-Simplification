@@ -1,0 +1,415 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>MetaMap 2009 Usage</title>
+	<meta name="author" content="">
+	<meta name="GENERATOR" content = "Almost Free Text v5.098; Copyright 1996-2010 Todd Coram.">
+<style type="text/css">
+  <!--
+	.section5 { padding-left: 50pt; }
+	.section6 { padding-left: 75pt; }
+	.section7 { padding-left: 100pt; }
+html { background: #eee; color: #000; }
+
+body { background: #eee; color: #000; margin: 0; padding: 0;}
+
+div.body {
+	background: #fff; color: #000;
+	margin: 0 1em 0 1em; padding: 1em;
+	font-family: serif;
+	font-size: 1em; line-height: 1.2em;
+	border-width: 0 1px 0 1px;
+	border-style: solid;
+	border-color: #aaa;
+}
+
+div.block {
+	background: #F8F8FF; color: #000;
+	margin: 1em; padding: 0 1em 0 1em;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #909090;
+}
+
+table {
+	background: #F8F8F8; color: #000;
+	margin: 1em;
+	border-width: 0 0 0 1px;
+	border-style: solid;
+	border-color: #C0C0C0;
+}
+
+td {
+	border-width: 0 1px 1px 0;
+	border-style: solid;
+	border-color: #C0C0C0;
+}
+
+th {
+	background: #F8F8FF;
+	border-width: 1px 1px 2px 0;
+	border-style: solid;
+	border-color: #C0C0C0;
+}
+
+
+/* body text, headings, and rules */
+
+p { margin: 0; text-indent: 0em; margin: 0 0 0.5em 0 }
+
+h1, h2, h3, h4, h5, h6 {
+	color: #206020; background: transparent;
+	font-family: Optima, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+/*
+h1 { font-size: 1.69em; margin: 1.4em 0 0.4em 0; }
+h2 { font-size: 1.44em; margin: 1.4em 0 0.4em 0; }
+h3 { font-size: 1.21em; margin: 1.4em 0 0.4em 0; }
+h4 { font-size: 1.00em; margin: 1.4em 0 0.4em 0; }
+h5 { font-size: 0.81em; margin: 1.4em 0 0.4em 0; }
+h6 { font-size: 0.64em; margin: 1.4em 0 0.4em 0; }
+*/
+
+hr {
+	color: transparent; background: transparent;
+	height: 0px; margin: 0.6em 0;
+	border-width: 1px ;
+	border-style: solid;
+	border-color: #999;
+}
+
+/* bulleted lists and definition lists */
+
+ul { margin: 0 1em 0.6em 2em; padding: 0; }
+li { margin: 0.4em 0 0 0; }
+
+dl { margin: 0.6em 1em 0.6em 2em; }
+dt { color: #206020; }
+
+tt { color: #602020; }
+
+/* links */
+
+a.link {
+	color: #33c; background: transparent;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000; background: transparent;
+}
+
+body > a {
+	font-family: Optima, Arial, Helvetica, sans-serif;
+	font-size: 0.81em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #206020; background: transparent;
+	font-family: Optima, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+  -->
+</style>
+</head>
+<body>
+<div class="body">
+
+<br><center><h1><a name="AFT-top">MetaMap 2009 Usage</a></h1></center>
+<!--  AFT Table of Contents (auto generated) -->
+<ul>
+<li> <a class="link" href="#Usage">Usage</a></li>
+<li> <a class="link" href="#MetaMap Options:">MetaMap Options:</a></li>
+<ul>
+<li> <a class="link" href="#File Options:">File Options:</a></li>
+<li> <a class="link" href="#Note For MMTX Users:">Note For MMTX Users:</a></li>
+<li> <a class="link" href="#Data Options:">Data Options:</a></li>
+<li> <a class="link" href="#Processing Options:">Processing Options:</a></li>
+<li> <a class="link" href="#Output Options:">Output Options:</a></li>
+<li> <a class="link" href="#Miscellaneous Options:">Miscellaneous Options:</a>
+
+</li>
+</ul>
+</ul>
+<!-- Start SectLevel1 -->
+<h2><a name="Usage">Usage</a></h2>
+<p class="Body">
+<strong>Usage:</strong> <tt>metamap08 Options InputFile OutputFile</tt>
+</p>
+<p class="Body">
+MetaMap maps (matches) text (from documents, queries) into concepts from
+the UMLS Metathesaurus.  Text is taken through a series of modules and
+broken down into the components that include sentences,  phrases,
+lexical elements and tokens. Variants are generated from the resulting
+phrases, and candidate concepts from the UMLS Metathesaurus are
+retrieved and evaluated against their phrases. The resulting concepts 
+are organized in such a way as to best cover the text, known as a final
+mapping. 
+</p>
+<!--End Section 1-->
+<h2><a name="MetaMap Options:">MetaMap Options:</a></h2>
+<p class="Body">
+MetaMap is highly configurable, and its behavior is controlled by option
+flags, each of which has a short name (e.g., <tt>-I</tt>) and a long name
+(e.g., <tt>--show_cuis</tt>). 
+</p>
+<!-- Start SectLevel2 -->
+<h3><a name="File Options:">File Options:</a></h3>
+<p class="Body">
+When MetaMap is run on the command line, the default input and output
+are standard input and output.  MetaMap allows specifying input and
+output files on the command line, but the order in which they are
+specified is important:
+</p>
+<div class="block"><pre>
+% metamap09 [Options] InputFile OutputFile
+</pre></div>
+<p class="Body">
+The <tt>InputFile</tt> and <tt>OutputFile</tt> arguments, if specified,
+must be the last two arguments. It is not necessary to specify <tt>OutputFile</tt>,
+because the output file will default to &amp;lt;InputFile&amp;gt;<tt>.out</tt>.
+Note that if the output file (whether specified on the command line or not)
+is an existing file,
+the existing file will be overwritten and its original contents lost.
+</p>
+<!--End Section 2-->
+<h3><a name="Note For MMTX Users:">Note For MMTX Users:</a></h3>
+<p class="Body">
+Please note the difference with MetaMap where there are no option
+flags for specifying the input and output file names! The input and
+output file names are specified directly on the command line without
+options with Metamap and if no filename is specified, MetaMap assumes
+standard in and out.
+</p>
+<!--End Section 2-->
+<h3><a name="Data Options:">Data Options:</a></h3>
+<p class="Body">
+Data options determine the underlying vocabularies and data model used
+by MetaMap.
+</p>
+<dl>
+<dt><strong><tt>-A (--strict_model)</tt></strong></dt><dd></dd>
+<dt><strong><tt>-C (--relaxed_model)</tt></strong></dt><dd> determines which data model is used. If more than one model is specified, the strictest one is used; if none is specified, then the strict model is used. See the report ''Filtering the UMLS Metathesaurus for MetaMap<em> at the </em>SKR website'' (<a class="link" href="http://skr.nlm.nih.gov/papers/index.shtml">http://skr.nlm.nih.gov/papers/index.shtml</a>) (under &quot;Technical Documents&quot;) for a description of the models.  [|-V (--mm_data_version)| &lt;data version&gt;] specifies which version of MetaMap's data files will be used for processing.  For Example, <tt>2004</tt> specifies ones of the UMLS 2004 models, <tt>2004_level0</tt> specifies one of the level 0 UMLS 2004 models. NOTE: because &quot;normal&quot; processing is the default, this option should very rarely be used.</dd>
+</dl>
+<p class="Body">
+The default data version is:
+</p>
+<dl>
+<dt><strong>normal</strong></dt><dd> All vocabularies  in a given AA release of the Metathesaurus with the exception of  the AMA vocabularies, CPT (Current Procedural Terminology) and CDT  (Current Dental Terminology). Also excluded from the <tt>normal</tt>  data version are CPT and CDT derivative vocabularies such as HCPCS  (Healthcare Common Procedure Coding System) and MTHHH (Metathesaurus  HCPSCS Hierarchical Terms).</dd>
+</dl>
+<p class="Body">
+Other data versions that are sometimes available are:
+</p>
+<dl>
+<dt><strong>level0</strong></dt><dd> UMLS vocabularies with the least restrictive source restriction  level, namely level0. Even level 0 vocabularies have some  copyright restrictions, but they are less restrictive than  those with restriction level 1 through 3; and </dd>
+<dt><strong>level0and4</strong></dt><dd> Level 0  and level 4 vocabularies. Currently SNOMEDCT and its derivatives  are the only level 4 vocabularies in the Metathesaurus. (Note  that, despite the numbering, level 4 is not as restrictive as  levels 1 through 3, especially for USA users.)</dd>
+</dl>
+<!--End Section 2-->
+<h3><a name="Processing Options:">Processing Options:</a></h3>
+<p class="Body">
+Processing options control MetaMap's internal behavior.
+</p>
+<dl>
+<dt><strong><tt>-@ (--WSD)</tt> &lt;option&gt;</strong></dt><dd> specifies the hostname running the WSD Server to be used for word-sense disambiguation</dd>
+</dl>
+<dl>
+<dt><strong><tt>-+ (--bracketed_output)</tt></strong></dt><dd> surrounds the Phrase, Candidates, and Mappings section of output with &quot;&gt;&gt;&gt;&gt;&gt;&quot; and &quot;&lt;&lt;&lt;&lt;&lt;&quot; brackets. E.g.,</dd>
+</dl>
+<div class="block"><pre>
+&gt;&gt;&gt;&gt;&gt; Phrase
+heart attack
+&lt;&lt;&lt;&lt;&lt; Phrase
+</pre></div>
+<p class="Body">
+and similarly for Candidates and Mappings.
+</p>
+<dl>
+<dt><strong><tt>-8 (--dynamic_variant_generation)</tt></strong></dt><dd> forces MetaMap to generate variants dynamically rather than by looking up variants in a table. This option is normally used only for debugging purposes.</dd>
+</dl>
+<dl>
+<dt><strong><tt>-a (--all_acros_abbrs)</tt></strong></dt><dd> allows the use of any acronym/abbreviation variants, which are the least reliable form of variation, because normally at most one of the expansions for an abbreviated form is correct.  </dd>
+</dl>
+<!--  This option became a default in 2006.  -->
+<dl>
+<dt><strong><tt>-d (--no_derivational_variants)</tt></strong></dt><dd> prevents the use of any derivational variation in the computation of word variants. This option exists because derivational variants, as opposed to all other forms of variation, always involve a significant change in meaning.</dd>
+</dl>
+<dl>
+<dt><strong><tt>-D (--all_derivational_variants)</tt></strong></dt><dd> forces the use of all derivational variation, instead of only those between adjectives and nouns.  Adjective/noun derivational variants are generally the best derivational variants. </dd>
+</dl>
+<!--  This option became a default in 2006.  -->
+<dl>
+<dt><strong><tt>-g (--allow_concept_gaps)</tt></strong></dt><dd> causes MetaMap to retrieve Metathesaurus candidates with gaps (such as &quot;Unspecified childhood psychosis&quot; for &quot;unspecified psychosis&quot;). This option does not appreciably affect MetaMap's performance. It is appropriate for browsing purposes.</dd>
+</dl>
+<dl>
+<dt><strong><tt>-i (--ignore_word_order)</tt></strong></dt><dd> allows MetaMap to ignore the order of words in the phrases it processes. MetaMap was originally developed to process full text and consequently depended very strongly on normal English word order.  This option avoids the use of specialized word indexes used for efficient candidate retrieval, it ignores word order when matching phrase text to candidate words, and it replaces the normal coverage metric with an involvement metric for evaluating how well a candidate covers the words of a phrase.</dd>
+</dl>
+<!--  (See Section 5 for a description of the involvement metric.)  -->
+<dl>
+<dt><strong><tt>-K (--ignore_stop_phrases)</tt></strong></dt><dd> simply prevents MetaMap from aborting its processing for commonly occurring phrases that are known to produce no mappings. This option is useful only for generating a new table of stop phrases after a change in UMLS data.</dd>
+</dl>
+<dl>
+<dt><strong><tt>-l (--allow_large_n)</tt></strong></dt><dd> enables retrieval of Metathesaurus candidates for two-character words occurring in more than 2,000 Metathesaurus strings and one-character words occurring in more than 1,000 Metathesaurus strings.  This option also allows retrieval for words that can be a preposition, conjunction or determiner. </dd>
+</dl>
+<!--  (according to the 2006 lexicon).  -->
+<dl>
+<dt><strong><tt>-L (--longest_lexicon_match)</tt></strong></dt><dd> causes lexical lookup to prefer matching as much text as possible to lexicon entries. This used to be the only form of lexical lookup, but it has been superseded by a shortest-match algorithm, this is because the SPECIALIST lexicon is a syntactic lexicon; multi-word items contain no more information than their constituents which have their own lexicon entries. </dd>
+</dl>
+<!--  (This option, and the new shortest match lookup algorithm are new for 2006.)  -->
+<dl>
+<dt><strong><tt>-o (--allow_overmatches)</tt></strong></dt><dd> causes MetaMap to retrieve Metathesaurus candidates which have words on one or both ends that do not match the text. For example, overmatches of &quot;medicine&quot; include 'Alternative Medicine', 'Medical Records' and 'Nuclear medicine procedure, NOS'. The use of --allow_overmatches greatly increases the number of candidates retrieved and is consequently much slower than MetaMap without overmatches. It is appropriate for browsing purposes.</dd>
+</dl>
+<dl>
+<dt><strong><tt>-P (--composite_phrases)</tt></strong></dt><dd> causes MetaMap to construct longer, composite phrases from the simple phrases produced by the parser. A composite phrase is a simple phrase followed by any prepositional phrase optionally followed by one or more of prepositional phrases. An example is &quot;pain on the left side of the chest&quot; which will map to 'Left sided chest pain' rather than separate concepts as it would without the option. Note that <tt>--composite_phrases</tt> is experimental; it is currently both inefficient and not completely correct.</dd>
+</dl>
+<dl>
+<dt><strong><tt>-Q (--quick_composite_phrases)</tt></strong></dt><dd> is a version of <tt>--composite_phrases</tt> designed to overcome its inefficiency. It is both experimental and temporary.</dd>
+</dl>
+<dl>
+<dt><strong><tt>-S (--tagger OPTION)</tt></strong></dt><dd> specifies the hostname running the Tagger Server to be used for tagging</dd>
+</dl>
+<dl>
+<dt><strong><tt>-t (--no_tagging)</tt></strong></dt><dd> causes the tagger to not be called.  By default, the SPECIALIST parser will use the results of a tagger to assist in parsing.We previously used the Xerox PARC part of speech tagger but now use the Med-Post/SKR tagger. The MedPost tagger was developed at NCBI specifically for tagging biomedical text; we modified it to use our part of speech tags. NOTE: specifying this option will result in the tagger <strong>not</strong> being called.</dd>
+</dl>
+<dl>
+<dt><strong><tt>-u (--unique_acros_abbrs_only)</tt></strong></dt><dd> restricts the generation of acronym/abbreviation variants to those forms with unique expansions.  This option produces better results than allowing all forms of acronym/abbreviation variants, but it is still better to prevent all such variants.</dd>
+</dl>
+<dl>
+<dt><strong><tt>-U (--allow_duplicate_concept_names)</tt></strong></dt><dd> requires that two Concepts' CUIs match (in addition to the Metathesaurus Concept itself and its position in the current phrase) in order for an evaluation to be considered redundant.</dd>
+</dl>
+<dl>
+<dt><strong><tt>-y (--word_sense_disambiguation)</tt></strong></dt><dd> causes MetaMap to attempt to disambiguate among concepts scoring equally well in matching input text. The initial implementation of MetaMap Word Sense Disambiguation uses a single method that chooses a concept (or concepts) having the most likely semantic type for the context in which the ambiguity arises.</dd>
+</dl>
+<dl>
+<dt><strong><tt>-Y (--prefer_multiple_concepts)</tt></strong></dt><dd> causes MetaMap to score mappings with more concepts higher than those with fewer concepts. (It does so simply by inverting the normal cohesiveness value.) As a simplified example, with this option in effect, the input text &quot;lung cancer&quot; will score the mapping to the two concepts 'Lung' and 'Cancer' higher than the mapping to the single concept 'Lung Cancer'. This option is useful for discovering higher-order relationships among concepts found in text (e.g., that 'Lung' is the location of 'Cancer' in the example).</dd>
+</dl>
+<dl>
+<dt><strong><tt>-z (--term_processing)</tt></strong></dt><dd> tells MetaMap to process terms rather than full text. When invoked, MetaMap treats each input as a single phrase (although the parser is still used to determine the head of that phrase). It also causes MetaMap to use the involvement metric rather than coverage for evaluating Metathesaurus candidates When used in conjunction with the --allow_overmatches and --allow_concept_gaps options, it constitutes MetaMap's browse mode for thorough searching of the Metathesaurus. In this case it is wise to also specify -m (--mappings) to toggle mapping construction off; otherwise, MetaMap spends too much time trying to combine the many candidates into final mappings.  </dd>
+</dl>
+<!--  (see Section 5). -->
+<!--End Section 2-->
+<h3><a name="Output Options:">Output Options:</a></h3>
+<p class="Body">
+Output options control how MetaMap displays results.
+</p>
+<dl>
+<dt><strong><tt> -b (--compute_all_mappings)</tt></strong></dt><dd> forces MetaMap to compute and display all mappings, rather than only the top scoring ones. Note: It is almost never useful to display all mappings because of their large number.</dd>
+</dl>
+<dl>
+<dt><strong><tt>-c (--hide_candidates)</tt></strong></dt><dd> disables the displaying of the the list of Metathesaurus candidates.  By default, candidates are displayed best to worst, according to the MetaMap evaluation metric.  Note that (assuming this option is not selected) if a candidate is not the preferred name for a concept, the preferred name is displayed in parentheses immediately following the candidate. Displaying both the matching string and the preferred concept name when they differ is intended to avoid any confusion about why a concept appears on the candidate list.  It is generally useful to display both the candidate list and the final mappings.</dd>
+</dl>
+<dl>
+<dt><strong><tt> -e (--exclude_sources) &amp;lt;list&amp;gt;</tt></strong></dt><dd> excludes those sources in the comma-separated &amp;lt;list&amp;gt; where spaces are not allowed. </dd>
+</dl>
+<!--  See Section 10.6 for the 2006AA sources. -->
+<dl>
+<dt><strong><tt> -E (--indicate_citation_end)</tt></strong></dt><dd> causes an end-of-transmission term to be written when processing of each unit of input is complete. It is only useful for processing using the Scheduler and only then with validated generic processing.</dd>
+</dl>
+<dl>
+<dt><strong><tt>-F (--formal<strong>tagger</strong>output)</tt></strong></dt><dd> Displays the tagging information returned by the tagger server as Prolog terms.</dd>
+</dl>
+<dl>
+<dt><strong><tt> -G (--sources)</tt></strong></dt><dd> displays the Metathesaurus sources for each candidate and mapping in the output.</dd>
+</dl>
+<dl>
+<dt><strong><tt> -I (--show_cuis)</tt></strong></dt><dd> shows the UMLS CUI for each concept displayed.  </dd>
+</dl>
+<!--  See Section 10.1 foran example.  -->
+<dl>
+<dt><strong><tt> -j (--dump_aas)</tt></strong></dt><dd> displays the Acronyms and Abbreviations discovered by MetaMap in the following form:</dd>
+</dl>
+<div class="block"><pre>
+	 AA|PMID|Acronym|Expansion|#Acronym Tokens|#Acronym Chars|#ExpansionTokens|#Expansion Chars
+</pre></div>
+<dl>
+<dt><strong><tt> -J (--restrict_to_sts)</tt> &lt;list&gt;</strong></dt><dd> restricts output to those concepts with semantic types in the comma-separated &amp;lt;list&amp;gt; where spaces are not allowed. </dd>
+</dl>
+<!--  See Section 10.7 for the 2006AA semantic types.  -->
+<dl>
+<dt><strong><tt> -k (--exclude_sts)</tt> &lt;list&gt;</strong></dt><dd> excludes concepts not having a semantic type in the comma-separated &amp;lt;list&amp;gt; where spaces are not allowed.</dd>
+</dl>
+<dl>
+<dt><strong><tt> -m (--hide_mappings)</tt></strong></dt><dd> disables the display of mappings. As noted above, it is generally useful to display both the candidate list and the final mappings.</dd>
+</dl>
+<dl>
+<dt><strong><tt> -M (--mmi_output)</tt></strong></dt><dd> displays in a separate section, the concepts from the highest-scoring mappings and their Semantic Types</dd>
+</dl>
+<dl>
+<dt><strong><tt> -n (--number_the_candidates)</tt></strong></dt><dd> simply numbers the candidates in a displayed candidate list.</dd>
+</dl>
+<dl>
+<dt><strong><tt> -N --fielded_mmi_output</tt></strong></dt><dd> displays in a separate section, a ranked list of all the mappings assigned to the text. Additional data such as the PMID of the citation, CUIs, abbreviated Semantic Types are also included.</dd>
+</dl>
+<dl>
+<dt><strong><tt>-O (--show_preferred_names_only)</tt></strong></dt><dd> prevents MetaMap from displaying both the matching string as well as the preferred name when it displays concepts.</dd>
+</dl>
+<dl>
+<dt><strong><tt>-p (--hide_plain_syntax)</tt></strong></dt><dd> disables the display of the words forming each phrase, as determined by the SPECIALIST parser.</dd>
+</dl>
+<dl>
+<dt><strong><tt>-q (--machine_output)</tt></strong></dt><dd> causes output to take the form of Prolog terms rather than human-readable form. The --machine_output option affects all other output options.  For further information on machine output, including visually enhanced examples, see the <em>SKR Help page</em> (<a class="link" href="http://skr.nlm.nih.gov/Help">http://skr.nlm.nih.gov/Help</a>).</dd>
+</dl>
+<dl>
+<dt><strong><tt> -r (--threshold)</tt> &lt;integer&gt;</strong></dt><dd> restricts output to candidates whose evaluation score equals or exceeds the specified threshold. Judicious use of this option can prevent MetaMap from making errors in situations where some input text has no close matches in the Metathesaurus. An appropriate threshold can usually be determined simply by examining MetaMap output for typical text in a given application.</dd>
+</dl>
+<dl>
+<dt><strong><tt> -R (--restrict_to_sources)</tt> &lt;list&gt;</strong></dt><dd> restricts output to those sources in the comma-separated &lt;list&gt;; spaces are not allowed in the list.  </dd>
+</dl>
+<!--  See Section 10.6 for the 2006AA sources. -->
+<dl>
+<dt><strong><tt> -s (--hide_semantic_types)</tt></strong></dt><dd> disables the display of the semantic types of Metathesaurus concepts.  By default, the semantic types of Metathesaurus concepts are displayed in square brackets for each concept in the candidate list and the mappings.</dd>
+</dl>
+<dl>
+<dt><strong><tt>-T (--tagger_output)</tt></strong></dt><dd> displays the output of the MedPost/SKR tagger lining up input words on one line with their tags on a line below.</dd>
+</dl>
+<dl>
+<dt><strong><tt>-v (--variants)</tt></strong></dt><dd> displays the variants generated for each input word.</dd>
+</dl>
+<dl>
+<dt><strong><tt> -W (--preferred_name_sources)</tt></strong></dt><dd> lists all sources for the preferred names of displayed concepts. Note that this is just one of many possible choices for showing sources; showing all sources for any synonym in a concept, for example, would often produce very cluttered output.</dd>
+</dl>
+<dl>
+<dt><strong><tt>-x (--syntax)</tt></strong></dt><dd> controls the output form of the results of the SPECIALIST parser. It outputs a Prolog term showing details of the syntactic processing.</dd>
+</dl>
+<dl>
+<dt><strong><tt> -X (--truncate_candidates_mappings)</tt></strong></dt><dd> first truncates the list of candidates to the 100 top-scoring ones before computing mappings and then truncates the list of mappings to the 8 top-scoring ones. This option can sometimes prevent a combinatorial explosion caused by computing a large number of mappings from a large number of candidates as is often encountered when using --allow_overmatches.</dd>
+</dl>
+<dl>
+<dt><strong><tt>-% (--XML)</tt> &lt;option&gt;</strong></dt><dd> generate XML output.  options are <tt>format</tt>, <tt>noformat</tt>, <tt>format1</tt>, and <tt>noformat1</tt>.  The options <tt>format</tt> and <tt>format1</tt> provide formatted, pretty-printed XML output, while <tt>noformat</tt> and <tt>noformat1</tt> provide a concise, ununformatted XML output.  See <em>MetaMap 2009 Release Notes</em> (<a class="link" href="http://metamap.nlm.nih.gov/MM09_Release_Notes.shtml">http://metamap.nlm.nih.gov/MM09_Release_Notes.shtml</a>) for more information.</dd>
+</dl>
+<dl>
+<dt><strong><tt>--negex</tt></strong></dt><dd> outputs a list of negated umls concepts occurring in the input and the associated strings that caused the negation.</dd>
+</dl>
+<dl>
+<dt><strong><tt>--no_header_info</tt></strong></dt><dd> suppresses printing of informational messages at the beginning of a MetaMap session.</dd>
+</dl>
+<dl>
+<dt><strong><tt>--phrases_only</tt></strong></dt><dd>  (for debugging purposes only) </dd>
+</dl>
+<p class="Body">
+     
+<dl>
+<dt><strong><tt>--warnings</tt></strong></dt><dd>  (for debugging purposes only)     </dd>
+</dl>
+ 
+<!--  NOTE: THERE ARE TWO I's  -->
+<!--  [| -I (--show__treecodes)|  -->
+<!--  	Display MeSH Treecodes  -->
+</p>
+<!--End Section 2-->
+<h3><a name="Miscellaneous Options:">Miscellaneous Options:</a></h3>
+<dl>
+<dt><strong><tt>--help</tt></strong></dt><dd> displays MetaMap usage, i.e., the form of the command and a list of all options. This option has no short form, and must therefore be invoked as <tt>--help</tt>. </dd>
+</dl>
+<!--End Section 2-->
+<!-- End SectLevel2 -->
+<!--End Section 1-->
+<!-- End SectLevel1 -->
+<hr>
+<br>
+<p align="right"> <small>This document was generated using <a class="link" href="http://www.maplefish.com/todd/aft.html">AFT v5.098</a></small> </p>
+</body>
+</html>
+

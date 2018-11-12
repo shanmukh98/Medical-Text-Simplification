@@ -1,0 +1,5 @@
+protein-4 FN3 fibronectin type III domain GSH lutathione GST
+glutathione S-transferase hIL-6 human interleukin-6 HSA human
+serum albumin IC(50) half-maximal inhibitory concentration Ig
+immunoglobulin IMAC immobilized metal affinity chromatography
+K(D) equilibrium constant

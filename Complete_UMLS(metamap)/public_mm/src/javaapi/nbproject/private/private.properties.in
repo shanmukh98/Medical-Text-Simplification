@@ -1,0 +1,9 @@
+application.args=No cold.
+do.depend=false
+do.jar=true
+file.reference.javaapi-sources=@@basedir@@/src/javaapi/sources
+file.reference.javaapi-tests=@@basedir@@/src/javaapi/tests
+file.reference.prologbeans.jar=@@basedir@@/src/javaapi/dist/prologbeans.jar
+javac.debug=true
+javadoc.preview=true
+user.properties.file=@@basedir@@/build.properties

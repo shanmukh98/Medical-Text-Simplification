@@ -1,0 +1,9 @@
+gov/nih/nlm/nls/mps/Predict.class
+gov/nih/nlm/nls/mps/MedPostSKRTranslator.class
+gov/nih/nlm/nls/mps/Lex.class
+gov/nih/nlm/nls/mps/Sentence.class
+gov/nih/nlm/nls/mps/Tags.class
+gov/nih/nlm/nls/mps/PennTranslator.class
+gov/nih/nlm/nls/mps/Ngram.class
+gov/nih/nlm/nls/mps/Tagger.class
+gov/nih/nlm/nls/mps/MedPostTranslator.class

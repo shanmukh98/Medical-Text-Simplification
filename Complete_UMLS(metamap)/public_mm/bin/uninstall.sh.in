@@ -1,0 +1,43 @@
+#!/bin/sh
+
+if [ $PWD = @@basedir@@ ]; then
+  echo "You can't run this in the MetaMap base directory: @@basedir@@"
+  echo "Please run this from a directory outside of the base directory"
+fi
+
+CHOICE=no
+
+read -p "Do you really want to uninstall MetaMap? [no/yes] " CHOICE
+if [ "$CHOICE" = "" ]; then
+   CHOICE=no
+fi     
+if [ "$CHOICE" = "no" ]; then
+  echo "Aborting uninstall."
+  exit 0
+fi
+
+echo "Removing Tagger Server"
+rm -rf @@basedir@@/MedPost-SKR
+echo "Removing WSD Server"
+rm -rf @@basedir@@/WSD_Server
+echo "Removing Lexicon"
+rm -rf @@basedir@@/lexicon
+echo "Removing MetaMap Databases"
+rm -rf @@basedir@@/DB
+echo "Removing Programs"
+rm -rf @@basedir@@/bin
+echo "Removing Base Directory"
+cd @@basedir@@/..
+rm -rf @@basedir@@
+
+if [ -e @@basedir@@ ]; then
+    echo "Error: MetaMap installation not fully removed!!"
+else
+    echo "Removal of MetaMap installation successful."
+fi
+exit 0
+
+
+
+
+

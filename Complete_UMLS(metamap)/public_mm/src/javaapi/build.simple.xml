@@ -1,0 +1,81 @@
+<project name="mmtx" default="main" basedir=".">
+
+  <!-- Give user a chance to override without editing this file
+       (and without typing -D each time it compiles it) -->
+  <property file=".ant.properties" />
+  <property file="${user.home}/.ant.properties" />
+
+  <property name="java.top"        value=".."/>
+  <property name="project.top"     value="."/>
+  <property name="project.src"     value="${project.top}/src/main/java"/>
+  <property name="project.lib"     value="${project.top}/lib/dist"/>
+  <property name="project.dist"    value="${project.top}/dist"/>
+  <property name="project.apidoc"  value="${project.top}/doc/apiDoc"/>
+  <property name="project.classes" value="${project.top}/build/classes" />
+  <property name="project.jar"     value="${project.dist}/MetaMapApi.jar"/>
+  <property name="prologbeans.jar" value="${project.dist}/prologbeans.jar"/>
+
+  <!-- ======================== compile ========================= -->
+  <target name="compile">  
+    <mkdir dir="${project.classes}" />
+    <javac srcdir="${project.src}"
+	   destdir="${project.classes}"
+	   debug="true"
+	   source="1.6"
+	   target="1.6">	   
+      <!-- compilerarg value="-Xlint"/ -->
+      <classpath>
+	<pathelement path="${prologbeans.jar}"/>
+      </classpath>
+    </javac>
+  </target>
+
+  <!-- ======================== java archive ========================= -->
+  <target name="jar" depends="compile">
+    <mkdir dir="${project.lib}" />
+    <jar jarfile="${project.jar}"
+         basedir="${project.classes}"/>
+  </target>
+
+  <!-- =================== javadoc generation ====================== -->
+  <target name="javadoc">
+  <!-- Add mmtx internal javadoc -->
+    <mkdir dir="${project.apidoc}" />
+    <javadoc packagenames="
+             gov.nih.nlm.nls.metamap.*,
+             gov.nih.nlm.nls.nlp.features.*"
+             sourcepath="${project.src}"
+             destdir="${project.apidoc}"
+             author="true"
+             version="true"
+             use="true"
+	     package="true"
+             windowtitle="MetaMap API"
+             doctitle="IR MetaMap Internal"
+             bottom="2010 National Library of Medicine."
+	     splitindex="true">
+      <classpath>
+	<pathelement path="${prologbeans.jar}"/>
+      </classpath>
+    </javadoc>
+  </target>
+
+  <!-- clean out old class files -->
+  <target name="clean">
+    <delete failonerror="false">
+     <fileset dir="${project.classes}" includes="**/*.class"/>
+    </delete>
+  </target>
+
+  <target name="main" depends="compile"/>
+
+  <target name="help">
+    <echo>
+  targets: 
+    clean                clean classes and archives from working directory
+    compile              build classes
+    jar                  build project jar: lib/mmapi.jar
+    javadoc              build javadoc
+    </echo>
+  </target>
+</project>

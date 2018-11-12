@@ -1,0 +1,3 @@
+Compile:  ant jar
+
+Run: java -cp lib/taggerServer.jar:lib/mps.jar taggerServer

@@ -1,0 +1,24 @@
+Processing 00000000.tx.1: The effect of Obstructive Sleep Apnea.
+
+Phrase: "The effect"
+Meta Candidates (2):
+  1000 Effect [Qualitative Concept]
+  1000 Effect (Effect, Appearance) [Qualitative Concept]
+Meta Mapping (1000):
+  1000 Effect [Qualitative Concept]
+Meta Mapping (1000):
+  1000 Effect (Effect, Appearance) [Qualitative Concept]
+
+Phrase: "of Obstructive Sleep Apnea."
+Meta Candidates (9):
+  1000 Obstructive sleep apnoea (Sleep Apnea, Obstructive) [Disease or Syndrome]
+   901 Apnea, Sleep (Sleep Apnea Syndromes) [Disease or Syndrome]
+   827 APNOEA (Apnea) [Pathologic Function]
+   827 Sleep [Organism Function]
+   827 Obstructive (Obstructed) [Functional Concept]
+   827 Apnea (Apnea Adverse Event) [Finding]
+   793 Sleeping (Asleep) [Finding]
+   755 Sleepy [Finding]
+   727 Sleeplessness [Sign or Symptom]
+Meta Mapping (1000):
+  1000 Obstructive sleep apnoea (Sleep Apnea, Obstructive) [Disease or Syndrome]

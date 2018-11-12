@@ -1,0 +1,39 @@
+# a Makefile.include with rules for converting AFT documents to various formats 
+
+AFT=aft
+AFTFLAGS=--verbose
+LATEX=latex
+PDFLATEX=pdflatex
+DVIPS=dvips
+
+%.tex : %.aft
+	$(AFT) $(AFTFLAGS) --output=$@ --type=tex $<
+
+%.html : %.aft
+	$(AFT) $(AFTFLAGS) --output=$@ --type=bn-html $<
+	$(AFT) $(AFTFLAGS) --output=$@ --type=bn-html $<
+	$(AFT) $(AFTFLAGS) --output=$@ --type=bn-html $<
+
+%.xhtml : %.aft
+	$(AFT) $(AFTFLAGS) --output=$@ --type=xhtml $<
+
+%.lout : %.aft
+	$(AFT) $(AFTFLAGS) --output=$@ --type=loutt $<
+
+%.rtf : %.aft
+	$(AFT) $(AFTFLAGS) --output=$@ --type=rtf $<
+
+%.pdf : %.tex
+	$(PDFLATEX) $<
+	$(PDFLATEX) $<
+	$(PDFLATEX) $<
+
+%.dvi : %.tex
+	$(LATEX) $<
+	$(LATEX) $<
+	$(LATEX) $<
+
+%.ps : %.dvi
+	$(DVIPS) -o $@ $<
+
+

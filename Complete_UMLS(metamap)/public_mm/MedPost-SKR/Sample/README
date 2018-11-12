@@ -1,0 +1,4 @@
+javac -classpath .:mps.jar Test.java
+
+java -cp .:mps.jar Test input_file output_file
+

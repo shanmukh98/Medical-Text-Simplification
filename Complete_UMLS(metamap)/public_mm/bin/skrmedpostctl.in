@@ -1,0 +1,80 @@
+#!/bin/sh
+#
+# modified SKR/MedPost Tagger init script 
+# 15jul2008 WjR
+
+# Source function library.
+# if [ -f /etc/init.d/functions ] ; then
+# 	. /etc/init.d/functions
+# elif [ -f /etc/rc.d/init.d/functions ] ; then
+# 	. /etc/rc.d/init.d/functions
+# else
+# 	exit 0
+# fi
+
+BASEDIR=@@basedir@@
+MEDPOSTDIR=$BASEDIR/MedPost-SKR
+DATADIR=$MEDPOSTDIR/data
+SERVERDIR=$MEDPOSTDIR/Tagger_server
+JAVA_HOME=@@java_home@@
+# JAVA=${JAVA_HOME}/bin/java
+JAVA=java
+CLASSPATH=$SERVERDIR/lib/taggerServer.jar:$SERVERDIR/lib/mps.jar
+PID_FILE=$SERVERDIR/log/pid
+LOG_FILE=$SERVERDIR/log/log
+ERR_FILE=$SERVERDIR/log/errors
+LEXDBFILE=$DATADIR/lexDB.serial
+NGRAMFILE=$DATADIR/ngramOne.serial
+SERVERPORT=1795
+JVMOPTIONS="-Dtaggerserver.port=$SERVERPORT -DlexFile=$LEXDBFILE -DngramOne=$NGRAMFILE"
+DAEMON="$JAVA $JVMOPTIONS -cp $CLASSPATH taggerServer"
+prog=skrmedpostctl
+
+start () {
+	echo $"Starting $prog: "
+
+	# start daemon
+	cd $SERVERDIR
+	$DAEMON 1> $LOG_FILE 2> $ERR_FILE & echo $! > $PID_FILE
+        echo "started."
+	return 0
+}
+
+stop () {
+	# stop daemon
+	echo $"Stopping $prog: "
+	if [ -r $PID_FILE ] 
+	then
+		PID=`cat "$PID_FILE"` 
+		echo Stopping Tagger Server process..
+		kill -9 $PID
+		echo Process $PID stopped 
+	        rm $PID_FILE
+	else
+		echo Server not running
+		exit 1
+	fi
+}
+
+restart() {
+	stop
+	start
+}
+
+case $1 in
+	start)
+		start
+	;;
+	stop)
+		stop
+	;;
+	restart)
+		restart
+	;;
+	*)
+
+	echo $"Usage: $prog {start|stop|restart}"
+	exit 1
+esac
+
+exit $RETVAL
